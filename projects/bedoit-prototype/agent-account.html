@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>личный кабинет агента</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/GUI.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/agent-account.css">
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/projects.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/discuss.js"></script>
+    </head>
+    <body>
+        <div id="doodle"></div>
+        <div id="project-bg-container">
+            <div class="wrapper">
+
+                <div id="header">   
+                    <div id="menu">
+
+                        <div id="menu-items">
+                            <a href="projects.html" class="white roboto-medium" id="projects-item">Наши работы</a>
+                            <a href="services.html" class="white roboto-medium">Услуги</a>
+                            <a href="about-company.html" class="white roboto-medium">О компании</a>
+                            <a href="contacts.html" class="white roboto-medium" id="contacts-item">Контакты</a>
+                        </div>
+                        <div id="your-project-products" class="right">Обсудить ваш проект</div>
+                        <a href="index.html" id="logo" class="white roboto-bold left">Bedoit</a>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+
+
+                    <div class="left advantages-container">
+
+                        <div class="left percent" id="agent-account-saving-time-advantage">
+                            <div class="diagram white roboto-medium"><span id="agent-account-saving-time-advantage-span">0</span>%</div>
+
+
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="155px"
+                                 height="160px" xml:space="preserve" id="agent-account-saving-time-advantage-svg">
+                            <circle cx="96" cy="76" r="71" stroke="#d92227" stroke-opacity=".8" stroke-width="17" stroke-dasharray="0, 495" fill="none" transform="rotate(-89.9 88 88)" id="agent-account-saving-time-advantage-svg-circle"></circle>
+                            </svg>
+                            <div data-circle="0,495" id='agent-account-saving-time-advantage-html-circle'></div>
+
+
+                            <div class="percent-header white roboto-regular">Экономия</div>
+                            <div class="percent-text white roboto-regular">
+                                времени на обработку данных до 70%
+                            </div>                        
+                        </div>
+
+
+                        <div class="right percent" id="agent-account-reduce-errors-advantage">
+                            <div class="diagram white roboto-medium"><span id="agent-account-reduce-errors-advantage-span">0</span>%</div>
+
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px"
+                                 height="160px" xml:space="preserve" id="agent-account-reduce-errors-advantage-svg">
+                            <circle cx="96" cy="80" r="71" stroke="#d92227" stroke-opacity=".8" stroke-width="17" stroke-dasharray="0, 495" fill="none" transform="rotate(-89.9 88 88)" id="agent-account-reduce-errors-advantage-svg-circle"></circle>
+                            </svg>
+                            <div data-circle="0,495" id='agent-account-reduce-errors-advantage-html-circle'></div>
+
+
+                            <div class="percent-header white roboto-regular">
+                                Сокращение
+                            </div>
+                            <div class="percent-text white roboto-regular">
+                                ошибок при обработке данных на 80%
+                            </div>                        
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div class="single-advantage-container">
+                            <div class="percent" id="agent-account-reduce-time-advantage">
+                                <div class="diagram white roboto-medium" style="padding-left:42px">x<span id="agent-account-reduce-time-advantage-span">0</span></div>
+
+                                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px"
+                                     height="160px" xml:space="preserve" id="agent-account-reduce-time-advantage-svg">
+                                <circle cx="96" cy="80" r="71" stroke="#d92227" stroke-opacity=".8" stroke-width="17" stroke-dasharray="0, 495" fill="none" transform="rotate(-89.9 88 88)" id="agent-account-reduce-time-advantage-svg-circle"></circle>
+                                </svg>
+                                <div data-circle="0,495" id='agent-account-reduce-time-advantage-html-circle'></div>
+
+
+                                <div class="percent-header white roboto-regular">
+                                    Сокращение
+                                </div>
+                                <div class="percent-text white roboto-regular">
+                                    времени заявки на открытие счета в 6 раз
+                                </div>                        
+                            </div>
+                        </div>
+
+                    </div><!-- left -->
+
+
+                    <div class="right" id="projects-near-charts">
+                        <div id="projects-near-charts-header" class="roboto-light white">
+                            Личный кабинет агента
+                        </div>
+                        <div id="projects-near-charts-text" class="roboto-regular white">
+                            <p>
+                                Оформление Банком клиентов — юридических лиц 
+                                связано с обработкой больших объемов информации. 
+                                Это процедуры требующие существенных ресурсных 
+                                затрат и тщательной проверки данных при работе
+                                с предоставляемой документации.
+                            </p>
+                            <p>
+                                С целью оптимизации работ связанных со сбором 
+                                данной информации было принято решение о 
+                                разработке Личного кабинета Агента: рабочего 
+                                пространство, позволяющего агенту быстро и 
+                                качественно осуществлять сбор и передачу 
+                                информации и документации клиента на обработку 
+                                в банк.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+            </div> <!-- header -->
+        </div> <!-- header-bg-container -->
+
+
+        <div id="project-info-container">
+            <div class="wrapper">
+                <div id="project-info-right" class="right">
+                    <div id="download-case" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Скачать кейс</span>
+                        </a>
+                        <div id="pdf">PDF (2,2 Мб)</div>
+                    </div>
+
+                    <div id="site-bank" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Сайт банка</span>
+                        </a>
+                    </div>
+
+                    <div id="indicators" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Количественно-временные показатели</span>
+                        </a>
+                    </div>
+
+
+                    <div id="statistics-of-efficiency" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Статистика эффективности работы</span>
+                        </a>
+                    </div>
+
+                    <div id="project-worked" class="roboto-italic">
+                        Над проектом работали:
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        ведущий программист
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Дмитрий Никитин
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        старший дизайнер
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Павел Кулигин
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        дизайнер
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Юлия Волкова
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        проектировщик
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Светлана Карпова
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        программист
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Александр Володин
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        технолог
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Сергей Светлаков
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        менеджер
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Владимир Смирнов
+                    </div>
+
+                </div><!-- project-info-right -->
+
+
+                <div id="project-info-left" class="left">
+
+                    <div class="project-h1 top-60">
+                        Задача
+                    </div>
+
+                    <div class="project-description-text top-22 width-80">
+                        Перед специалистами Bedoit была поставлена задача 
+                        разработать сервис облегчающий работу по сбору, 
+                        систематизации и передачи данных потенциальных клиентов 
+                        юр. лиц на предварительный анализ, проверку и 
+                        автоматизацию резервации и открытия счета в Банке.
+                    </div>
+
+                    <div class="project-h2 top-32 bottom-7">
+                        Данное решение должно было решать целый спектр задач:
+                    </div>
+
+                    <div class="left width-34">
+                        <div class="list-item top-11">
+                            Автоматизировать сбор первичной документации и информации о клиенте.
+                        </div>
+
+                        <div class="list-item top-11">
+                            Осуществлять автоматическое заполнение полей анкеты по связанным параметрам.
+                        </div>
+
+                        <div class="list-item top-11">
+                            Формировать готовые документы, используя заложенные 
+                            шаблоны и логики (правила) заполнения этих документов 
+                            при вводе данных клиента.
+                        </div>
+
+                        <div class="list-item top-11">
+                            Возможность прикрепления сканов документов и 
+                            обеспечение доступа к этой информации подразделениям 
+                            бек-офиса Банка.
+                        </div>
+
+                        <div class="list-item top-11">
+                            Осуществлять обратную связь между агентом и бек-офисом, 
+                            для оперативного устранения ошибок и недочетов 
+                            допущенных при предоставлении документации и данных. 
+                        </div>
+                    </div>
+
+                    <div class="left left-10 width-34">
+                        <div class="list-item top-11">
+                            Интеграция с внутренней системой банка, 
+                            получение информации из анкет и корректного ее 
+                            попадания в системы банка, автоматизация процесса 
+                            резервирования и открытия счета, через внешний 
+                            интерфейс при соответствии внутрибанковским 
+                            правилам и условиям осуществления данных операций. 
+                        </div>
+
+                        <div class="list-item top-11">
+                            Систему споп-факторов, автоматически отсеивающих 
+                            недобросовестных клиентов, намеренно предоставляющих 
+                            недостоверные данные и оповещающих службы безопасности 
+                            Банка о подобных случаях, с блокировкой дальнейшего 
+                            процесса оформления. 
+                        </div>
+
+                        <div class="list-item top-11">
+                            Защита персональных и иных данных потенциального
+                            клиента.
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+
+                    <div class="project-h1 top-78">
+                        Решение
+                    </div>
+
+                    <div class="project-description-text top-22 width-80">
+                        Первоначально был осуществлен масштабный сбор 
+                        информации о том, какие процессы осуществляют 
+                        все участники процесса для успешного оформления 
+                        клиента, какие проблемы возникают на каждом участке, 
+                        в каких участках процесса необходим наиболее 
+                        тщательный контроль и система защиты от ошибок 
+                        и человеческого фактора.
+                    </div>
+
+                    <img src="images/notebook-1.png" alt="как выглядит на ноутбуке" class="top-43"/>
+
+                    <div class="left width-34">
+                        <div class="project-h2 top-7">
+                            Ключевые участники
+                        </div>
+                        <div class="project-description-text top-11">
+                            Затем были выявлены все ключевые участки, 
+                            которые требуют наибольших затрат времени 
+                            на ручной ввод и обработку информации 
+                            (заполнения анкет, адресов, повторный ввод 
+                            однотипных данных для различных форм документов 
+                            и т.д.). Все эти участки требовали максимальной 
+                            автоматизации за счет применения связанных логик 
+                            и построения механизмов соответствия правилам 
+                            оформления документации.
+                        </div>
+                    </div>
+
+                    <div class="left left-10 width-34">
+                        <div class="project-h2 top-7">
+                            Автозаполнение анкеты
+                        </div>
+                        <div class="project-description-text top-11">
+                            Было подобрано решение, позволяющее предзаполнение 
+                            максимально возможного количества ключевых полей 
+                            анкеты по однозначно определяющим параметрам 
+                            (ИНН юридического лица), за счет обращения к 
+                            сторонним сертифицированным базам данных юридических 
+                            лиц. Осуществлена интеграция этого решения в 
+                            структуру Личного кабинета.
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+
+                    <div class="left width-34 top-41">
+                        <div class="project-h2">
+                            Обработка информации
+                        </div>
+                        <div class="project-description-text top-11">
+                            Выявлен весь пул информации, необходимой для 
+                            резервирования и открытия счета во внутренней 
+                            системе банка, минуя ручной ввод данных. 
+                            Произведена поэтапная интеграция с внутренними 
+                            системами банка с постепенно увеличивающимся 
+                            объемом передаваемой информации (от необходимого 
+                            минимума, до максимально полной передачи всей 
+                            требуемой информации из Личного кабинета Агента 
+                            в систему Банка).
+                        </div>
+                    </div>
+
+                    <div class="left width-34 left-10 top-41">
+                        <img src="images/agent-account-image-1.png" alt="картинка" />
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="left width-34 top-50">
+                        <img src="images/agent-account-image-2.png" alt="картинка" />
+                    </div>
+
+                    <div class="left width-34 left-10 top-50" style="display: table; height: 270px;">
+                        <div style="display:table-cell; vertical-align: middle">
+                            <div class="project-h2">
+                                Создание шаблонов
+                            </div>
+                            <div class="project-description-text top-11">
+                                Запрограммированы шаблоны и логики заполнения 
+                                шаблонов, полностью соответствующие всем правилам, 
+                                предусмотренным как в Банке, так и всецело отвечающим 
+                                требованиям регулятора в работе со стандартизированной 
+                                документацией.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+
+                    <div class="left width-34 top-41">
+                        <div class="project-h2">
+                            Разработка документооборорта
+                        </div>
+                        <div class="project-description-text top-11">
+                            Разработана и внедрена система внутреннего 
+                            документооборота для бек-офиса банка, 
+                            включающая в себя системы оценки качества 
+                            предоставляемой агентом документации, 
+                            проверки полноты предоставляемых документов 
+                            (в электронном виде), сбора статистической 
+                            информации для оценки качества работы всех 
+                            подразделений отвечающих за процесс (скорость 
+                            обработки заявок, подсчет количества итераций 
+                            между агентом и бек-офисом, соответствие данных 
+                            параметров внутренним ограничением, правилам и 
+                            стандартам 
+                        </div>
+                    </div>
+
+                    <div class="left width-34 left-10 top-41">
+                        <img src="images/agent-account-image-3.png" alt="картинка" />
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="project-h2 top-41 width-80">
+                        Система разграничения прав доступа
+                    </div>
+                    <div class="project-description-text top-11 width-80">
+                        Разработана и внедрена система разграничения 
+                        прав и доступов пользователей, как к личному 
+                        кабинету, так и к его изнанке – системе 
+                        документооборота. Благодаря этой системе 
+                        появилась возможность осуществлять полный 
+                        контроль над процессами руководителями 
+                        ответственными за прием и обработку заявок 
+                        подразделений. Введена личная ответственность 
+                        и возможность оценки эффективности работы 
+                        каждого сотрудника, принимающего участие в 
+                        бизнес процессе. Зоны «потерянного контроля», 
+                        узлы в которых возникали ошибки, и, впоследствии,
+                        происходили профессиональные конфликты между 
+                        подразделениями Банка, были последовательно 
+                        ликвидированы.
+                    </div>
+
+                    <div class="project-h2 top-41 width-80">
+                        Система сбора статистики
+                    </div>
+                    <div class="project-description-text top-11 width-80">
+                        Разработана и внедрена автоматизированная система 
+                        сбора и предоставления статистики, позволяющая 
+                        руководителям моментально получать доступ к 
+                        любому срезу информации, соответствующему их 
+                        уровню доступа. Реализована выгрузка статистики 
+                        в средства Microsoft Office.
+                    </div>
+
+                    <img src="images/notebook-2.png" alt="как выглядит на ноутбуке" class="top-35"/>
+
+                    <div class="project-h1 top-78">
+                        Результат
+                    </div>
+
+                    <div class="project-description-text top-22 width-80">
+                        В совокупности этих решений и разработок была 
+                        получена система полного цикла, позволяющая 
+                        практически полностью автоматизировать процессы 
+                        получения, обработки оценки и использования 
+                        данных клиента для максимального быстрого и 
+                        качественного открытия счета в банке для клиентов 
+                        юр.лиц.
+                    </div>
+
+                    <div class="project-description-text top-8 width-80">
+                        Система экономила 70% того времени, которое 
+                        ранее затрачивалось на ручную обработку 
+                        информации и взаимодействие между структурами 
+                        банка участвующими в процессе. Более чем на 80% 
+                        было сокращено количество ошибок, возникающих 
+                        из-за человеческого фактора. «Чистое время» 
+                        обработки заявки на открытие счета от момента 
+                        попадания систему, до получения клиентом счета 
+                        сократилось в N раз.
+                    </div>
+
+                    <div class="project-description-text top-8 width-80">
+                        Личный кабинет агента был успешно интегрирован 
+                        в общий бизнес-процесс открытия счетов для 
+                        клиентов юр. лиц Банка в качестве одного из 
+                        ключевых модулей масштабной автоматизации 
+                        данного процесса.
+                    </div>
+
+
+                    <div class="project-h1 top-78 width-80">
+                        Экономические показатели работы системы 
+                        «Личный кабинет агента»
+                    </div>
+
+                    <div class="left width-34 top-37">
+                        <img src="images/agent-account-icon-1.png" alt="картинка" />
+                        <div class="project-description-text width-80 top-7">
+                            Экономия времени на обработку данных до 70%
+                        </div>
+                    </div>
+
+                    <div class="left width-34 left-10 top-37">
+                        <img src="images/agent-account-icon-2.png" alt="картинка" />
+                        <div class="project-description-text width-80 top-7">
+                            Сокращение ошибок при обработке данных на 80%
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="left width-34 top-25">
+                        <img src="images/agent-account-icon-3.png" alt="картинка" />
+                        <div class="project-description-text width-80 top-7">
+                            Сокращение времени обработки заявки 
+                            на открытие счета в 6 раз
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+
+                </div><!-- project-info-left -->
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="wrapper">
+                <div id="footer-col-1" class="white roboto-regular left">
+                    <div>Россия, Москва, Лубянский проезд, 4</div>
+                    <div>Spain, Vilanova i la Geltru, Neapolis, fl. 3</div>
+                </div>
+                <div id="footer-col-2" class="left">
+                    <div class="white roboto-regular">+7 (926) 888-22-32</div>
+                    <div class="white roboto-regular">+34 727-76-004</div>
+                </div>
+                <div id="footer-col-3" class="left">
+                    <a href="mailto:info@bedoit.ru" class="white roboto-regular" id="footer-email">info@bedoit.ru</a>
+                    <a href="skype:bedoit_skype" class="white roboto-regular" id="footer-skype">bedoit_skype</a>
+                </div>
+                <div id="groups" class="right">
+                    <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="twitter,facebook"></div>       
+
+
+                </div>
+                <div class="clear"></div>
+
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function () {
+
+                function svgAnimate(svg, svgdom, html, x, y) {
+                    var svgCircle = jQuery(svg, svgdom);
+                    var attr = $(html).attr('data-circle');
+                    var arr = attr.split(',');
+                    var intCurrentX = parseInt(arr[0]);
+                    var intCurrentY = parseInt(arr[1]);
+
+                    if (intCurrentX < x) {
+                        var currentX = intCurrentX + 1;
+                        var str = currentX.toString().concat(',').concat(intCurrentY.toString());
+                        $(html).attr('data-circle', str);
+                        svgCircle.attr('stroke-dasharray', str);
+                        setTimeout(function () {
+                            svgAnimate(svg, svgdom, html, x, y);
+                        }, 3);
+                    }
+                    else {
+                        return;
+                    }
+                }
+
+                function increasePercent(el, max) {
+
+                    var percent = parseInt($(el).text().trim());
+                    if (percent < max) {
+                        percent = percent + 1;
+                        $(el).text(percent);
+                    }
+                    else {
+                        return;
+                    }
+                }
+
+                var agentAccountReduceErrorsAdvantageSvg = document.getElementById('agent-account-reduce-errors-advantage-svg');
+                var agentAccountSavingTimeAdvantageSvg = document.getElementById('agent-account-saving-time-advantage-svg');
+                var agentAccountReduceTimeAdvantageSvg = document.getElementById('agent-account-reduce-time-advantage-svg');
+
+                setInterval(function () {
+                    $('#agent-account-saving-time-advantage, #agent-account-reduce-errors-advantage, #agent-account-reduce-time-advantage').fadeIn(1000);
+                }, 0);
+
+                setInterval(function () {
+
+                    setInterval(function () {
+                        increasePercent('#agent-account-saving-time-advantage-span', 70);
+                        increasePercent('#agent-account-reduce-errors-advantage-span', 80);
+                        increasePercent('#agent-account-reduce-time-advantage-span', 6);
+                    }, 30);
+
+                    svgAnimate('#agent-account-saving-time-advantage-svg-circle', agentAccountSavingTimeAdvantageSvg, '#agent-account-saving-time-advantage-html-circle', 290, 495);
+                    svgAnimate('#agent-account-reduce-errors-advantage-svg-circle', agentAccountReduceErrorsAdvantageSvg, '#agent-account-reduce-errors-advantage-html-circle', 360, 495);
+                    svgAnimate('#agent-account-reduce-time-advantage-svg-circle', agentAccountReduceTimeAdvantageSvg, '#agent-account-reduce-time-advantage-html-circle', 120, 495);
+                    
+                }, 500);
+
+            });
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Юрий Кетов</title>
+        <meta name="description" content="Юрий Кетов. Дизайнер, программист, маркетолог.">
+        <meta name="keywords" content="Строю продажи через интернет. Создаю корпоративные сайты, лендинги и интернет-магазины. Превращаю psd в html. Настраиваю Яндекс.Директ.">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/GUI.css">   
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="js/jquery-ui.js"></script>     
+        <script src="js/GUI.js"></script>
+        <!--<script src="js/queryloader2.min.js"></script>-->
+        <script src="js/typed.js"></script>
+    </head>
+    <body>
+
+        <script>
+/*
+            $('body').queryLoader2({
+                //barColor: "#1aa6e9",
+                //backgroundColor: "#fff",
+                percentage: true,
+                barHeight: 1,
+                minimumTime: 1500,
+                fadeOutTime: 400
+            });*/
+
+        </script>
+
+        <div class="black-bg"></div>
+
+        <div class="ketov-block__form-container popup-container">
+
+            <div class="ketov-block__form-close popup-close">
+                <i class="fa fa-times"></i>
+            </div>
+
+            <form class="ketov-block__form">
+                <div class="ketov-block__form-header popup-header">
+                    Стать клиентом
+                </div>
+                <div class="ketov-block__form-comment form-comment">
+                    Оставьте контактные данные и сообщение,<br>
+                    я отвечу в течение часа в рабочее время
+                </div>
+
+
+                <input placeholder="Имя" class="ketov-block__form-name-input popup-input" />
+                <input placeholder="Телефон или эл. почта" class="ketov-block__form-phone-input popup-input" />               
+                <textarea placeholder="Сообщение" class="ketov-block__form-text popup-input"></textarea>
+
+                <div class="ketov-block__form-success form-success"></div>
+
+                <button class="ketov-block__form-button orange-button form-button" type="submit" name="submit">
+                    Отправить
+                </button>
+            </form>
+        </div>
+
+        <div class="request__form-container popup-container">
+            <div class="request__form-close popup-close">
+                <i class="fa fa-times"></i>
+            </div>
+
+            <form class="request__form">
+                <div class="request__form-header popup-header">
+                    Оставить заявку
+                </div>
+                <div class="request__form-comment form-comment">
+                    Оставьте контактные данные и сообщение,<br>
+                    я отвечу в течение часа в рабочее время
+                </div>
+
+                <input placeholder="Имя" class="request__form-name-input popup-input" />
+                <input placeholder="Телефон или эл. почта" class="request__form-phone-input popup-input" />
+                <textarea placeholder="Сообщение" class="request__form-text popup-input"></textarea>
+
+                <div class="request__form-success form-success"></div>
+
+                <button class="request__form-button orange-button form-button" type="submit" name="submit">
+                    Отправить
+                </button>
+            </form>
+        </div>
+
+        <div class="ketov-block">
+            <div class="wrapper">
+
+                <div class="ketov-block__logo">Юрий Кетов</div>
+
+                <div class="ketov-block__text">
+                    <div class="ketov-block__typed-container">
+                        <span class="ketov-block__typed"></span>
+                    </div>
+
+                    <div class="ketov-block__text-about">
+                        Я — дизайнер продуктов и услуг, 
+                        верстальщик&nbsp;и&nbsp;директолог. 
+                        Cоздаю и запускаю промостраницы, 
+                        сайты-визитки и&nbsp;интернет-магазины 
+                        для малого и среднего бизнеса. Помогаю 
+                        клиентам повышать продажи, находить 
+                        новых клиентов и формировать репутацию.
+                    </div>
+
+                    <button class="ketov-block__button orange-button">
+                        Стать клиентом
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script>
+            $(function () {
+                $(".ketov-block__typed").typed({
+                    strings: ["Строю продажи<br /> через интернет", "Верстаю сайты,<br /> работаю со студиями", "Рисую и запускаю<br /> промостраницы", "Настраиваю<br /> Яндекс.Директ"],
+                    typeSpeed: 25,
+                    backDelay: 2500,
+                    loop: true
+                });
+            });
+        </script>
+
+        <div class="wrapper">
+            <div class="competence">
+                <div class="competence__header-h1">
+                    Компетенции
+                </div>
+
+                <div class="competence__item--layout left">
+                    <img src="images/competence-layout.png" alt="вёрстка" class="competence__icon left" />
+                    <div class="competence__text left">
+                        <div class="competence__header-h2">
+                            Вёрстка
+                        </div>
+                        <div class="competence__p competence__p--layout">
+                            Я верстаю проекты для постоянных клиентов, 
+                            работаю на фрилансе, сотрудничаю со 
+                            студиями. В зависимости от задачи делаю 
+                            фиксированную, резиновую или адаптивную 
+                            верстку. Использую HTML5, CSS3, нативный 
+                            JS и jQuery, Twitter Bootstrap и Angular. 
+                            Изучаю пакетные менеджеры, препроцессоры 
+                            и Node.js. Хочу дорасти до Senior 
+                            Frontend Developer.
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="competence__item--design left">
+                    <img src="images/competence-design.png" alt="дизайн" class="competence__icon left" />
+                    <div class="competence__text left">
+                        <div class="competence__header-h2">
+                            Дизайн
+                        </div>
+                        <div class="competence__p competence__p--design">
+                            Занимаюсь дизайном сайтов и интерфейсов под руководством моего арт-директора 
+                            <a href="http://pavelkuligin.ru" class="link link--speed-1">
+                                <span class="link__span">
+                                    Павла Кулигина
+                                </span>
+                            </a>. Проектирую прототипы, 
+                            отрисовываю макеты, думаю о пользе. 
+                        </div>
+                        <div class="competence__p competence__p--design">
+                            В декабре 2015 закончил I ступень 
+                            <a href="http://artgorbunov.ru/school/31aug2015/" class="link link--speed-1">
+                                <span class="link__span">
+                                    Школы Стажёров
+                                </span>
+                            </a>
+                            и сейчас готовлюсь 
+                            ко второй.
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="competence__item--direct left">
+                    <img src="images/competence-direct.png" alt="яндекс.директ" class="competence__icon left" />
+                    <div class="competence__text left">
+                        <div class="competence__header-h2">
+                            Яндекс.Директ 
+                        </div>
+                        <div class="competence__p">
+                            Привожу новых клиентов с помощью 
+                            Яндекс.Директ. Собираю семантику, 
+                            анализирую показатели, провожу 
+                            А/В-тестирование.
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="competence__item--team left">
+                    <img src="images/competence-team.png" alt="Формирую команду " class="competence__icon left" />
+                    <div class="competence__text left">
+                        <div class="competence__header-h2">
+                            Формирую команду  
+                        </div>
+                        <div class="competence__p">
+                            В зависимости от задачи подключаю 
+                            артдиректора, иллюстратора, 
+                            backend-программиста, 
+                            smm-специалиста.
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+            <div class="projects">
+
+                <div class="projects__header-1">
+                    Проекты
+                </div>
+
+                <a class="project project--class-for-span project--kozub" href="http://antonkozub.ru/" target="_blank">
+                    <div class="project__images">
+                        <div class="project__image-div active">
+                            <img src="images/kozub/kozub-1.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/kozub/kozub-2.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/kozub/kozub-3.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/kozub/kozub-4.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/kozub/kozub-5.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/kozub/kozub-6.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/kozub/kozub-7.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/kozub/kozub-8.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/kozub/kozub-9.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/kozub/kozub-10.png" alt="картинка">
+                        </div>
+                    </div>
+                    <div class="hover-block" id="hover-block-1" style="display: none;">
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left active"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>            
+                        <div class="hover-item left"></div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="project__link">
+                        <span class="project__link-span">Антон Козуб</span>
+                    </div>
+
+                    <div class="project__label-block">
+                        <div class="project__label">
+                            Вёрстка
+                        </div>
+                        <div class="project__label">
+                            Дизайн
+                        </div>
+                        <div class="project__label">
+                            Программирование
+                        </div>
+                    </div>
+
+                </a>
+                
+                
+                
+                <a class="project project--class-for-span project--golden-strike" href="http://promo.golden-strike.ru" target="_blank">
+                    <div class="project__images">
+                        <div class="project__image-div active">
+                            <img src="images/golden-strike/golden-strike-1.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/golden-strike/golden-strike-2.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/golden-strike/golden-strike-3.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/golden-strike/golden-strike-4.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/golden-strike/golden-strike-5.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/golden-strike/golden-strike-6.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/golden-strike/golden-strike-7.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/golden-strike/golden-strike-8.png" alt="картинка">
+                        </div>
+                    </div>
+                    <div class="hover-block" id="hover-block-5" style="display: none;">
+                        <div class="hover-item left active"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="project__link">
+                        <span class="project__link-span">Боулинг-клуб</span>
+                    </div>
+
+                    <div class="project__label-block">
+                        <div class="project__label">
+                            Вёрстка
+                        </div>
+                        <div class="project__label">
+                            Дизайн
+                        </div>
+                        <div class="project__label">
+                            Программирование
+                        </div>
+                    </div>
+
+                </a>
+
+                
+                <a class="project project--class-for-span project--d-ajour" href="http://d-ajour.ru" target="_blank">
+                    <div class="project__images">
+                        <div class="project__image-div active">
+                            <img src="images/d-ajour/d-ajour-1.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/d-ajour/d-ajour-2.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/d-ajour/d-ajour-3.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/d-ajour/d-ajour-4.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/d-ajour/d-ajour-5.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/d-ajour/d-ajour-6.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/d-ajour/d-ajour-7.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/d-ajour/d-ajour-8.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/d-ajour/d-ajour-9.png" alt="картинка">
+                        </div>
+                    </div>
+                    <div class="hover-block" id="hover-block-6" style="display: none;">
+                        <div class="hover-item left active"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="project__link">
+                        <span class="project__link-span">Хна для биотатуажа</span>
+                    </div>
+
+                    <div class="project__label-block">
+                        <div class="project__label">
+                            Вёрстка
+                        </div>
+                        <div class="project__label">
+                            Дизайн
+                        </div>
+                        <div class="project__label">
+                            Яндекс.Директ
+                        </div>
+                    </div>
+
+                </a>
+
+
+                <a class="project project--class-for-span project--silkway-tours" href="projects/silkway-tours" target="_blank">
+                    <div class="project__images">
+                        <div class="project__image-div active">
+                            <img src="images/silkway-tours/silkway-tours-1.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/silkway-tours/silkway-tours-2.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/silkway-tours/silkway-tours-3.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/silkway-tours/silkway-tours-4.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/silkway-tours/silkway-tours-5.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/silkway-tours/silkway-tours-6.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/silkway-tours/silkway-tours-7.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/silkway-tours/silkway-tours-8.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/silkway-tours/silkway-tours-9.png" alt="картинка">
+                        </div>
+                    </div>
+                    <div class="hover-block" id="hover-block-3" style="display: none;">
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left active"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>   
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="project__link">
+                        <span class="project__link-span">Мебельные туры в китай</span>
+                    </div>
+
+                    <div class="project__label-block">
+                        <div class="project__label">
+                            Вёрстка
+                        </div>
+                        <div class="project__label">
+                            Дизайн
+                        </div>
+                    </div>
+
+                </a>
+
+
+
+                <div class="clear"></div>
+
+                
+
+                <a class="project project--class-for-span project--bedoit" href="projects/bedoit-prototype" target="_blank">
+                    <div class="project__images">
+                        <div class="project__image-div active">
+                            <img src="images/bedoit/bedoit-1.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/bedoit/bedoit-2.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/bedoit/bedoit-3.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/bedoit/bedoit-4.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/bedoit/bedoit-5.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/bedoit/bedoit-6.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/bedoit/bedoit-7.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/bedoit/bedoit-8.png" alt="картинка">
+                        </div>
+                    </div>
+                    <div class="hover-block" id="hover-block-2" style="display: none;">
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left active"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="project__link">
+                        <span class="project__link-span">Bedoit</span>
+                    </div>
+
+                    <div class="project__label-block">
+                        <div class="project__label">
+                            Вёрстка
+                        </div>
+                    </div>
+
+                </a>
+
+                <a class="project project--class-for-span project--sensors" href="http://park.upartnera.com" target="_blank">
+                    <div class="project__images">
+                        <div class="project__image-div active">
+                            <img src="images/sensors/sensors_1.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/sensors/sensors_2.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/sensors/sensors_3.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/sensors/sensors_4.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/sensors/sensors_5.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/sensors/sensors_6.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/sensors/sensors_7.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/sensors/sensors_8.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/sensors/sensors_9.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/sensors/sensors_10.png" alt="картинка">
+                        </div>
+                        <div class="project__image-div">
+                            <img src="images/sensors/sensors_11.png" alt="картинка">
+                        </div>
+                    </div>
+                    <div class="hover-block" id="hover-block-4" style="display: none;">
+                        <div class="hover-item left active"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>            
+                        <div class="hover-item left"></div>
+                        <div class="hover-item left"></div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div class="project__link">
+                        <span class="project__link-span">Продажа парктроников</span>
+                    </div>
+
+                    <div class="project__label-block">
+                        <div class="project__label">
+                            Вёрстка
+                        </div>
+                    </div>
+
+                </a>
+
+
+                <a class="project project--class-for-span project--yellow-label" href="projects/yellow-label" target="_blank">
+                    <div class="project__images">
+                        <div class="project__image-div active">
+                            <img src="images/yellow-label/yellow-label_1.png" alt="картинка">
+                        </div>                      
+                    </div>                   
+
+                    <div class="project__link">
+                        <span class="project__link-span">Yellow Label</span>
+                    </div>
+
+                    <div class="project__label-block">
+                        <div class="project__label">
+                            Вёрстка
+                        </div>
+                    </div>
+
+                </a>
+
+
+
+                <a class="project project--class-for-span project--gidriki" href="http://book.mrgidrik.ru" target="_blank">
+                    <div class="project__images">
+                        <div class="project__image-div active">
+                            <img src="images/gidriki/gidriki.png" alt="картинка">
+                        </div>                      
+                    </div>                   
+
+                    <div class="project__link">
+                        <span class="project__link-span">Интерфейс бронирования</span>
+                    </div>
+
+                    <div class="project__label-block">
+                        <div class="project__label">
+                            Вёрстка
+                        </div>
+                    </div>
+
+                </a>
+
+                <div class="clear"></div>
+            </div>
+
+
+
+            <div class="blog">
+                <div class="blog__header-h1">
+                    Блог
+                </div>
+
+                <div class="blog__column blog__column--1">
+                    <div class="blog__link">
+                        <a class="blog__future">
+                            Стилизованная кнопка загрузки файлов
+                        </a>
+                    </div>
+
+                    <div class="blog__link">
+                        <a class="blog__future">
+                            Анимации css
+                        </a>
+                    </div>
+
+                    <div class="blog__link">
+                        <a class="blog__future">
+                            Меню по центру
+                        </a>
+                    </div>
+
+                    <div class="blog__link">
+                        <a class="blog__future">
+                            Стилизация плейсхолдеров
+                        </a>
+                    </div>
+
+                    <div class="blog__link">
+                        <a class="blog__future">
+                            БЭМ
+                        </a>
+                    </div>
+                </div>
+
+                <div class="blog__column blog__column--2">
+                    <div class="blog__link">
+                        <a class="blog__future">
+                            Разница между верстальщиком 
+                            и frontend-разработчиком
+                        </a>
+                    </div>
+
+                    <div class="blog__link">
+                        <a class="blog__future">
+                            Что должен знать frontend-
+                            разработчик сегодня
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="blog__clear"></div>
+
+                <div class="blog__column blog__column--3">
+                    <div class="blog__link">
+                        <a class="blog__future">
+                            Люди и блоги. Кого нужно знать и читать тем, 
+                            кто связан с IT. Книги.
+                        </a>
+                    </div>
+
+                    <div class="blog__link">
+                        <a class="blog__future">
+                            Студии. Сайты. Россия, Запад. 
+                            Хрестоматийные примеры.
+                        </a>
+                    </div>
+                </div>
+
+                <div class="blog__column blog__column--4 blog__column--last">
+                    <div class="blog__link">
+                        <a class="link link--speed-2" href="javascript:void(0);">
+                            <span class="link__span">
+                                Школа Стажёров Бюро Горбунова
+                                Первая часть Марлезонского балета
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="blog__link">
+                        <a class="blog__future">
+                            Копипаст — это отлично
+                        </a>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+
+
+            <div class="request">
+                <div class="request__column-left">
+                    <div class="request__text">
+                        Пишите мне или оставляйте заявку. 
+                        Вместе мы подберем решение и подходящий инструмент.
+                    </div>
+
+                    <div class="request__contacts">
+
+                        <img src="images/request__skype.png" alt="скайп" class="request__icon request__icon--skype"/>
+                        <a href="skype:insight202?call" class="link link--speed-1 request__skype">
+                            <span class="link__span">
+                                insight202
+                            </span>
+                        </a>
+
+                        <img src="images/request__email.png" alt="почта" class="request__icon request__icon--mail"/>
+                        <a href="mailto:ketov1992@list.ru" class="link link--speed-1 request__email">
+                            <span class="link__span">
+                                ketov1992@gmail.com
+                            </span>
+                        </a>
+
+                        <img src="images/request__phone.png" alt="телефон" class="request__icon request__icon--phone"/>
+                        <a href="tel:+79223104870" class="link link--speed-1 request__phone">
+                            <span class="link__span">
+                                +7 (922) 310-48-70
+                            </span>
+                        </a>
+
+                        <div class="request__available">
+                            На связи с 8:00 до 22:00 Мск.
+                        </div>
+
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="request__column-right">
+                    <button class="request__button orange-button">
+                        Оставить заявку
+                    </button>
+                </div>
+                <div class="clear">
+
+                </div>
+            </div>
+
+
+            <div class="footer">
+                <div class="footer__copyright">
+                    © 2015–2016, Юрий Кетов
+                </div>
+
+                <a href="https://vk.com/id4274889" class="footer__link footer__link--vk" target="_blank">
+                    <img src="images/footer__vk.png" alt="вконтакте" />
+                </a>
+
+                <a href="javascript:void(0);" class="footer__link footer__link--behance">
+                    <img src="images/footer__behance.png" alt="беханс" />
+                </a>
+
+                <!--<a href="javascript:void(0);" class="footer__link footer__link--github">
+                    <img src="images/footer__github.png" alt="гитхаб" />
+                </a>-->
+
+                <div class="clear"></div>
+            </div>
+
+        </div>
+
+        <!-- Yandex.Metrika counter --><script type="text/javascript"> (function (d, w, c) {
+                (w[c] = w[c] || []).push(function () {
+                    try {
+                        w.yaCounter31509778 = new Ya.Metrika({id: 31509778, clickmap: true, trackLinks: true, accurateTrackBounce: true});
+                    } catch (e) {
+                    }
+                });
+                var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://mc.yandex.ru/metrika/watch.js";
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else {
+                    f();
+                }
+            })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="https://mc.yandex.ru/watch/31509778" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+
+    </body>
+</html>

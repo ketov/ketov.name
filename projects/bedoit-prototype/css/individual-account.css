@@ -1,0 +1,29 @@
+#project-bg-container{
+    width: 100%;
+    max-width: 1900px;   
+    margin: 0 auto;
+    background: url('../images/individual-account-top-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0 76px 0;
+    min-width: 940px;
+}
+
+.project-description-individual-account-text{
+    font-family: RobotoMedium, sans-serif;
+    color: #343434;
+    font-size: 115%;
+    line-height: 165%;
+}
+
+.individual-account-goal-1{
+    background: url('../images/individual-account-goal-1.png') no-repeat 0 4px;
+}
+
+.individual-account-goal-2{
+    background: url('../images/individual-account-goal-2.png') no-repeat 0 4px;
+}
+
+.individual-account-goal-1,
+.individual-account-goal-2{
+    padding-left: 60px;
+}

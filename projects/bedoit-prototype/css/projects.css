@@ -1,0 +1,50 @@
+#doodle-projects{
+    display: block !important;
+    background: #000;
+opacity: .8;
+width: 100%;
+height: 113px;
+position: fixed;
+top: 0;
+}
+
+#services{
+    background: #fff !important;
+}
+
+#projects{
+    margin-top: 90px;
+    padding-top: 85px !important;
+}
+
+#menu{
+    padding-top: 50px;
+}
+
+#your-project{
+    top: 39px;
+}
+
+#logo-projects{
+    font-size: 220%;
+text-decoration: none;
+margin-top: -42px;
+margin-left: 37px;
+}
+
+#discuss-project{
+    background: #f25350;
+color: #fff;
+font-family: RobotoRegular;
+padding: 10px 20px 10px 20px;
+font-size: 85%;
+border-radius: 5px;
+cursor: pointer;
+position: absolute;
+right: 37px;
+top: 37px;
+}
+
+#discuss-project:hover{
+    background: #ff6360;
+}

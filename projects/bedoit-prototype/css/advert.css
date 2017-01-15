@@ -1,0 +1,53 @@
+#project-bg-container{
+    width: 100%;
+    max-width: 1900px;   
+    margin: 0 auto;
+    background: url('../images/advert-top-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0 76px 0;
+    min-width: 940px;
+}
+
+.advert-advantage-1{
+    background: url('../images/advert-advantage-1.png') no-repeat;
+}
+
+.advert-advantage-2{
+    background: url('../images/advert-advantage-2.png') no-repeat;
+}
+
+.advert-advantage-3{
+    background: url('../images/advert-advantage-3.png') no-repeat;
+}
+
+.advert-advantage-4{
+    background: url('../images/advert-advantage-4.png') no-repeat;
+}
+
+.advert-advantage-4{
+    background: url('../images/advert-advantage-4.png') no-repeat;
+}
+
+.advert-advantage-5{
+    background: url('../images/advert-advantage-5.png') no-repeat;
+}
+
+.advert-advantage-6{
+    background: url('../images/advert-advantage-6.png') no-repeat;
+}
+
+.advert-advantage{
+    padding-left: 62px;
+    margin-top: 29px;
+}
+
+.advert-callback{
+    color: #1278b8;
+    border-bottom: 1px dashed rgba(18, 120, 184, 0.6);
+    cursor: pointer;
+}
+
+.advert-callback:hover{
+    border-bottom: 1px dashed rgba(242, 83,80, 0.6);
+    color: #f25350;
+}

@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif !important;
+    color: #303030;
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+
+.overflow-auto{
+    overflow: auto;
+}
+
+@media (max-width: 767px){
+    body {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+}
+
+.wrapper{
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+#menu{
+    position: fixed;
+    background: rgba(255,255,255,0.95);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
+
+#menu > .table{
+    width: 100%;
+    height: 33.33333%;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+#logo{
+    color: #303030;
+    text-decoration: none;
+    padding-top: 23px;
+    font-size: 150%;
+    font-weight: 600;
+    border-radius: 29px;
+    margin-left: 2%;
+    padding-bottom: 24px;
+    padding-right: 23px;
+}
+
+#calendar{
+    font-size: 110%;
+    margin-top: 19px;
+    margin-right: 2%;
+    padding-top: 4px;
+}
+
+#my-books-text{
+    margin-right: 8px;
+}
+
+#header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 6;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0px 2px 2px rgba(194,194,194,0.3);
+}
+
+.table{
+    display: table;
+}
+
+.table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#footer{
+    background: #ededed;
+    margin-top: 102px;
+    padding: 12px 0px 11px 0px;
+}
+
+#table{
+    margin-top: 50px;
+}
+
+#my-books-text:hover,
+#calendar:hover,
+#close-menu:hover
+{
+    color: #eb194a !important;
+}
+
+a:hover{
+    color: #eb194a;
+}
+
+#close-menu{
+    cursor: pointer;
+}
+
+#header-wrapper{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#menu > .table > a{
+    text-decoration: none;
+    font-size: 207%;
+    text-align: center;
+}
+
+#menu > .table > a:hover{
+    background: rgba(43, 43, 43, 0.6);
+    color: #fff;
+}
+
+#menu{
+    display: none;
+}
+
+.active-menu-item{
+    background: rgba(43, 43, 43, 0.9);
+    color: #fff;
+    cursor: default;
+}
+
+.active-menu-item:hover{
+    background: rgba(43, 43, 43, 0.9) !important;
+}
+
+.active-menu-item > .in-table-cell{
+    border-bottom: 3px solid #fff;
+    padding-bottom: 5px;
+    color: #fff;
+}
+
+#close-menu{
+    position: absolute;
+    right: 0;
+    padding: 14px 24px 17px 24px;
+    font-size: 295%;
+}
+
+
+#close-menu{
+    color: #fff !important;
+}
+
+#close-menu:hover{
+    color: #ffae13;
+}
+
+#footer-copyright{
+    font-size: 90%;
+}
+
+@media (max-width: 450px){
+    #my-books-text{
+        display: none;
+    }
+
+    #calendar{
+        font-size: 175%;
+        margin-top: 15px;
+    }
+}
+
+@media (min-width: 1600px){
+    #logo{
+        margin-left: 0;
+    }
+}

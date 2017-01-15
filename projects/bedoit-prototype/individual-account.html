@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>личный кабинет физического лица</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/GUI.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/individual-account.css">
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/projects.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/discuss.js"></script>
+    </head>
+    <body>
+        <div id="doodle"></div>
+        <div id="project-bg-container">
+            <div class="wrapper">
+
+                <div id="header">   
+                    <div id="menu">
+
+                        <div id="menu-items">
+                            <a href="projects.html" class="white roboto-medium" id="projects-item">Наши работы</a>
+                            <a href="services.html" class="white roboto-medium">Услуги</a>
+                            <a href="about-company.html" class="white roboto-medium">О компании</a>
+                            <a href="contacts.html" class="white roboto-medium" id="contacts-item">Контакты</a>
+                        </div>
+                        <div id="your-project-products" class="right">Обсудить ваш проект</div>
+                        <a href="index.html" id="logo" class="white roboto-bold left">Bedoit</a>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+
+
+                    <div class="left advantages-container">
+
+                        <div class="left percent" id="individual-account-client-cost-advantage">
+                            <div class="diagram white roboto-medium"><span id="individual-account-client-cost-advantage-span">0</span>%</div>
+
+
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="155px"
+                                 height="160px" xml:space="preserve" id="individual-account-client-cost-advantage-svg">
+                            <circle cx="96" cy="76" r="71" stroke="#d92227" stroke-opacity=".8" stroke-width="17" stroke-dasharray="0, 495" fill="none" transform="rotate(-89.9 88 88)" id="individual-account-client-cost-advantage-svg-circle"></circle>
+                            </svg>
+                            <div data-circle="0,495" id='individual-account-client-cost-advantage-html-circle'></div>
+
+
+                            <div class="percent-header white roboto-regular">Уменьшение</div>
+                            <div class="percent-text white roboto-regular">
+                                затрат на обслуживание клиентов банка на 60%
+                            </div>                        
+                        </div>
+
+                        <div class="right percent" id="individual-account-reduce-costs-advantage">
+                            <div class="diagram white roboto-medium"><span id="individual-account-reduce-costs-advantage-span">0</span>%</div>
+
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px"
+                                 height="160px" xml:space="preserve" id="individual-account-reduce-costs-advantage-svg">
+                            <circle cx="96" cy="80" r="71" stroke="#d92227" stroke-opacity=".8" stroke-width="17" stroke-dasharray="0, 495" fill="none" transform="rotate(-89.9 88 88)" id="individual-account-reduce-costs-advantage-svg-circle"></circle>
+                            </svg>
+                            <div data-circle="0,495" id='individual-account-reduce-costs-advantage-html-circle'></div>
+
+
+                            <div class="percent-header white roboto-regular">
+                                Сокращение
+                            </div>
+                            <div class="percent-text white roboto-regular">
+                                издержек на содержание сотрудников до 50%
+                            </div>                        
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div class="left percent" id="individual-account-load-decrease-advantage">
+                            <div class="diagram white roboto-medium"><span id="individual-account-load-decrease-advantage-span">0</span>%</div>
+
+
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="155px"
+                                 height="160px" xml:space="preserve" id="individual-account-load-decrease-advantage-svg">
+                            <circle cx="96" cy="76" r="71" stroke="#d92227" stroke-opacity=".8" stroke-width="17" stroke-dasharray="0, 495" fill="none" transform="rotate(-89.9 88 88)" id="individual-account-load-decrease-advantage-svg-circle"></circle>
+                            </svg>
+                            <div data-circle="0,495" id='individual-account-load-decrease-advantage-html-circle'></div>
+
+
+                            <div class="percent-header white roboto-regular">Уменьшение</div>
+                            <div class="percent-text white roboto-regular">
+                                нагрузки на бэк-офис и поддержку на 70%
+                            </div>                        
+                        </div>
+
+                       <div class="right percent" id="individual-account-reduce-time-advantage">
+                            <div class="diagram white roboto-medium"><span id="individual-account-reduce-time-advantage-span">0</span>%</div>
+
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px"
+                                 height="160px" xml:space="preserve" id="individual-account-reduce-time-advantage-svg">
+                            <circle cx="96" cy="80" r="71" stroke="#d92227" stroke-opacity=".8" stroke-width="17" stroke-dasharray="0, 495" fill="none" transform="rotate(-89.9 88 88)" id="individual-account-reduce-time-advantage-svg-circle"></circle>
+                            </svg>
+                            <div data-circle="0,495" id='individual-account-reduce-time-advantage-html-circle'></div>
+
+
+                            <div class="percent-header white roboto-regular">
+                                Уменьшение 
+                            </div>
+                            <div class="percent-text white roboto-regular">
+                                затрат личного времени клиентов на 80%
+                            </div>                        
+                        </div>
+
+                    </div><!-- left -->
+
+
+                    <div class="right" id="projects-near-charts">
+                        <div id="projects-near-charts-header" class="roboto-light white">
+                            Личный кабинет физического лица
+                        </div>
+                        <div id="projects-near-charts-text" class="roboto-regular white">
+                            <p>
+                                Для работы с заемщиками Банку требовался удобный, 
+                                функциональный сервис, позволяющий его клиентам 
+                                полностью контролировать движение средств по 
+                                кредитному счету, осуществлять денежные переводы, 
+                                погашать заложенность и получить доступ к 
+                                дополнительным услугам, оказываемым банком 
+                                своим клиентам. 
+                            </p>
+                            <p>
+                                Данный сервис должен был максимально 
+                                автоматизировать взаимодействие клиентов 
+                                физ.лиц с банком, перевести работу с клиентом
+                                из «офлайна» в «онлайн», снять нагрузку с 
+                                бек-офиса банка, повысить качество и скорость 
+                                исполнения запросов.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+            </div> <!-- header -->
+        </div> <!-- header-bg-container -->
+
+
+        <div id="project-info-container">
+            <div class="wrapper">
+                <div id="project-info-right" class="right">
+                    <div id="download-case" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Скачать кейс</span>
+                        </a>
+                        <div id="pdf">PDF (2,2 Мб)</div>
+                    </div>
+
+                    <div id="site-bank" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Сайт банка</span>
+                        </a>
+                    </div>
+
+                    <div id="indicators" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Количественно-временные показатели</span>
+                        </a>
+                    </div>
+
+
+                    <div id="statistics-of-efficiency" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Статистика эффективности работы</span>
+                        </a>
+                    </div>
+
+                    <div id="project-worked" class="roboto-italic">
+                        Над проектом работали:
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        ведущий программист
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Дмитрий Никитин
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        старший дизайнер
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Павел Кулигин
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        дизайнер
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Юлия Волкова
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        проектировщик
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Светлана Карпова
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        программист
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Александр Володин
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        технолог
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Сергей Светлаков
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        менеджер
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Владимир Смирнов
+                    </div>
+
+                </div><!-- project-info-right -->
+
+
+                <div id="project-info-left" class="left">
+
+                    <div class="project-h1 top-60">
+                        Задача
+                    </div>
+
+                    <div class="project-description-individual-account-text top-22 width-34 left">
+                        Перед специалистами <br />Bedoit были поставлены <br />
+                        2 основных задачи
+                    </div>
+
+                    <div class="left left-5 width-39 top-22">
+                        <div class="project-description-text individual-account-goal-1">
+                            Автоматизировать и оптимизировать процессы 
+                            обслуживания клиентов (физических лиц) по 
+                            предоставлению кредитных продуктов в реальном 
+                            времени и постобслуживанию клиентов посредством 
+                            современных дистанционных каналов.
+                        </div>
+
+                        <div class="project-description-text individual-account-goal-2 top-15">
+                            Разработать интерфейс для онлайн-сервиса, 
+                            позволяющий клиенту самостоятельно получать 
+                            доступ к управлению услугами банка.
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="project-description-text top-35 width-80">
+                        <p>Новый процесс должен был позволить банку максимально 
+                            сократить издержки на обслуживание клиентов физических 
+                            лиц, связать потребности клиента в получении услуг с 
+                            автоматизированными процессами оказания данных услуг, 
+                            минуя ручной труд сотрудников банка. Параллельно в 
+                            задачу оптимизации входило ускорение процессов оказания 
+                            запрошенных услуг, а так же структурирование передачи, 
+                            обработки и хранения данных клиента.</p>
+
+                        <p>
+                            Основная задача разработки интерфейса заключалась в 
+                            простоте и легкости пользования сервисом, то есть у 
+                            тех клиентов банка, которые впервые сталкивались с 
+                            самостоятельной работой в интернет банкинге, не должно 
+                            было возникнуть неразрешимых вопросов, связанных с 
+                            механикой работы сервиса. Клиент должен был с первого 
+                            же визита понять каким образом работает сервис и какие 
+                            возможности он дает клиенту, без дополнительного 
+                            обращения, как в бек-офис, так и в колл-центр банка.
+                        </p>
+
+                        <p>
+                            Интерфейс должен был учитывать не только уже 
+                            запущенные сервисы, но и учитывать расширение 
+                            предоставляемых услуг без последующей его 
+                            переработки, то есть разрабатывался сразу с 
+                            перспективой развития банка и его сервисов.
+                        </p>
+                    </div>
+
+
+                    <div class="project-h1 top-78">
+                        Решение
+                    </div>
+
+                    <img src="images/notebook-3.png" alt="как выглядит на ноутбуке" class="top-43"/>
+
+                    <div class="left width-34">
+                        <div class="project-h2 top-7">
+                            Личный кабинет клиента
+                        </div>
+                        <div class="project-description-text top-11">
+                            Специалистами Bedoit, совместно с сотрудниками Банка, 
+                            были проанализированы правила и процессы внедренные 
+                            в Банке, осуществлен аудит технологий и юридических 
+                            возможностей для автоматизации обслуживания и 
+                            предоставления услуг клиентам банка по кредитным 
+                            продуктам. На основе анализа было принято решение 
+                            создать унифицированный сервис для дистанционного 
+                            клиентского обслуживания — Личный кабинет клиента.
+                        </div>
+                    </div>
+
+                    <div class="left left-10 width-34">
+                        <div class="project-h2 top-7">
+                            Комплексная схема
+                        </div>
+                        <div class="project-description-text top-11">
+                            Была составлена принципиально новая комплексная 
+                            схема работы с клиентами, ключевой особенностью 
+                            которой стала полная автоматизация всей процедуры: 
+                            от получения заявки на получение продукта, до 
+                            машинной обработки запросов связанных с 
+                            обслуживанием кредитной линии - получение 
+                            реквизитов, погашения кредита, выписки по 
+                            транзакциям, денежные переводы, подключение 
+                            или активация дополнительных услуг.
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+
+
+                    <div class="project-h2 top-35">
+                        Разработка программного обеспечения
+                    </div>
+                    <div class="project-description-text width-80">
+                        <p>
+                            На основе схемы были подготовлены технические 
+                            задания для разработки программного необходимого 
+                            для автоматизации сервиса и интеграции новой 
+                            схемы с внутренними системами банка.
+                        </p>
+                        <p>
+                            Разработка основной части нового программного 
+                            обеспечения велась программистами Bedoit.
+                        </p>
+                        <p>
+                            Параллельно, на основании составленной схемы 
+                            процесса, был разработан и подготовлен прототип 
+                            интерфейса, который после фокус-тестирования 
+                            подвергся незначительным правкам и был 
+                            синтерирован с новыми сервисами и внутренними 
+                            сервисами банка посредством выделенного API.
+                        </p>
+                    </div>
+
+
+                    <div class="left width-34 top-41">
+                        <div class="project-h2">
+                            Шифровавние личных данных
+                        </div>
+                        <div class="project-description-text top-11">
+                            Так как работа сервиса предполагала работу с личными 
+                            данными клиентов и транзакциями, было принято 
+                            решение не хранить данные на стороне интерфейса. 
+                            Совместно с IT специалистами банка были разработаны 
+                            протоколы шифрования данных для передачи и хранения 
+                            во внутренних системах банка, интерфейс в свою 
+                            очередь решал задачу корректного отображения данных 
+                            и формирования запросов на проведение тех или иных 
+                            операций.
+                        </div>
+                    </div>
+
+                    <div class="left width-34 left-10 top-41">
+                        <img src="images/individual-account-image-1.png" alt="картинка" />
+                    </div>
+
+                    <div class="clear"></div>
+
+
+                    <div class="left width-34 top-50">
+                        <img src="images/individual-account-image-2.png" alt="картинка" />
+                    </div>
+
+                    <div class="left width-34 left-10 top-50" style="display: table; height: 270px;">
+                        <div style="display:table-cell; vertical-align: middle">
+                            <div class="project-h2">
+                                Переход на новую систему
+                            </div>
+                            <div class="project-description-text top-11">
+                                Запуск ключевых процессов и переход на новую 
+                                схему работы осуществлялся поэтапно. В первую 
+                                очередь были запущены фундаментальные сервисы, 
+                                являющиеся необходимым минимумом для 
+                                предоставления кредитных продуктов клиентам, 
+                                далее добавлялись сопутствующие и дополнительные 
+                                услуги.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+
+
+
+                    <div class="project-h2 top-41 width-80">
+                        Сдача готового проекта
+                    </div>
+                    <div class="project-description-text top-11 width-80">
+                        В дальнейшем развитие сервиса сводилось лишь к добавлению 
+                        ранее предусмотренных возможностей и услуг Банка, по мере 
+                        их готовности со стороны Банка. Каждый этап запуск 
+                        новых возможностей сопровождался бизнес-тестированием 
+                        с участием ответственных лиц: как в банке, так и со 
+                        стороны Bedoit. По окончанию полноценного запуска 
+                        проекта была подготовлена проектная документация, 
+                        технические задания на реализацию ПО и исходники 
+                        интерфейса переданы в Банк.
+                    </div>
+
+                    <img src="images/notebook-4.png" alt="как выглядит на ноутбуке" class="top-35"/>
+
+                    <div class="project-h1 top-78">
+                        Результат
+                    </div>
+
+                    <div class="project-description-text top-22 width-80">
+                        <p>Внедрение Личного кабинета клиента позволило Банку 
+                            значительно оптимизировать затраты ресурсов на 
+                            ежедневное, рутинное обслуживание клиентов. 
+                            Автоматизация всей системы предоставления кредитных 
+                            продуктов и клиентских запросов на подключение 
+                            дополнительных услуг и сервисов позволило сократить 
+                            издержки на поддержание внушительного штата специалистов 
+                            банка, а удобство и простота интерфейса сервиса, в свою 
+                            очередь, позволила «переложить» часть задач с бек-офиса 
+                            и службы поддержки банка на клиента, который получил 
+                            возможность самостоятельно решать свои задачи и получать 
+                            необходимые услуги, без существенных затрат своего 
+                            времени и не требуя дополнительной помощи 
+                            специалистов Банка.</p>
+                    </div>
+
+                    <div class="project-h1 top-78 width-80">
+                        Экономические показатели работы созданной системы
+                    </div>
+
+                    <div class="left width-34 top-37">
+                        <img src="images/individual-account-icon-1.png" alt="картинка" />
+                        <div class="project-description-text width-80 top-7">
+                            Уменьшение затрат
+                            на обслуживание клиентов банка на 60% 
+                        </div>
+                    </div>
+
+                    <div class="left width-34 left-10 top-37">
+                        <img src="images/individual-account-icon-2.png" alt="картинка" />
+                        <div class="project-description-text width-80 top-7">
+                            Сокращение издержек
+                            на поддержание персонала
+                            до 50%
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="left width-34 top-25">
+                        <img src="images/individual-account-icon-3.png" alt="картинка" />
+                        <div class="project-description-text width-80 top-7">
+                            Уменьшение нагрузки
+                            на бэк-офис и службу поддержки на 70%
+                        </div>
+                    </div>
+
+                    <div class="left left-10 width-34 top-25">
+                        <img src="images/individual-account-icon-4.png" alt="картинка" />
+                        <div class="project-description-text width-80 top-7">
+                            Уменьшение затрат времени клиентов при работе
+                            с личным кабинетом на 80%
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+
+                </div><!-- project-info-left -->
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="wrapper">
+                <div id="footer-col-1" class="white roboto-regular left">
+                    <div>Россия, Москва, Лубянский проезд, 4</div>
+                    <div>Spain, Vilanova i la Geltru, Neapolis, fl. 3</div>
+                </div>
+                <div id="footer-col-2" class="left">
+                    <div class="white roboto-regular">+7 (926) 888-22-32</div>
+                    <div class="white roboto-regular">+34 727-76-004</div>
+                </div>
+                <div id="footer-col-3" class="left">
+                    <a href="mailto:info@bedoit.ru" class="white roboto-regular" id="footer-email">info@bedoit.ru</a>
+                    <a href="skype:bedoit_skype" class="white roboto-regular" id="footer-skype">bedoit_skype</a>
+                </div>
+                <div id="groups" class="right">
+                    <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="twitter,facebook"></div>       
+
+
+                </div>
+                <div class="clear"></div>
+
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function() {
+
+                function svgAnimate(svg, svgdom, html, x, y) {
+                    var svgCircle = jQuery(svg, svgdom);
+                    var attr = $(html).attr('data-circle');
+                    var arr = attr.split(',');
+                    var intCurrentX = parseInt(arr[0]);
+                    var intCurrentY = parseInt(arr[1]);
+
+                    if (intCurrentX < x) {
+                        var currentX = intCurrentX + 1;
+                        var str = currentX.toString().concat(',').concat(intCurrentY.toString());
+                        $(html).attr('data-circle', str);
+                        svgCircle.attr('stroke-dasharray', str);
+                        setTimeout(function() {
+                            svgAnimate(svg, svgdom, html, x, y);
+                        }, 3);
+                    }
+                    else {
+                        return;
+                    }
+                }
+
+                function increasePercent(el, max) {
+
+                    var percent = parseInt($(el).text().trim());
+                    if (percent < max) {
+                        percent = percent + 1;
+                        $(el).text(percent);
+                    }
+                    else {
+                        return;
+                    }
+                }
+
+                var individualAccountClientCostAdvantageSvg = document.getElementById('individual-account-client-cost-advantage-svg');
+                var individualAccountReduceCostsAdvantageSvg = document.getElementById('individual-account-reduce-costs-advantage-svg');
+                var individualAccountLoadDecreaseAdvantageSvg = document.getElementById('individual-account-load-decrease-advantage-svg');
+                var individualAccountReduceTimeAdvantageSvg = document.getElementById('individual-account-reduce-time-advantage-svg');
+                
+                setInterval(function() {
+                    $('#individual-account-client-cost-advantage, \n\
+                       #individual-account-reduce-costs-advantage, \n\
+                       #individual-account-load-decrease-advantage, \n\
+                       #individual-account-reduce-time-advantage').fadeIn(1000);
+                }, 0);
+
+                setInterval(function() {
+
+                    setInterval(function() {
+                        increasePercent('#individual-account-client-cost-advantage-span', 60);
+                        increasePercent('#individual-account-reduce-costs-advantage-span', 50);
+                        increasePercent('#individual-account-load-decrease-advantage-span', 70);
+                        increasePercent('#individual-account-reduce-time-advantage-span', 80);
+                    }, 30);
+
+                    svgAnimate('#individual-account-client-cost-advantage-svg-circle', individualAccountClientCostAdvantageSvg, '#individual-account-client-cost-advantage-html-circle', 260, 495);
+                    svgAnimate('#individual-account-reduce-costs-advantage-svg-circle', individualAccountReduceCostsAdvantageSvg, '#individual-account-reduce-costs-advantage-html-circle', 225, 495);
+                    svgAnimate('#individual-account-load-decrease-advantage-svg-circle', individualAccountLoadDecreaseAdvantageSvg, '#individual-account-load-decrease-advantage-html-circle', 290, 495);
+                    svgAnimate('#individual-account-reduce-time-advantage-svg-circle', individualAccountReduceTimeAdvantageSvg, '#individual-account-reduce-time-advantage-html-circle', 360, 495);
+
+                }, 500);
+
+            });
+        </script>
+
+    </body>
+</html>

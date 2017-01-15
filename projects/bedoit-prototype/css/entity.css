@@ -1,0 +1,102 @@
+#project-bg-container{
+    width: 100%;
+    max-width: 1900px;   
+    margin: 0 auto;
+    background: url('../images/entity-top-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0 76px 0;
+    min-width: 940px;
+}
+
+.project-description-individual-account-text{
+    font-family: RobotoMedium, sans-serif;
+    color: #343434;
+    font-size: 115%;
+    line-height: 165%;
+}
+
+.tab-menu-item{
+    background-color: #e3f2fd;
+    color: #343434;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 95%;
+    padding: 11px 26px 15px 60px;
+    border-radius: 37px;
+    cursor: pointer;
+}
+
+.tab-menu-item:hover, .active-tab{
+    background-color: #ef5350;
+    color: #fff;
+}
+
+.active-tab{
+    cursor: default;
+}
+
+.active-tab.bag-tab{
+    background-image: url('../images/bag-tab-active.png');
+}
+
+.bag-tab:hover{
+    background-image: url('../images/bag-tab-active.png');
+}
+
+.bag-tab{
+    background-image: url('../images/bag-tab.png');
+    background-repeat: no-repeat;
+    background-position-y: 17px;
+    background-position-x: 20px;
+}
+
+.active-tab.car-tab{
+    background-image: url('../images/car-tab-active.png');
+}
+
+.car-tab:hover{
+    background-image: url('../images/car-tab-active.png');
+}
+
+.car-tab{
+    background-image: url('../images/car-tab.png');
+    background-repeat: no-repeat;
+    background-position-y: 17px;
+    background-position-x: 20px;
+}
+
+.active-tab.phone-tab{
+    background-image: url('../images/phone-tab-active.png');
+}
+
+.phone-tab:hover{
+    background-image: url('../images/phone-tab-active.png');
+}
+
+.phone-tab{
+    background-image: url('../images/phone-tab.png');
+    background-repeat: no-repeat;
+    background-position-y: 17px;
+    background-position-x: 20px;
+}
+
+#tab-info-1,
+#tab-info-2,
+#tab-info-3
+{
+    display:none;
+}
+
+.tab-info-active{
+    display: block !important;
+}
+
+#tab-info-container{
+    min-height: 800px;
+}
+
+.entity-small-text{
+    font-family: RobotoRegular, sans-serif;
+    color: #343434;
+    font-size: 70%;
+    margin-top: 6px;
+}

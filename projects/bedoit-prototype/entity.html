@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>личный кабинет физического лица</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/GUI.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/entity.css">
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/projects.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/discuss.js"></script>
+    </head>
+    <body>
+        <div id="doodle"></div>
+        <div id="project-bg-container">
+            <div class="wrapper">
+
+                <div id="header">   
+                    <div id="menu">
+
+                        <div id="menu-items">
+                            <a href="projects.html" class="white roboto-medium" id="projects-item">Наши работы</a>
+                            <a href="services.html" class="white roboto-medium">Услуги</a>
+                            <a href="about-company.html" class="white roboto-medium">О компании</a>
+                            <a href="contacts.html" class="white roboto-medium" id="contacts-item">Контакты</a>
+                        </div>
+                        <div id="your-project-products" class="right">Обсудить ваш проект</div>
+                        <a href="index.html" id="logo" class="white roboto-bold left">Bedoit</a>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+
+
+                    <div class="left advantages-container">
+
+                        <div class="left percent" id="entity-speed-advantage">
+                            <div class="diagram white roboto-medium" style="padding-left:42px">x<span id="entity-speed-advantage-span">0</span></div>
+
+
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="155px"
+                                 height="160px" xml:space="preserve" id="entity-speed-advantage-svg">
+                            <circle cx="96" cy="76" r="71" stroke="#d92227" stroke-opacity=".8" stroke-width="17" stroke-dasharray="0, 495" fill="none" transform="rotate(-89.9 88 88)" id="entity-speed-advantage-svg-circle"></circle>
+                            </svg>
+                            <div data-circle="0,495" id='entity-speed-advantage-html-circle'></div>
+
+
+                            <div class="percent-header white roboto-regular">Увеличение</div>
+                            <div class="percent-text white roboto-regular">
+                                скорости работы колл-центра в 6 раз
+                            </div>                        
+                        </div>
+
+                        <div class="right percent" id="entity-time-advantage">
+                            <div class="diagram white roboto-medium" style="padding-left:42px"><span id="entity-time-advantage-span">0</span></div>
+
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px"
+                                 height="160px" xml:space="preserve" id="entity-time-advantage-svg">
+                            <circle cx="96" cy="80" r="71" stroke="#d92227" stroke-opacity=".8" stroke-width="17" stroke-dasharray="0, 495" fill="none" transform="rotate(-89.9 88 88)" id="entity-time-advantage-svg-circle"></circle>
+                            </svg>
+                            <div data-circle="0,495" id='entity-time-advantage-html-circle'></div>
+
+
+                            <div class="percent-header white roboto-regular">
+                                Экономия
+                            </div>
+                            <div class="percent-text white roboto-regular">
+                                времени руководства до 84 часов
+                            </div>                        
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div class="left percent" id="entity-efficiency-advantage">
+                            <div class="diagram white roboto-medium"><span id="entity-efficiency-advantage-span">0</span>%</div>
+
+
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="155px"
+                                 height="160px" xml:space="preserve" id="entity-efficiency-advantage-svg">
+                            <circle cx="96" cy="76" r="71" stroke="#d92227" stroke-opacity=".8" stroke-width="17" stroke-dasharray="0, 495" fill="none" transform="rotate(-89.9 88 88)" id="entity-efficiency-advantage-svg-circle"></circle>
+                            </svg>
+                            <div data-circle="0,495" id='entity-efficiency-advantage-html-circle'></div>
+
+
+                            <div class="percent-header white roboto-regular">Увеличение</div>
+                            <div class="percent-text white roboto-regular">
+                                эффективности менеджеров на 60%
+                            </div>                        
+                        </div>
+
+                        <div class="right percent" id="entity-costs-advantage">
+                            <div class="diagram white roboto-medium"><span id="entity-costs-advantage-span">0</span>%</div>
+
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px"
+                                 height="160px" xml:space="preserve" id="entity-costs-advantage-svg">
+                            <circle cx="96" cy="80" r="71" stroke="#d92227" stroke-opacity=".8" stroke-width="17" stroke-dasharray="0, 495" fill="none" transform="rotate(-89.9 88 88)" id="entity-costs-advantage-svg-circle"></circle>
+                            </svg>
+                            <div data-circle="0,495" id='entity-costs-advantage-html-circle'></div>
+
+
+                            <div class="percent-header white roboto-regular">
+                                Сокращение
+                            </div>
+                            <div class="percent-text white roboto-regular">
+                                расходов на обслуживание данного процесса на 30%
+                            </div>                        
+                        </div>
+
+                    </div><!-- left -->
+
+
+                    <div class="right" id="projects-near-charts">
+                        <div id="projects-near-charts-header" class="roboto-light white">
+                            Решение дистанционного и быстрого открытия 
+                            банковских счетов
+                        </div>
+                        <div id="projects-near-charts-text" class="roboto-regular white">
+                            <p>
+                                В рамках оптимизации процесса открытия счета
+                                для юр.лиц и ИП нашей компанией была поставлена 
+                                задача разработать комплексное решение,
+                                связывающее клиента, колл-центр банка и выездного
+                                агента с целью максимально ускорить процесс
+                                открытия счета для юр. лиц и ИП и повысить 
+                                качество работы всех задействованных в процессе 
+                                специалистов банка.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+            </div> <!-- header -->
+        </div> <!-- header-bg-container -->
+
+
+        <div id="project-info-container">
+            <div class="wrapper">
+                <div id="project-info-right" class="right">
+                    <div id="download-case" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Скачать кейс</span>
+                        </a>
+                        <div id="pdf">PDF (2,2 Мб)</div>
+                    </div>
+
+                    <div id="site-bank" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Сайт банка</span>
+                        </a>
+                    </div>
+
+                    <div id="indicators" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Количественно-временные показатели</span>
+                        </a>
+                    </div>
+
+
+                    <div id="statistics-of-efficiency" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Статистика эффективности работы</span>
+                        </a>
+                    </div>
+
+                    <div id="project-worked" class="roboto-italic">
+                        Над проектом работали:
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        ведущий программист
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Дмитрий Никитин
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        старший дизайнер
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Павел Кулигин
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        дизайнер
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Юлия Волкова
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        проектировщик
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Светлана Карпова
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        программист
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Александр Володин
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        технолог
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Сергей Светлаков
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        менеджер
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Владимир Смирнов
+                    </div>
+
+                </div><!-- project-info-right -->
+
+
+                <div id="project-info-left" class="left">
+
+                    <div class="project-h1 top-60">
+                        Проблематика
+                    </div>
+
+                    <div class="project-description-text top-22 width-80">
+                        <p>
+                            Запуск сервиса осуществлялся в крайне сжатые сроки. 
+                            Все основные этапы оформления продукта нуждались в 
+                            постоянном «ручном контроле» как для клиента, так и 
+                            для персонала банка, автоматизация ключевых 
+                            процессов отсутствовала. В таких условиях показатели 
+                            скорости/качества обработки заявок были крайне 
+                            неудовлетворительными: возросшая нагрузка на 
+                            персонал привела к возникновению большого количества 
+                            ошибок, качество работы с клиентом достигло 
+                            критически низкого уровня. Увеличение численности 
+                            персонала проблему не решило: ошибки, недочеты и 
+                            затраты времени только росли. В результате Банк 
+                            терял потенциальных клиентов и прибыль.
+                        </p>
+                        <p>
+                            Банк принял решение о разработке и внедрении 
+                            систем качественной автоматизации процессов 
+                            для открытия счетов.
+                        </p>
+                    </div>
+
+                    <div class="project-h2 top-32 bottom-7 width-80">
+                        Автоматизация и оптимизация системы должны были 
+                        решать множество ключевых задач процесса:
+                    </div>
+
+                    <div class="left width-34">
+                        <div class="list-item top-11">
+                            Оптимизировать обработку входящих заявок 
+                            от клиентов на открытие расчетного счета.
+                        </div>
+
+                        <div class="list-item top-11">
+                            Автоматизировать процесс назначения 
+                            выездного менеджера к клиенту.
+                        </div>
+
+                        <div class="list-item top-11">
+                            Максимизировать эффективность работы 
+                            основных участников процесса: сотрудников 
+                            колл-центра и выездного менеджера.
+                        </div>
+
+                        <div class="list-item top-11">
+                            Обеспечить информирование клиента на всех 
+                            этапах обработки его заявки.
+                        </div>
+
+                        <div class="list-item top-11">
+                            Предоставлять подробную и качественную статистику 
+                            работы каждого специалиста колл-центра и выездных 
+                            менеджеров, а так же совокупную эффективность работы 
+                            данных подразделений.                            
+                        </div>
+
+                        <div class="list-item top-11">
+                            Управлять графиком работы менеджеров, включающим 
+                            такие параметры как интервалы доступности в 
+                            течение дня, рабочие/нерабочие дни, 
+                            продолжительность рабочего дня.                           
+                        </div>
+                    </div>
+
+                    <div class="left left-10 width-34">
+                        <div class="list-item top-11">
+                            Реализовать зональное деление выездных менеджеров 
+                            для Москвы и Петербурга по линиям метрополитена.  
+                        </div>
+
+                        <div class="list-item top-11">
+                            Обеспечить многоканальность и полную онлайн 
+                            синхронизацию потока заявок для колл-центра.
+                        </div>
+
+                        <div class="list-item top-11">
+                            Полное исключение возможности «потерять»
+                            заявку из-за человеческого фактора.
+                        </div>
+
+                        <div class="list-item top-11">
+                            Возможность «ручного» модерирования занятости 
+                            выездных менеджеров (переназначение заявок, 
+                            перераспределение нагрузок, возврат заявок в 
+                            колл-центр и т.д.).
+                        </div>
+
+                        <div class="list-item top-11">
+                            Обеспечить сохранность и безопасность 
+                            персональных данных клиента.
+                        </div>
+
+                        <div class="list-item top-11">
+                            Обеспечить полную интеграцию реализуемого ПО с 
+                            внутренней системой банк для автоматизации 
+                            процесса передачи клиентских данных и открытия 
+                            счетов. 
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+
+                    <div class="project-h1 top-78">
+                        Решение
+                    </div>
+
+                    <div class="project-description-text top-22 width-80">
+                        <p>
+                            Проанализировав полученную задачу, наши специалисты 
+                            провели детальное интервьюирование всех 
+                            задействованных в процессе специалистов, выявили 
+                            основные функциональные требования и приступили к 
+                            созданию рабочего прототипа.
+                        </p>
+                        <p>
+                            В результате мы получили систему, состоящую из 3 
+                            рабочих мест, связанных рабочими логиками.
+                        </p>
+                    </div>
+
+
+                    <div class="project-description-individual-account-text top-32 width-34 left">
+                        Была выстроена общая схема функционирования обновленного 
+                        процесса
+                    </div>
+
+                    <div class="left left-5 width-39 top-35">
+                        <img src="images/entity-image-1.png" alt="картинка" />
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="project-description-text top-35 width-80">
+                        <p>
+                            Для выполнения поставленных перед системой задач, 
+                            было разработано решение, которое «на входе»
+                            интегрируется в систему приема заявок от клиентов 
+                            банка, а «на выходе» подключается к внутренней 
+                            учетной системе банка. Решение состоит из 3 модулей, 
+                            связанных мужду собой рабочими логиками:
+                        </p>
+                    </div>
+
+
+                    <div class="tab-menu top-43" id="entity-first-menu">
+                        <div class="tab-menu-item active-tab left phone-tab">
+                            Приложение<br /> колл-центра
+                        </div>
+                        <div class="tab-menu-item left left-5 car-tab">
+                            Приложение<br /> агента
+                        </div>
+                        <div class="tab-menu-item left left-5 bag-tab">
+                            Приложение<br /> руководителя
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+                    <div id="tab-info-container">
+                        <div class="tab-info-active" id="tab-info-1">
+                            <img src="images/notebook-6.png" alt="как выглядит на ноутбуке" class="top-50">
+
+                            <div class="project-h3 top-11">
+                                Приложение колл-центра
+                            </div>
+                            <div class="project-description-text top-11 width-80">
+                                Разработан интерфейс и программное обеспечение, 
+                                позволяющее сотрудникам колл-центра обрабатывать 
+                                входящие заявки в режиме бесперебойного конвейера. 
+                                Каждый сотрудник получал собственный аккаунт, 
+                                предоставляющий доступ к «хранилищу» заявок, 
+                                доступ к настройкам управления потоком заявок 
+                                (система предполагает много поточность каналов 
+                                получения заявок).
+                            </div>
+
+                            <div class="left width-34 top-41">
+                                <div class="project-h2">
+                                    Настройка системы под задачу
+                                </div>
+                                <div class="project-description-text top-11">
+                                    Настроив систему под конкретную текущую 
+                                    задачу (например, обработку только заявок 
+                                    поступивших в нерабочее время или только 
+                                    заявок пришедших по определенному каналу 
+                                    или заявок, которые были отправлены на 
+                                    повторный дозвон), сотрудник мог приступить 
+                                    к работе по обработке заявок.
+                                </div>
+                            </div>
+
+                            <div class="left width-34 left-10 top-41">
+                                <img src="images/entity-image-2.png" alt="картинка" />
+                            </div>
+
+                            <div class="clear"></div>
+
+
+                            <div class="left top-50 width-34">
+                                <img src="images/entity-image-3.png" alt="картинка" />
+                            </div>
+
+                            <div class="left width-34 left-10 top-50" style="display: table; height: 270px;">
+                                <div style="display:table-cell; vertical-align: middle">
+                                    <div class="project-h2">
+                                        Автодозвон
+                                    </div>
+                                    <div class="project-description-text top-11">
+                                        Технически была учтена возможность 
+                                        интеграции с системами автодозвона, 
+                                        позволяющей дозваниваться до клиента 
+                                        сразу из интерфейса, без ручного набора 
+                                        номера клиента.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+
+
+                            <div class="left width-34 top-50" style="display: table; height: 270px;">
+                                <div style="display:table-cell; vertical-align: middle">
+                                    <div class="project-h2">
+                                        Повторные звонки, при недозвоне
+                                    </div>
+                                    <div class="project-description-text top-11">
+                                        Заявка автоматически уходит в цикл, 
+                                        возвращаясь в выдачу операторам по 
+                                        прошествии определенного времени 
+                                        (устанавливаемого отдельно, в 
+                                        зависимости от правил работы).
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="left top-50 left-10 width-34">
+                                <img src="images/entity-image-4.png" alt="картинка" />
+                            </div>
+
+                            <div class="clear"></div>
+
+                            <div class="left top-50 width-34">
+                                <img src="images/entity-image-5.png" alt="картинка" />
+                            </div>
+
+                            <div class="left width-34 left-10 top-50" style="display: table; height: 270px;">
+                                <div style="display:table-cell; vertical-align: middle">
+                                    <div class="project-h2">
+                                        Автоназначение менеджера
+                                    </div>
+                                    <div class="project-description-text top-11">
+                                        Назначение свободного менеджера так же 
+                                        полностью автоматизировано — оператор 
+                                        не выбирает конкретного менеджера, 
+                                        система самостоятельно определяет, 
+                                        кому из доступных и свободных агентов 
+                                        назначить встречу, исходя из параметров 
+                                        времени/зоны и даты встречи.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+
+
+
+                            <div class="left width-34 top-35">
+                                <div class="project-h2 top-7">
+                                    СМС-информирование
+                                </div>
+                                <div class="project-description-text top-11">
+                                    <p>
+                                        По факту успешного назначения встречи и 
+                                        клиент и агент получают смс,
+                                        информирующее о встрече. Агент так же 
+                                        получает уведомления в своем приложении, 
+                                        где указаны необходимые для встречи 
+                                        данные клиента.
+                                    </p>
+                                    <p>
+                                        Заявка получает статус «в работе» и 
+                                        уходит из выдачи сотрудникам колл-центра 
+                                        и оператор тут же может приступить к 
+                                        обработке следующей заявки.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="left left-10 width-34 top-35">
+                                <div class="project-h2 top-7">
+                                    Автоматическая статистика
+                                </div>
+                                <div class="project-description-text top-11">
+                                    <p>
+                                        Система умеет считать время на обработку 
+                                        каждой заявки, считать общее количество 
+                                        обработанных заявок каждым конкретным 
+                                        сотрудником, что может быть использовано 
+                                        в качестве аналитического инструмента 
+                                        для расчета KPI сотрудников и задать 
+                                        ограничения и правила на уровне самой 
+                                        системы.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+
+                            <img src="images/notebook-7.png" alt="как выглядит на ноутбуке" class="top-50">
+
+                        </div><!-- tab-info-1 -->
+
+                        <div id="tab-info-2">
+
+                            <div class="left width-34 top-50">                           
+                                <div class="project-h2">
+                                    Приложение агента
+                                </div>
+                                <div class="project-description-text top-11">
+                                    <p>
+                                        Представление выездного менеджера, 
+                                        по сути, является календарем задач, 
+                                        где каждая задача это прикрепленная 
+                                        к нему заявка на встречу с клиентом.
+                                    </p>
+                                    <p>
+                                        Из приложения агент узнает о новых 
+                                        встречах, дате, времени и месте 
+                                        ее проведения.
+                                    </p>
+                                    <p>
+                                        Приложение позволяет агенту не 
+                                        только оценивать свою занятость, но 
+                                        и подтверждать факт получения заявки 
+                                        на встречу, причем уведомление об 
+                                        этом получает также и клиент 
+                                        (посредством СМС). Агент не имеет 
+                                        возможность «просто так» отказаться 
+                                        от встречи (для этого он обязан
+                                        уточнить причину отказа и получить 
+                                        на отказ санкцию руководителя). В 
+                                        случае отказа от встречи, заявка 
+                                        автоматически отправляется снова в 
+                                        колл-центр, с описанием причины 
+                                        отказа.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="left top-50 width-34 left-10">
+                                <img src="images/entity-image-6.png" alt="картинка" />
+                            </div>
+
+                            <div class="clear"></div>
+
+
+                            <div class="left top-50 width-34">
+                                <img src="images/entity-image-7.png" alt="картинка" />
+                            </div>
+
+                            <div class="left left-10 width-34 top-50">                           
+                                <div class="project-h2">
+                                    Менеджер встреч
+                                </div>
+                                <div class="project-description-text top-11">
+                                    <p>
+                                        Приложение «ведет» и агента и клиента к 
+                                        встрече через систему уведомлений. За 
+                                        сутки до встречи уведомляет клиента 
+                                        посредством смс, а непосредственно перед 
+                                        встречей клиент получает от агента 
+                                        подтверждение, о том, что встреча 
+                                        действительна и агент ожидает клиента по 
+                                        условленному адресу.
+                                    </p>
+                                    <p>
+                                        Если агент вынужден перенести встречу, 
+                                        приложение позволит сделать это только 
+                                        после уведомления клиента о переносе и 
+                                        передачи заявки обратно в колл-центр для 
+                                        назначение новой даты.
+                                    </p>
+                                    <p>
+                                        Если агент вынужден перенести встречу, 
+                                        приложение позволит сделать это только 
+                                        после уведомления клиента о переносе и 
+                                        передачи заявки обратно в колл-центр для 
+                                        назначение новой даты.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+
+
+                            <div class="left width-20">
+                                <img src="images/entity-icon-5.png" alt="картинка" class="bottom-7 top-37"/>
+                                <div class="project-description-text">
+                                    Фотографирование документов
+                                </div>
+                                <div class="entity-small-text">
+                                    Приложение позволяет осуществлять 
+                                    фотографирование и передачу документов 
+                                    клиента для дальнейшей работы в Личный 
+                                    кабинет агента.
+                                </div>
+                            </div>
+
+                            <div class="left width-20 left-5">
+                                <img src="images/entity-icon-6.png" alt="картинка" class="bottom-7 top-37"/>
+                                <div class="project-description-text">
+                                    Отправка документации
+                                    в банк
+                                </div>
+                                <div class="entity-small-text">
+                                    В Личном кабинете агента осуществляется 
+                                    автоматическая генерации внутрибанковской 
+                                    документации клиента и передача 
+                                    сформированного пакета в бек-офис банка для 
+                                    проверки и открытия счета.
+                                </div>
+                            </div>
+
+                            <div class="left width-20 left-5">
+                                <img src="images/entity-icon-6.png" alt="картинка" class="bottom-7 top-37"/>
+                                <div class="project-description-text">
+                                    Автоматическое СМС-оповещение
+                                </div>
+                                <div class="entity-small-text">
+                                    В завершении процесса клиент дополнительно 
+                                    информируется об успешном открытии счета 
+                                    посредством автоматического СМС-оповещения.
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+
+                        </div><!-- tab-info-2 -->
+
+                        <div id="tab-info-3">
+                            <img src="images/notebook-8.png" alt="как выглядит на ноутбуке" class="top-50">
+
+                            <div class="project-h3 top-11">
+                                Приложение руководителя
+                            </div>
+                            <div class="project-description-text top-11 width-80">
+                                <p>
+                                    Задача руководителя, как ответственного за 
+                                    бесперебойную эффективную и качественную 
+                                    работу всего сервиса, заключается в 
+                                    грамотной настройке системы и анализе 
+                                    статистических показателей, а так же 
+                                    прогнозировании нагрузки и своевременной 
+                                    реакции на внештатные ситуации.
+                                </p>
+
+                                <p>
+                                    Именно исходя из аналитической составляющей 
+                                    работы руководителя, было разработано его 
+                                    рабочее место для управления системой.
+                                </p>
+
+                                <p>
+                                    Оно построено на 3 основополагающих экранах. 
+                                    Они позволяют руководителю выстроить работу 
+                                    своих подчиненных, руководствуясь текущей 
+                                    бизнес задачей, осуществлять контроль 
+                                    процессов в режиме онлайн, объективно 
+                                    оценивать результаты и оперативно реагировать 
+                                    на любые внештатные ситуации затрачивая 
+                                    минимум времени с максимальной отдачей.
+                                </p>
+                            </div>
+
+                            <div class="project-h2 top-41">
+                                1. Статистика и аналитика
+                            </div>
+
+                            <div class="left width-34 top-15">
+                                <div class="project-description-text top-11">
+                                    <p>
+                                        Нашими специалистами было разработано 
+                                        уникальное визуальное решение, 
+                                        позволяющее максимально полно отображать 
+                                        как актуальную статистику, так и 
+                                        прогнозируемую нагрузку на выездных 
+                                        менеджеров в перспективе. Реализована 
+                                        возможность проводить сравнительный 
+                                        анализ эффективности каждого выездного 
+                                        специалиста, сравнивать результативность 
+                                        команд. Данный экран полностью 
+                                        удовлетворяет потребностям руководителя 
+                                        в получении общей картины работы сервиса 
+                                        и его результативности.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="left top-25 width-34 left-10">
+                                <img src="images/entity-image-8.png" alt="картинка" />
+                            </div>
+
+                            <div class="clear"></div>
+
+
+
+
+
+
+                            <div class="project-h2 top-41">
+                                2. Календарь встреч
+                            </div> 
+
+                             <div class="left top-25 width-34">
+                                <img src="images/entity-image-9.png" alt="картинка" />
+                            </div>
+                            
+                            <div class="left width-34 top-15 left-10">
+                                <div class="project-description-text top-11">
+                                    <p>
+                                        Данный экран позволяет руководителю 
+                                        осуществлять микро менеджмент
+                                        по управлению выездными менеджерами.
+                                        Руководитель получает наглядную 
+                                        информацию о том, какова нагрузка 
+                                        каждого конкретного менеджера в любой 
+                                        день, какова нагрузка на команду, какие 
+                                        заявки отправлены на дополнительную 
+                                        обработку в колл-центр, сколько заявок 
+                                        требуют ручной модерации (системой 
+                                        предусмотрены исключительные случаи, 
+                                        когда встреча назначается без 
+                                        конкретного менеджера, и он должен быть 
+                                        выбран руководителем вручную).
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="clear"></div>
+
+   
+                            <div class="left width-34 top-50" style="display: table; height: 270px;">
+                                <div style="display:table-cell; vertical-align: middle">
+                                    <div class="project-description-text top-11">
+                                        Руководитель может переназначать заявки 
+                                        между менеджерами, назначать заявки в 
+                                        принудительном порядке, руководствуясь 
+                                        объективными обстоятельствами.
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="left top-50 width-34 left-10">
+                                <img src="images/entity-image-10.png" alt="картинка">
+                            </div>
+                            
+                            <div class="clear"></div>
+                            
+                            
+
+                            <div class="project-h2 top-41">
+                                3. Администрирование настроек
+                            </div> 
+                            
+                            <div class="left top-25 width-34">
+                                <img src="images/entity-image-11.png" alt="картинка" />
+                            </div>
+                            
+                            <div class="left width-34 top-15 left-10">
+                                <div class="project-description-text top-11">
+                                    <p>
+                                        В данном разделе руководитель 
+                                        осуществляет непосредственную настройку 
+                                        графиков агентов.
+                                    </p>
+                                    <p>
+                                        Он имеет возможность добавлять агентов в 
+                                        систему, активировать/деактивировать 
+                                        сотрудников, составлять рабочие графики 
+                                        (рабочие дни, выходные, отпуска, 
+                                        больничные), определять 
+                                        продолжительность рабочего дня 
+                                        каждого специалистов, определять 
+                                        интервалы между встречами, объединять 
+                                        сотрудников в команды( по зональной 
+                                        принадлежности).
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="clear"></div>
+                            
+
+                            <div class="project-h2 top-41">
+                                Результат
+                            </div>
+
+                            <div class="project-description-text top-11 width-80">
+                                В итоге все три экрана дают руководителю 
+                                возможность выстроить работу своих подчиненных, 
+                                руководствуясь текущей бизнес задачей, 
+                                осуществлять контроль процессов в режиме онлайн, 
+                                объективно оценивать результаты и оперативно 
+                                реагировать на любые внештатные ситуации 
+                                затрачивая минимум времени с максимальной 
+                                отдачей.
+                            </div>
+
+                            <img src="images/notebook-9.png" alt="как выглядит на ноутбуке" class="top-50">
+
+                        </div>
+                    </div>
+
+                    <div class="tab-menu top-50">
+                        <div class="tab-menu-item active-tab left phone-tab">
+                            Приложение<br /> колл-центра
+                        </div>
+                        <div class="tab-menu-item left left-5 car-tab">
+                            Приложение<br /> агента
+                        </div>
+                        <div class="tab-menu-item left left-5 bag-tab">
+                            Приложение<br /> руководителя
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+                    <div class="project-h1 top-78">
+                        Результат
+                    </div>
+
+                    <div class="project-description-text top-22 width-80">
+                        <p>
+                            В совокупности решение полностью выполняет все 
+                            поставленные перед ним задачи, оптимизируя и 
+                            автоматизируя стартовый этап взаимодействия с 
+                            клиентом для оказания услуги открытия открытие счета 
+                            ИП или юр. лица. За счет четко продуманной логики, 
+                            гибким настройкам и персонализации ответственностей 
+                            процесс полностью прозрачен, защищен от 
+                            неблагоприятного воздействия «человеческого» 
+                            фактора, из-за которого мог бы пострадать клиент, 
+                            интересы бизнеса защищены необходимым и достаточным 
+                            контролем над ключевыми этапами процесса.
+                        </p>
+                        <p>
+                            Проведено всестороннее тестирование разработанной 
+                            системы. Ключевые сотрудники Банка прошли обучение 
+                            работе в новой системе. Осуществлено комплексное 
+                            внедрение продукта, произведена интеграция с 
+                            внутренними системами Банка. Настроена служба 
+                            технической поддержки продукта.
+                        </p>
+                    </div>
+
+                    <div class="project-h1 top-78 width-80">
+                        Экономические показатели работы созданной системы
+                    </div>
+
+                    <div class="left width-34 top-37">
+                        <img src="images/entity-icon-1.png" alt="картинка" />
+                        <div class="project-description-text width-80 top-7">
+                            Увеличение скорости работы
+                            колл-центра в 6 раз
+                        </div>
+                    </div>
+
+                    <div class="left width-34 left-10 top-37">
+                        <img src="images/entity-icon-2.png" alt="картинка" />
+                        <div class="project-description-text width-80 top-7">
+                            Увеличение эффективности работы менеджеров на 60%
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="left width-34 top-25">
+                        <img src="images/entity-icon-3.png" alt="картинка" />
+                        <div class="project-description-text width-80 top-7">
+                            Экономия времени руководителя до 84 часов 
+                            реального времени
+                        </div>
+                    </div>
+
+                    <div class="left left-10 width-34 top-25">
+                        <img src="images/entity-icon-4.png" alt="картинка" />
+                        <div class="project-description-text width-80 top-7">
+                            Сокращение расходов
+                            на обслуживание данного
+                            процесса на 30% 
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+
+                </div><!-- project-info-left -->
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="wrapper">
+                <div id="footer-col-1" class="white roboto-regular left">
+                    <div>Россия, Москва, Лубянский проезд, 4</div>
+                    <div>Spain, Vilanova i la Geltru, Neapolis, fl. 3</div>
+                </div>
+                <div id="footer-col-2" class="left">
+                    <div class="white roboto-regular">+7 (926) 888-22-32</div>
+                    <div class="white roboto-regular">+34 727-76-004</div>
+                </div>
+                <div id="footer-col-3" class="left">
+                    <a href="mailto:info@bedoit.ru" class="white roboto-regular" id="footer-email">info@bedoit.ru</a>
+                    <a href="skype:bedoit_skype" class="white roboto-regular" id="footer-skype">bedoit_skype</a>
+                </div>
+                <div id="groups" class="right">
+                    <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="twitter,facebook"></div>       
+
+
+                </div>
+                <div class="clear"></div>
+
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function() {
+
+                function svgAnimate(svg, svgdom, html, x, y) {
+                    var svgCircle = jQuery(svg, svgdom);
+                    var attr = $(html).attr('data-circle');
+                    var arr = attr.split(',');
+                    var intCurrentX = parseInt(arr[0]);
+                    var intCurrentY = parseInt(arr[1]);
+
+                    if (intCurrentX < x) {
+                        var currentX = intCurrentX + 1;
+                        var str = currentX.toString().concat(',').concat(intCurrentY.toString());
+                        $(html).attr('data-circle', str);
+                        svgCircle.attr('stroke-dasharray', str);
+                        setTimeout(function() {
+                            svgAnimate(svg, svgdom, html, x, y);
+                        }, 3);
+                    }
+                    else {
+                        return;
+                    }
+                }
+
+                function increasePercent(el, max) {
+
+                    var percent = parseInt($(el).text().trim());
+                    if (percent < max) {
+                        percent = percent + 1;
+                        $(el).text(percent);
+                    }
+                    else {
+                        return;
+                    }
+                }
+
+                $('.car-tab').click(function() {
+                    if ($(this).hasClass('active-tab')) {
+                        return;
+                    }
+                    tabShow('#tab-info-2', '.car-tab');
+
+                    destination = jQuery('#entity-first-menu').offset().top;
+                    jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 900);
+                });
+
+                $('.phone-tab').click(function() {
+                    if ($(this).hasClass('active-tab')) {
+                        return;
+                    }
+                    tabShow('#tab-info-1', '.phone-tab');
+
+                    destination = jQuery('#entity-first-menu').offset().top;
+                    jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 900);
+
+                });
+
+                $('.bag-tab').click(function() {
+                    if ($(this).hasClass('active-tab')) {
+                        return;
+                    }
+                    tabShow('#tab-info-3', '.bag-tab');
+
+                    destination = jQuery('#entity-first-menu').offset().top;
+                    jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 900);
+
+                });
+
+                function tabShow(tabShow, menuItem) {
+                    $('.tab-info-active').fadeOut(300);
+                    $('.tab-info-active').removeClass('tab-info-active');
+                    $('.active-tab').removeClass('active-tab');
+                    $(menuItem).each(function() {
+                        $(this).addClass('active-tab');
+                    });
+                    setTimeout(function() {
+                        $(tabShow).fadeIn(300);
+                        $(tabShow).addClass('tab-info-active');
+                    }, 340);
+                }
+
+                var entitySpeedAdvantageSvg = document.getElementById('entity-speed-advantage-svg');
+                var entityTimeAdvantageSvg = document.getElementById('entity-time-advantage-svg');
+                var entityEfficiencyAdvantageSvg = document.getElementById('entity-efficiency-advantage-svg');
+                var entityCostsAdvantageSvg = document.getElementById('entity-costs-advantage-svg');
+
+                setInterval(function() {
+                    $('#entity-speed-advantage,\n\
+                       #entity-time-advantage,\n\
+                       #entity-efficiency-advantage,\n\
+                       #entity-costs-advantage').fadeIn(1000);
+                }, 0);
+
+                setInterval(function() {
+
+                    setInterval(function() {
+                        increasePercent('#entity-speed-advantage-span', 6);
+                        increasePercent('#entity-time-advantage-span', 84);
+                        increasePercent('#entity-efficiency-advantage-span', 60);
+                        increasePercent('#entity-costs-advantage-span', 30);
+                    }, 30);
+
+                    svgAnimate('#entity-speed-advantage-svg-circle', entitySpeedAdvantageSvg, '#entity-speed-advantage-html-circle', 120, 495);
+                    svgAnimate('#entity-time-advantage-svg-circle', entityTimeAdvantageSvg, '#entity-time-advantage-html-circle', 120, 495);
+                    svgAnimate('#entity-efficiency-advantage-svg-circle', entityEfficiencyAdvantageSvg, '#entity-efficiency-advantage-html-circle', 260, 495);
+                    svgAnimate('#entity-costs-advantage-svg-circle', entityCostsAdvantageSvg, '#entity-costs-advantage-html-circle', 130, 495);
+
+
+                }, 500);
+
+            });
+        </script>
+
+    </body>
+</html>

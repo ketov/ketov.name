@@ -1,0 +1,9 @@
+#project-bg-container{
+    width: 100%;
+    max-width: 1900px;   
+    margin: 0 auto;
+    background: url('../images/agent-account-top-bg.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0 76px 0;
+    min-width: 940px;
+}

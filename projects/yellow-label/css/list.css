@@ -1,0 +1,279 @@
+#book-services{   
+    background: url('../images/list.jpg') no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+.slash{
+    color: #d7d7d7;
+}
+
+#bread-crumbs{
+    font-size: 110%;
+    margin-bottom: 8px;
+    text-shadow: 1px 1px 1px #222;
+}
+
+#bread-crumbs > a{
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+#bread-crumbs > a:hover{
+    color: #eb194a;
+    border-bottom: 1px solid rgba(235, 25, 74, 0.3);
+}
+
+#book-services-header{
+    text-shadow: 2px 2px 7px #222;
+}
+
+/* list-container */
+.list-item, 
+.list-header
+{
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.list-header{
+    font-weight: 600;
+    font-size: 110%;
+    padding-bottom: 6px;
+}
+
+.list-header > .span12 > .row-fluid > .span3{
+    padding-left: 8px;
+}
+
+.list-item > .span3{
+    padding-left: 8px;
+    font-size: 105%;
+    padding-bottom: 22px;
+    margin-top: 10px;
+    line-height: 135%;
+}
+
+#map-canvas{
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+#list-container{
+    position: relative;
+    min-height: 500px;
+}
+
+#footer{
+    margin-top: 0 !important;
+}
+
+#map-item{
+    border-top: 2px solid #6aa4d1;
+    border-right: 2px solid #6aa4d1;
+    border-bottom: 2px solid #6aa4d1;
+    font-size: 120%;
+    padding: 7px 15px 8px 15px;
+    border-radius: 0 30px 30px 0;
+    margin-bottom: 28px;
+    color: #6aa4d1;
+    cursor: pointer;
+}
+
+#list-item{
+    border-top: 2px solid #6aa4d1;
+    border-left: 2px solid #6aa4d1;
+    border-bottom: 2px solid #6aa4d1;
+    font-size: 120%;
+    padding: 7px 15px 8px 15px;
+    border-radius: 30px 0 0 30px;
+    margin-bottom: 28px;
+    color: #6aa4d1;
+    cursor: pointer;
+}
+
+.active-list-map-item{
+    background: #6aa4d1;
+    color: #fff !important;
+}
+
+#list-map-items-container{
+    margin-right: 2%;
+}
+
+#list-item > .fa,
+#map-item > .fa
+{
+    font-size: 90%;
+    margin-right: 5px;
+}
+
+.list-item-location > a,
+.list-item-place > a
+{
+    color: #68a5d2 !important;
+}
+
+.list-item-place > a:hover{
+    color: #eb194a !important;
+}
+
+.last-list-item{
+    border-bottom: none !important;
+    padding-bottom: 26px !important;
+}
+
+.search{
+    width: 256px !important;
+}
+
+.district,
+.microdistrict
+{
+    border: 2px solid #6aa4d1;
+    font-size: 120%;
+    padding: 7px 15px 8px 15px;
+    border-radius: 30px;
+    margin-right: 2%;
+    margin-bottom: 28px;
+    cursor: pointer;
+    width: 18% !important;
+    min-width: 200px;
+    position: relative;
+}
+
+.district > .left,
+.microdistrict > .left
+{
+    color: #303030;
+}
+
+.district > .left.left-placeholder,
+.microdistrict > .left.left-placeholder{
+    color: #ababab;
+}
+
+
+
+.district .fa,
+.microdistrict .fa{
+    display: block;
+}
+
+.select-ul{
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 43px;
+    border: 2px solid #6aa4d1;
+    font-size: 120%;
+    padding: 0;
+    border-radius: 8px;
+    margin-left: -15px;
+    background: #fff;
+    z-index: 2;
+    display: none;
+}
+
+.select-ul li{
+    border-bottom: 1px solid #eee;
+    padding: 5px 15px 6px 12px;
+    font-size: 75%;
+}
+
+.select-ul li:hover{
+    background: #e9f4fc;
+}
+
+.select-ul li:first-child{
+    border-top: none;
+    border-radius: 8px 8px 0 0;
+}
+
+.select-ul li:last-child{
+    border-bottom: none;
+    border-radius: 0 0 8px 8px;
+}
+
+.selected{
+    background: #e9f4fc;
+    cursor: default;
+    border-top: none !important;
+}
+
+.desc{
+    margin-top: 0px;
+    color: #6aa4d1;
+    font-size: 115%;
+}
+
+.list-item-phone > a{
+    color: #303030;
+}
+
+@media(max-width: 1180px){
+    .search{
+        float: left !important;
+        margin-bottom: 27px !important;
+    }
+}
+
+@media (max-width: 767px){
+    .list-header{
+        display: none;
+    }
+
+    .list-item-place{
+        font-weight: 600;
+        padding-bottom: 0 !important;
+        margin-top: 15px !important;
+    }
+
+    .list-item-location{
+        margin-top: 6px !important;
+        padding-bottom: 0 !important;
+    }
+
+    .list-item-phone{
+        padding-bottom: 0 !important;
+    }
+
+    .worktime, 
+    .list-item-phone{
+        font-size: 95% !important;
+    }
+}
+
+#map{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+}
+
+.microdistrict-ul,
+.microdistrict
+{
+    display: none;
+}
+
+@media(max-width: 690px){
+    #map-item > span,
+    #list-item > span
+    {
+        display: none;
+    }
+
+    .district,
+    .microdistrict,
+    .search
+    {
+        width: 20% !important;
+        min-width: 135px;
+    }
+}
+

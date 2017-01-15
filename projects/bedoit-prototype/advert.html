@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>адверт</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/GUI.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/advert.css">
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/projects.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/discuss.js"></script>
+    </head>
+    <body>
+        <div id="doodle"></div>
+        <div id="project-bg-container">
+            <div class="wrapper">
+
+                <div id="header">   
+                    <div id="menu">
+
+                        <div id="menu-items">
+                            <a href="projects.html" class="white roboto-medium" id="projects-item">Наши работы</a>
+                            <a href="services.html" class="white roboto-medium">Услуги</a>
+                            <a href="about-company.html" class="white roboto-medium">О компании</a>
+                            <a href="contacts.html" class="white roboto-medium" id="contacts-item">Контакты</a>
+                        </div>
+                        <div id="your-project-products" class="right">Обсудить ваш проект</div>
+                        <a href="index.html" id="logo" class="white roboto-bold left">Bedoit</a>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+
+
+                    <div class="left advantages-container">
+
+                        <div class="left percent" id="advert-advertising-efficiency-advantage">
+                            <div class="diagram white roboto-medium" style="padding-left:42px">x<span id="advert-advertising-efficiency-advantage-span">0</span></div>
+
+
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="155px"
+                                 height="160px" xml:space="preserve" id="advert-advertising-efficiency-advantage-svg">
+                            <circle cx="96" cy="76" r="71" stroke="#d92227" stroke-opacity=".8" stroke-width="17" stroke-dasharray="0, 495" fill="none" transform="rotate(-89.9 88 88)" id="advert-advertising-efficiency-advantage-svg-circle"></circle>
+                            </svg>
+                            <div data-circle="0,495" id='advert-advertising-efficiency-advantage-html-circle'></div>
+
+
+                            <div class="percent-header white roboto-regular">Увеличение </div>
+                            <div class="percent-text white roboto-regular">
+                                эффективности от рекламы в 6 раз
+                            </div>                        
+                        </div>
+
+
+                        <div class="right percent" id="advert-speed-decision-advantage">
+                            <div class="diagram white roboto-medium" style="padding-left:42px">x<span id="advert-speed-decision-advantage-span">0</span></div>
+
+                            <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px"
+                                 height="160px" xml:space="preserve" id="advert-speed-decision-advantage-svg">
+                            <circle cx="96" cy="80" r="71" stroke="#d92227" stroke-opacity=".8" stroke-width="17" stroke-dasharray="0, 495" fill="none" transform="rotate(-89.9 88 88)" id="advert-speed-decision-advantage-svg-circle"></circle>
+                            </svg>
+                            <div data-circle="0,495" id='advert-speed-decision-advantage-html-circle'></div>
+
+
+                            <div class="percent-header white roboto-regular">
+                                Увеличение
+                            </div>
+                            <div class="percent-text white roboto-regular">
+                                оперативности принятия решений
+                            </div>                        
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div class="single-advantage-container">
+                            <div class="percent" id="advert-budget-advantage">
+                                <div class="diagram white roboto-medium"><span id="advert-budget-advantage-span">0</span>%</div>
+
+                                <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="160px"
+                                     height="160px" xml:space="preserve" id="advert-budget-advantage-svg">
+                                <circle cx="96" cy="80" r="71" stroke="#d92227" stroke-opacity=".8" stroke-width="17" stroke-dasharray="0, 495" fill="none" transform="rotate(-89.9 88 88)" id="advert-budget-advantage-svg-circle"></circle>
+                                </svg>
+                                <div data-circle="0,495" id='advert-budget-advantage-html-circle'></div>
+
+
+                                <div class="percent-header white roboto-regular">
+                                    Оптимизация
+                                </div>
+                                <div class="percent-text white roboto-regular">
+                                    бюджета (экономия) на 60%
+                                </div>                        
+                            </div>
+                        </div>
+
+                    </div><!-- left -->
+
+
+                    <div class="right" id="projects-near-charts">
+                        <div id="projects-near-charts-header" class="roboto-light white">
+                            Учет рекламного трафика
+                        </div>
+                        <div id="projects-near-charts-text" class="roboto-regular white">
+                            <p>
+                                Воронка продаж – «альфа и омега» современного 
+                                цифрового маркетинга. Тем не менее, многие 
+                                компании продолжают работать с лидами и заявками 
+                                «на глазок», ведут очень приблизительную 
+                                статистику взаимоотношений с партнерами и не 
+                                анализируют, откуда к ним приходит основная 
+                                масса клиентов.
+                            </p>
+                            <p>
+                                Хотите продавать? Создайте воронку продаж 
+                                онлайн. Хотите продавать «по науке» – 
+                                автоматизируйте работу с запросами.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+            </div> <!-- header -->
+        </div> <!-- header-bg-container -->
+
+
+        <div id="project-info-container">
+            <div class="wrapper">
+                <div id="project-info-right" class="right">
+                    <div id="download-case" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Скачать кейс</span>
+                        </a>
+                        <div id="pdf">PDF (2,2 Мб)</div>
+                    </div>
+
+                    <div id="site-bank" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Сайт банка</span>
+                        </a>
+                    </div>
+
+                    <div id="indicators" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Количественно-временные показатели</span>
+                        </a>
+                    </div>
+
+
+                    <div id="statistics-of-efficiency" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Статистика эффективности работы</span>
+                        </a>
+                    </div>
+
+                    <div id="project-worked" class="roboto-italic">
+                        Над проектом работали:
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        ведущий программист
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Дмитрий Никитин
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        старший дизайнер
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Павел Кулигин
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        дизайнер
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Юлия Волкова
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        проектировщик
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Светлана Карпова
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        программист
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Александр Володин
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        технолог
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Сергей Светлаков
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        менеджер
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Владимир Смирнов
+                    </div>
+
+                </div><!-- project-info-right -->
+
+
+                <div id="project-info-left" class="left">
+
+                    <div class="project-h1 top-60 width-80">
+                        Решение с помощью установки BeAdvert
+                    </div>
+
+                    <div class="project-description-text top-22 width-80">
+                        Достоверно известно: хотите заработать деньги – 
+                        умейте их считать. Ручная обработка запросов 
+                        и заявок опирается на крайне ненадежные плечи 
+                        «человеческого фактора»: забыли, перепутали, устали.
+                        Кроме того, растущий бизнес сталкивается с проблемой 
+                        увеличения нагрузки: отработанная, казалось бы, система 
+                        перестаёт быть эффективной даже при несущественном 
+                        увеличении объемов. Качественная работа и грамотная 
+                        аналитика возможна только при полной автоматизации 
+                        процессов.
+                    </div>
+
+                    <div class="project-h2 top-32 bottom-7 width-80">
+                        Именно для автоматизации воронки продаж предназначен 
+                        сервис «BeAdvert»
+                    </div>
+
+                    <img src="images/notebook-5.png" alt="как выглядит на ноутбуке" class="top-15"/>
+
+                    <div class="project-h2 top-15 width-80">
+                        Вы понимаете откуда к вам приходят деньги
+                    </div>
+
+                    <div class="project-description-text width-80">
+                        <p>Точная обработка в реальном времени всех входящих 
+                            заявок, абсолютно прозрачные пути конверсии и глубинное 
+                            понимание источников вашего дохода.</p>
+                    </div>
+
+                    <div class="left width-34 top-41">
+                        <div class="project-h2">
+                            Живая аналитика
+                        </div>
+                        <div class="project-description-text top-11">
+                            Рекламные компании, источники трафика/заявок – вся 
+                            аналитика доступна вам онлайн. Вы видите, насколько 
+                            окупается рекламный бюджет, и реально оцениваете 
+                            эффективность работы компании каждую минуту. У вас 
+                            есть возможность принимать оперативные решения по 
+                            рекламной компании и тут же получать живой отклик. 
+                            Ваша реклама приносит вам деньги, а не «пустой» 
+                            трафик. 
+                        </div>
+                    </div>
+
+                    <div class="left width-34 left-10 top-41">
+                        <img src="images/advert-image-1.png" alt="картинка" />
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="project-h1 top-78 width-80 bottom-7">
+                        Преимущества использования BeAdvert
+                    </div>
+
+                    <div class="left width-34">
+                        <div class="advert-advantage-1 advert-advantage project-description-text">
+                            Детальная аналитика по трафику и заявкам
+                        </div>
+                    </div>
+
+                    <div class="left width-34 left-10">
+                        <div class="advert-advantage-2 advert-advantage project-description-text">
+                            Значительное улучшение качества рекламного трафика
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="left width-34">
+                        <div class="advert-advantage-3 advert-advantage project-description-text">
+                            Невысокая стоимость внедрения, экономия бюджета
+                        </div>
+                    </div>
+
+                    <div class="left width-34 left-10">
+                        <div class="advert-advantage-4 advert-advantage project-description-text">
+                            Легкое подключение новых партнеров
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="left width-34">
+                        <div class="advert-advantage-5 advert-advantage project-description-text">
+                            Простая интеграция в CRM. При отсутствии CRM — 
+                            организация в системе мест принятия 
+                            решений (подробнее по телефону 8 800 555-55-55)
+                        </div>
+                    </div>
+
+                    <div class="left width-34 left-10">
+                        <div class="advert-advantage-6 advert-advantage project-description-text">
+                            Выделенное API для предоставления статистики 
+                            партнерам
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="project-h1 top-78">
+                        Как работает BeAdvert?
+                    </div>
+
+                    <div class="left width-34 top-25" style="display: table; height: 270px;">
+                        <div style="display:table-cell; vertical-align: middle">
+                            <div class="project-h2">
+                                Легкая интеграция в вашу CRM
+                            </div>
+                            <div class="project-description-text top-11">
+                                Система интегрируется с существующими 
+                                CRM/учетными системами и передает в них 
+                                информацию о новых обращениях/заявках 
+                                оставленных через формы(анкеты) на вашем сайте. 
+                                Заявка автоматически вливается в существующий в
+                                компании механизм обработки нового обращения.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="left left-10 width-34 top-25">
+                        <img src="images/advert-image-2.png" alt="картинка" />
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="left width-34 top-25">
+                        <img src="images/advert-image-3.png" alt="картинка" />
+                    </div>
+
+                    <div class="left left-10 width-34 top-25" style="display: table; height: 270px;">
+                        <div style="display:table-cell; vertical-align: middle">
+                            <div class="project-h2">
+                                Оперативная статистика
+                            </div>
+                            <div class="project-description-text top-11">
+                                CRM системы передают в BeAdvert информацию 
+                                о ходе прохождения заявкой всего 
+                                бизнес-процесса (ключевые статусы).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="project-h2 top-50 width-80">
+                        BeAdvert представляет оперативные данные на 
+                        всех уровнях воронки продаж
+                    </div>
+
+                    <div class="width-20 left">
+                        <img src="images/advert-icon-1.png" alt="картинка" class="bottom-7 top-32"/>
+                        <div class="project-description-text">                          
+                            Сколько трафика (посещений) предоставил
+                            каждый поставщик                           
+                        </div>
+                    </div>
+
+                    <div class="width-20 left left-5">
+                        <img src="images/advert-icon-2.png" alt="картинка" class="bottom-7 top-32" />
+                        <div class="project-description-text">
+                            Конверсия из посещений в заявки
+                        </div>
+                    </div>
+
+                    <div class="width-20 left left-5">
+                        <img src="images/advert-icon-3.png" alt="картинка" class="bottom-7 top-32" />
+                        <div class="project-description-text">
+                            Конверсия из заявок в продажи
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="project-h1 top-78">
+                        Как подключить BeAdvert?
+                    </div>
+
+                    <div class="project-description-text width-80 top-22">
+                        <p>
+                            <span class="advert-callback">
+                                Закажите бесплатный звонок</span> с сайта и узнайте, 
+                            как интегрировать BeAdvert в ваши бизнес-процессы. 
+                            Надеемся, что вопрос «зачем» у вас уже отпал. 
+                            Если же у вас остались другие вопросы, пожалуйста, 
+                            расскажите нам об этом.
+                        </p>
+
+                        <p>
+                            Мы делаем из стихийной воронки продаж высокоточный 
+                            аналитический инструмент.
+                            BeAdvert оптимизирует ваш рекламный бюджет, 
+                            а сокращение расходов это обратная сторона 
+                            увеличения прибыли. С BeAdvert ваша прибыль растет.
+                        </p>
+                    </div>
+
+                    <div class="project-h1 top-78 width-80">
+                        Экономические показатели работы BeAdvert
+                    </div>
+
+                    <div class="left width-34 top-37">
+                        <img src="images/advert-icon-4.png" alt="картинка" />
+                        <div class="project-description-text width-80 top-7">
+                            Увеличение эффективности от рекламы в 6 раз
+                        </div>
+                    </div>
+
+                    <div class="left width-34 left-10 top-37">
+                        <img src="images/advert-icon-5.png" alt="картинка" />
+                        <div class="project-description-text width-80 top-7">
+                            Увеличение оперативности принятия решений в 4 раза
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="left width-34 top-25">
+                        <img src="images/advert-icon-6.png" alt="картинка" />
+                        <div class="project-description-text width-80 top-7">
+                            Оптимизация бюджета (экономия) на 60%
+                        </div>
+                    </div>
+
+                    <div class="clear"></div>
+
+
+                </div><!-- project-info-left -->
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="wrapper">
+                <div id="footer-col-1" class="white roboto-regular left">
+                    <div>Россия, Москва, Лубянский проезд, 4</div>
+                    <div>Spain, Vilanova i la Geltru, Neapolis, fl. 3</div>
+                </div>
+                <div id="footer-col-2" class="left">
+                    <div class="white roboto-regular">+7 (926) 888-22-32</div>
+                    <div class="white roboto-regular">+34 727-76-004</div>
+                </div>
+                <div id="footer-col-3" class="left">
+                    <a href="mailto:info@bedoit.ru" class="white roboto-regular" id="footer-email">info@bedoit.ru</a>
+                    <a href="skype:bedoit_skype" class="white roboto-regular" id="footer-skype">bedoit_skype</a>
+                </div>
+                <div id="groups" class="right">
+                    <script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="twitter,facebook"></div>       
+
+
+                </div>
+                <div class="clear"></div>
+
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function() {
+
+                function svgAnimate(svg, svgdom, html, x, y) {
+                    var svgCircle = jQuery(svg, svgdom);
+                    var attr = $(html).attr('data-circle');
+                    var arr = attr.split(',');
+                    var intCurrentX = parseInt(arr[0]);
+                    var intCurrentY = parseInt(arr[1]);
+
+                    if (intCurrentX < x) {
+                        var currentX = intCurrentX + 1;
+                        var str = currentX.toString().concat(',').concat(intCurrentY.toString());
+                        $(html).attr('data-circle', str);
+                        svgCircle.attr('stroke-dasharray', str);
+                        setTimeout(function() {
+                            svgAnimate(svg, svgdom, html, x, y);
+                        }, 3);
+                    }
+                    else {
+                        return;
+                    }
+                }
+
+                function increasePercent(el, max) {
+
+                    var percent = parseInt($(el).text().trim());
+                    if (percent < max) {
+                        percent = percent + 1;
+                        $(el).text(percent);
+                    }
+                    else {
+                        return;
+                    }
+                }
+
+                var advertAdvertisingEfficiencyAdvantageSvg = document.getElementById('advert-advertising-efficiency-advantage-svg');
+                var advertSpeedDecisionAdvantageSvg = document.getElementById('advert-speed-decision-advantage-svg');
+                var advertBudgetAdvantageSvg = document.getElementById('advert-budget-advantage-svg');
+
+                setInterval(function() {
+                    $('#advert-advertising-efficiency-advantage, #advert-speed-decision-advantage, #advert-budget-advantage').fadeIn(1000);
+                }, 0);
+
+                setInterval(function() {
+
+                    setInterval(function() {
+                        increasePercent('#advert-speed-decision-advantage-span', 4);
+                        increasePercent('#advert-advertising-efficiency-advantage-span', 6);
+                        increasePercent('#advert-budget-advantage-span', 60);
+                    }, 30);
+
+                    svgAnimate('#advert-speed-decision-advantage-svg-circle', advertSpeedDecisionAdvantageSvg, '#advert-speed-decision-advantage-html-circle', 80, 495);
+                    svgAnimate('#advert-advertising-efficiency-advantage-svg-circle', advertAdvertisingEfficiencyAdvantageSvg, '#advert-advertising-efficiency-advantage-html-circle', 120, 495);
+                    svgAnimate('#advert-budget-advantage-svg-circle', advertBudgetAdvantageSvg, '#advert-budget-advantage-html-circle', 260, 495);
+
+                }, 500);
+
+            });
+        </script>
+
+    </body>
+</html>

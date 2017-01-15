@@ -1,0 +1,116 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #2a2a2a;
+    background: #f3f3f3 !important;
+}
+
+.wrapper{
+    padding-left: 4%;
+    padding-right: 4%;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+@font-face{
+    font-family: Rouble;
+    src: url(../fonts/rouble.ttf);
+}
+
+.Rouble{
+    font-family: Rouble;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clear{
+    clear: both;
+}
+
+.table{
+    display: table;
+}
+
+.table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.none{
+    display: none;
+}
+
+@media (max-width: 767px){
+    body {
+        padding-right: 0 !important; 
+        padding-left: 0 !important; 
+    }
+}
+
+/* Фиксированное меню */
+#menu.fixed-menu {
+    position: fixed;
+    width: 92%;
+    background: rgba(14,17,23,0.8);
+    left: 0;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 3px;
+    padding-bottom: 24px;
+    z-index: 6;
+    top: 0;
+    color: #fff;
+}
+
+#menu > ul {
+    padding: 0;
+    list-style: none;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+#logo {
+    margin-right: 3%;
+}
+
+#menu-items-container {
+    width: 100%;
+    margin-top: -41px;
+}
+
+#in-menu-items-container {
+    display: table;
+    margin: 0 auto;
+}
+
+.menu-item{
+    font-size: 120%;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.menu-item:hover{
+    color: #ffd34c;
+}
+/* Фиксированное меню конец */
+
+#menu-phone > a{
+    font-weight: 600;
+    font-size: 180%;
+    color: #fff;
+}
+
+#menu-phone{
+    margin-top: 26px;
+}

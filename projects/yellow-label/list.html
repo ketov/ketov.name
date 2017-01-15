@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>list</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/GUI.css">
+        <link rel="stylesheet" href="css/index-categories.css">
+        <link rel="stylesheet" href="css/list.css">
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="js/GUI.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+    </head>
+    <body>
+
+        <div id="header">
+            <div id="header-wrapper">
+                <a href="http://localhost/chan" id="logo" class="left">
+                    Yellow Pages
+                </a>
+
+                <a href="javascript:void(0);" id="calendar" class="right">
+                    <span id="my-books-text">
+                        Мои бронирования
+                    </span>
+                    <i class="fa fa-calendar right"></i>
+                </a>
+
+                <div class="clear"></div>
+
+            </div>
+        </div>
+
+
+        <div id="menu">
+
+            <div id="close-menu">
+                <i class="fa fa-times"></i>
+            </div>
+
+            <div class="table">
+                <a href="javascript:void(0);" class="table-cell active-menu-item">
+                    <span class="in-table-cell">
+                        Главная
+                    </span>
+                </a>
+            </div>
+
+            <div class="table">
+                <a href="1.html" class="table-cell">
+                    <span class="in-table-cell">
+                        Расписание
+                    </span>
+                </a>
+            </div>
+
+            <div class="table">
+                <a href="3.html" class="table-cell">
+                    <span class="in-table-cell">
+                        Оформить
+                    </span>
+                </a>
+            </div>
+
+        </div><!-- menu end-->
+
+        <div id="book-services" class="table">
+            <div class="wrapper table-cell">
+                <div class="in-table-cell">
+
+                    <div id="bread-crumbs">
+                        <a href="http://localhost/chan">Все услуги</a>
+                        <span class="slash">/</span>
+                        <a href="category.html">Спорт</a>
+                        <span class="slash">/</span>
+                    </div>
+
+                    <div id="book-services-header">
+                        Бадминтон<sup>12</sup>
+                    </div>
+                </div> 
+            </div>
+        </div><!-- book-services end-->
+
+        <div id="tabs-block">
+            <div class="wrapper">
+                <div class="left" id="list-map-items-container">
+                    <div class="left active-list-map-item" id="list-item">
+                        <i class="fa fa-list-ul"></i><span>Списком</span>
+                    </div>
+
+                    <div class="left" id="map-item">
+                        <i class="fa fa-map-marker"></i><span>На карте</span>
+                    </div>
+
+                    <div class="clear"></div>
+                </div>
+
+                <div class="district left">
+                    <ul class="select-ul">
+                        <li data-class="district-1">Район 1</li>
+                        <li data-class="district-2">Район 2</li>
+                        <li data-class="district-3">Район 3</li>
+                        <li data-class="district-4">Район 4</li>
+                    </ul>
+                    <div class="left left-placeholder">Район</div>
+                    <div class="right desc">
+                        ▾
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <div class="microdistrict left">
+                    <ul class="select-ul microdistrict-ul" data-district="district-1">
+                        <li class="microdistrict-li" data-class="microdistrict-1">Микрорайон-1</li>
+                        <li class="microdistrict-li" data-class="microdistrict-2">Микрорайон-2</li>
+                    </ul>
+                    <ul class="select-ul microdistrict-ul" data-district="district-4">
+                        <li class="microdistrict-li" data-class="microdistrict-11">Микрорайон-11</li>                        
+                        <li class="microdistrict-li" data-class="microdistrict-12">Микрорайон-12</li>
+                    </ul>
+                    <ul class="select-ul microdistrict-ul" data-district="district-3">
+                        <li class="microdistrict-li" data-class="microdistrict-23">Микрорайон-23</li>
+                        <li class="microdistrict-li" data-class="microdistrict-22">Микрорайон-22</li>
+                    </ul>
+                    <div class="left left-placeholder">Микрорайон</div>
+                    <div class="right desc">
+                        ▾
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                <input class="search right" placeholder="Место или название" type="search" />
+
+                <div class="clear"></div>
+            </div>
+        </div><!-- tabs-block end -->
+
+
+
+
+        <div id="list-container">
+
+            <div class="wrapper">
+
+
+                <div class="row-fluid show-grid list-header">
+                    <div class="span12">
+                        <div class="row-fluid show-grid">
+                            <div class="span3">
+                                Название
+                            </div>
+
+                            <div class="span3">
+                                Адрес
+                            </div>
+
+                            <div class="span3">    
+                                Телефон
+                            </div>
+
+                            <div class="span3">
+                                График работы
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row-fluid show-grid list-item-row list-item-active district-1 microdistrict-1">
+                    <div class="span12">
+                        <div class="row-fluid show-grid list-item">
+                            <div class="span3 list-item-place">
+                                <a href="merchant.html" class="marker" data-lat="12.1234" data-lng="106.0345">
+                                    asdfasfd
+                                </a>
+                            </div>
+
+                            <div class="span3 list-item-location">
+                                <a href="javascript:void(0);">
+                                    Тайпин, Верхний район,
+                                    округ 17
+                                </a>
+                            </div>
+
+                            <div class="span3 list-item-phone">    
+                                <a href="tel:+650123456189">+65 0123 456 189</a>
+                            </div>
+
+                            <div class="span3">
+                                <div class="worktime">
+                                    Пн-пт  10:00 - 18:00
+                                </div>
+                                <div class="worktime">
+                                    Сб  12:00 - 16:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row-fluid show-grid list-item-row list-item-active district-4 microdistrict-11">
+                    <div class="span12">
+                        <div class="row-fluid show-grid list-item">
+                            <div class="span3 list-item-place">
+                                <a href="merchant.html" class="marker" data-lat="17.1234" data-lng="98.0345">
+                                    Площадка «Звезда Вьетнама»
+                                </a>
+                            </div>
+
+                            <div class="span3 list-item-location">
+                                <a href="javascript:void(0);">
+                                    Тайпин, Средний район,
+                                    округ 11, ул. Революции
+                                </a>
+                            </div>
+
+                            <div class="span3 list-item-phone">    
+                                <a href="tel:+656924749302">+65 6924 749 302</a>
+                            </div>
+
+                            <div class="span3">
+                                <div class="worktime">
+                                    Пн-пт  10:00 - 18:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row-fluid show-grid list-item-row list-item-active district-1 microdistrict-2">
+                    <div class="span12">
+                        <div class="row-fluid show-grid list-item">
+                            <div class="span3 list-item-place">
+                                <a href="merchant.html" class="marker" data-lat="14.66" data-lng="99.6556">
+                                    Клуб «Prime»
+                                </a>
+                            </div>
+
+                            <div class="span3 list-item-location">
+                                <a href="javascript:void(0);">
+                                    Тайпин, Средний район, округ 3, ул. Виноградная 
+                                </a>
+                            </div>
+
+                            <div class="span3 list-item-phone">    
+                                <a href="tel:+653496076310">+65 3496 076 310</a>
+                            </div>
+
+                            <div class="span3">
+                                <div class="worktime">
+                                    Пн-пт  12:00 - 16:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row-fluid show-grid list-item-row list-item-active district-4 microdistrict-12">
+                    <div class="span12">
+                        <div class="row-fluid show-grid list-item">
+                            <div class="span3 list-item-place">
+                                <a href="merchant.html" class="marker" data-lat="14.8512" data-lng="103.9877">
+                                    Площадка «Красный дракон»
+                                </a>
+                            </div>
+
+                            <div class="span3 list-item-location">
+                                <a href="javascript:void(0);">
+                                    Тайпин, Нижний район, округ 1, ул. Труда
+                                </a>
+                            </div>
+
+                            <div class="span3 list-item-phone">
+                                <a href="tel:+651462730943">+65 1462 730 943</a>
+                            </div>
+
+                            <div class="span3">
+                                <div class="worktime">
+                                    Пн-пт  09:00 - 17:00
+                                </div>
+                                <div class="worktime">
+                                    Сб  12:00 - 16:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-fluid show-grid list-item-row list-item-active district-3 microdistrict-23">
+                    <div class="span12">
+                        <div class="row-fluid show-grid list-item">
+                            <div class="span3 list-item-place">
+                                <a href="merchant.html" class="marker" data-lat="15" data-lng="101.07421">
+                                    65tw
+                                </a>
+                            </div>
+
+                            <div class="span3 list-item-location">
+                                <a href="javascript:void(0);">
+                                    0fhjfk
+                                </a>
+                            </div>
+
+                            <div class="span3 list-item-phone">
+                                <a href="tel:+651462730943">+65 1462 730 943</a>
+                            </div>
+
+                            <div class="span3">
+                                <div class="worktime">
+                                    Пн-пт  09:00 - 17:00
+                                </div>
+                                <div class="worktime">
+                                    Сб  12:00 - 16:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-fluid show-grid list-item-row list-item-active district-3 microdistrict-22">
+                    <div class="span12">
+                        <div class="row-fluid show-grid list-item">
+                            <div class="span3 list-item-place">
+                                <a href="merchant.html" class="marker" data-lat="15.1234" data-lng="102.0345">
+                                    asdfn
+                                </a>
+                            </div>
+
+                            <div class="span3 list-item-location">
+                                <a href="javascript:void(0);">
+                                    oi;lui,jmgh
+                                </a>
+                            </div>
+
+                            <div class="span3 list-item-phone">
+                                <a href="tel:+651462730943">+65 1462 730 943</a>
+                            </div>
+
+                            <div class="span3">
+                                <div class="worktime">
+                                    Пн-пт  09:00 - 17:00
+                                </div>
+                                <div class="worktime">
+                                    Сб  12:00 - 16:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-fluid show-grid list-item-row list-item-active district-2">
+                    <div class="span12">
+                        <div class="row-fluid show-grid list-item">
+                            <div class="span3 list-item-place">
+                                <a href="merchant.html" class="marker" data-lat="15.3422" data-lng="101.342">
+                                    43qweafsd
+                                </a>
+                            </div>
+
+                            <div class="span3 list-item-location">
+                                <a href="javascript:void(0);">
+                                    ,yutjhgdf
+                                </a>
+                            </div>
+
+                            <div class="span3 list-item-phone">
+                                <a href="tel:+651462730943">+65 1462 730 943</a>
+                            </div>
+
+                            <div class="span3">
+                                <div class="worktime">
+                                    Пн-пт  09:00 - 17:00
+                                </div>
+                                <div class="worktime">
+                                    Сб  12:00 - 16:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row-fluid show-grid list-item-row list-item-active district-1">
+                    <div class="span12">
+                        <div class="row-fluid show-grid list-item">
+                            <div class="span3 list-item-place">
+                                <a href="merchant.html" class="marker" data-lat="17.1234" data-lng="102.5567">
+                                    asdf
+                                </a>
+                            </div>
+
+                            <div class="span3 list-item-location">
+                                <a href="javascript:void(0);">
+                                    1234sab
+                                </a>
+                            </div>
+
+                            <div class="span3 list-item-phone">
+                                <a href="tel:+651462730943">+65 1462 730 943</a>
+                            </div>
+
+                            <div class="span3">
+                                <div class="worktime">
+                                    Пн-пт  09:00 - 17:00
+                                </div>
+                                <div class="worktime">
+                                    Сб  12:00 - 16:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div id="map"></div>
+
+
+        </div><!-- links-block -->
+
+
+
+
+        <div id="footer">
+            <div class="wrapper">
+                <div id="footer-copyright" class="left">
+                    © 2015, Yellow Pages
+                </div>
+
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function() {
+
+                function initMap() {
+
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: 19.72534, lng: 102.07421},
+                        scrollwheel: false,
+                        zoom: 5
+                    });
+
+                    $('.list-item-active').each(function() {
+                        var marker = $(this).find('.marker');
+                        marker = new google.maps.Marker({
+                            map: map,
+                            position: {lat: parseFloat(marker.attr('data-lat')), lng: parseFloat(marker.attr('data-lng'))}
+                        });
+                    });
+                }
+                initMap();
+                $(window).resize(function() {
+                    initMap();
+                });
+
+                $('.list-item:last').addClass('last-list-item');
+
+                function selectUlHeight() {
+                    $('.select-ul').each(function() {
+                        $(this).css({'width': $(this).parent().width() + 27});
+                    });
+                }
+
+                $('.district').click(function() {
+
+                    if ($(this).hasClass('active')) {
+                        $(this).removeClass('active');
+                        $(this).find('.select-ul').fadeOut(200);
+                        $(this).find('.right').html('▾');
+                    }
+                    else {
+                        $(this).addClass('active');
+                        $(this).find('.select-ul').fadeIn(200);
+
+                        $(this).find('.right').html('▴');
+                    }
+                });
+                
+                $('.microdistrict').click(function() {
+
+                    if ($(this).hasClass('active')) {
+                        $(this).removeClass('active');
+                        $(this).find('.microdistrict-ul-active').fadeOut(200);
+                        $(this).find('.right').html('▾');
+                    }
+                    else {
+                        $(this).addClass('active');
+                        $(this).find('.microdistrict-ul-active').fadeIn(200);
+
+                        $(this).find('.right').html('▴');
+                    }
+                });
+
+                $(document).click(function(event) {
+                    if ($(event.target).closest(".select-ul").length || $(event.target).closest(".district").length || $(event.target).closest(".microdistrict").length)
+                        return;
+                    $('.select-ul').fadeOut(200);
+                    $('.district, .microdistrict').find('.right').html('▾');
+                    $('.district, .microdistrict').removeClass('active');
+                    event.stopPropagation();
+                });
+
+                $('.district .select-ul li').click(function() {
+                    
+                    $('.microdistrict').removeClass('active');
+                    $('.microdistrict').children('.left').addClass('left-placeholder');
+                    $('.microdistrict').children('.left').text('Микрорайон');
+                    
+                    $('.microdistrict, .microdistrict-ul').hide();
+                    $('.microdistrict-ul-active').removeClass('microdistrict-ul-active');
+
+                    $(this).siblings('.selected').removeClass('selected');
+
+                    var left = $(this).parent('ul').siblings('.left');
+                    if (left.hasClass('left-placeholder')) {
+                        left.removeClass('left-placeholder');
+                    }
+
+                    if ($(this).hasClass('selected')) {
+                        return;
+                    }
+                    left.text($(this).text());
+                    $(this).addClass('selected');
+
+
+                    var className = $(this).attr('data-class');
+                    $('.list-item-row').each(function() {
+                        if (!$(this).hasClass(className)) {
+                            $(this).removeClass('list-item-active');
+                            $(this).hide();
+                            initMap();
+                        }
+                        else {
+                            $(this).addClass('list-item-active');
+                            $(this).show();
+                        }
+                    });
+
+
+                    $('.microdistrict-ul').each(function(){
+                         if ($(this).attr('data-district') === className){
+                             $('.microdistrict').show();
+                             $(this).addClass('microdistrict-ul-active');
+                         }
+                    });                    
+
+                });
+                
+                
+                
+                
+                 $('.microdistrict .select-ul li').click(function() {
+
+                    $(this).siblings('.selected').removeClass('selected');
+
+                    var left = $(this).parent('ul').siblings('.left');
+                    if (left.hasClass('left-placeholder')) {
+                        left.removeClass('left-placeholder');
+                    }
+
+                    if ($(this).hasClass('selected')) {
+                        return;
+                    }
+                    left.text($(this).text());
+                    $(this).addClass('selected');
+
+
+                    var className = $(this).attr('data-class');
+                    $('.list-item-row').each(function() {
+                        if (!$(this).hasClass(className)) {
+                            $(this).removeClass('list-item-active');
+                            $(this).hide();
+                            initMap();
+                        }
+                        else {
+                            $(this).addClass('list-item-active');
+                            $(this).show();
+                        }
+                    });
+                  
+
+                });
+                
+                
+                
+                
+                
+                
+
+                selectUlHeight();
+                $(window).resize(function() {
+                    selectUlHeight();
+                });
+
+                $('#map-item').click(function() {
+                    initMap();
+                    $('#list-item').css({'background': '#fff', 'color': '#6aa4d1 !important'});
+                    if (!$(this).hasClass('active-list-map-item')) {
+                        $('.active-list-map-item').removeClass('active-list-map-item');
+                        $(this).addClass('active-list-map-item');
+                    }
+
+                    $('#map').animate({
+                        'opacity': 1
+                    }, 500);
+                    $('#list-container .wrapper').animate({
+                        'opacity': 0
+                    }, 500);
+
+                    setTimeout(function() {
+                        $('#map').css({'z-index': 1});
+                    }, 550);
+                });
+
+                $('#list-item').click(function() {
+                    $('#map-item').css({'background': '#fff', 'color': '#6aa4d1 !important'});
+                    if (!$(this).hasClass('active-list-map-item')) {
+                        $('.active-list-map-item').removeClass('active-list-map-item');
+                        $(this).addClass('active-list-map-item');
+                    }
+                    $('#list-container .wrapper').animate({
+                        'opacity': 1
+                    }, 500);
+                    $('#map').animate({
+                        'opacity': 0
+                    }, 500);
+
+                    setTimeout(function() {
+                        $('#map').css({'z-index': -1});
+                    }, 550);
+                });
+
+                $('#map-item, #list-item').hover(
+                        function() {
+                            if ($(this).hasClass('active-list-map-item')) {
+                                return;
+                            }
+                            else {
+                                $(this).animate({
+                                    'backgroundColor': '#6aa4d1',
+                                    'color': '#fff'
+                                }, 300);
+                            }
+
+                        },
+                        function() {
+                            if ($(this).hasClass('active-list-map-item')) {
+                                return;
+                            }
+                            else {
+                                $(this).animate({
+                                    'backgroundColor': '#fff',
+                                    'color': '#6aa4d1'
+                                }, 300);
+                            }
+                        });
+
+            });
+        </script>
+
+    </body>
+</html>

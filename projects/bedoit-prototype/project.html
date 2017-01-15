@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>bedoit проекты</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/project.css">
+        <link rel="stylesheet" href="css/GUI.css">
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/projects.js"></script>
+        <script src="js/jquery.loupe.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="js/discuss.js"></script>
+    </head>
+    <body>
+        <div id="doodle"></div>
+        <div id="project-bg-container">
+            <div class="wrapper">
+                
+                <div id="header">   
+                    <div id="menu">
+
+                        <div id="menu-items">
+                            <a href="projects.html" class="white roboto-medium" id="projects-item">Наши работы</a>
+                            <a href="services.html" class="white roboto-medium">Услуги</a>
+                            <a href="about-company.html" class="white roboto-medium">О компании</a>
+                            <a href="contacts.html" class="white roboto-medium" id="contacts-item">Контакты</a>
+                        </div>
+                        <div id="your-project-products" class="right">Обсудить ваш проект</div>
+                        <a href="index.html" id="logo" class="white roboto-bold left">Bedoit</a>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+
+                    <div class="left percent" id="speed">
+                        <div class="diagram white roboto-medium"><span id="speed-span">0</span>%</div>
+
+
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="155px"
+                             height="155px" xml:space="preserve" id="percent-40-svg">
+                        <circle cx="96" cy="76" r="71" stroke="#d92227" stroke-opacity=".8" stroke-width="17" stroke-dasharray="0, 495" fill="none" transform="rotate(-89.9 88 88)" id="percent-40-svg-circle"></circle>
+                        </svg>
+                        <div data-circle="0,495" id='percent-40-html-circle'></div>
+
+
+                        <div class="percent-header white roboto-regular">Увеличение</div>
+                        <div class="percent-text white roboto-regular">скорости обработки заявок</div>                        
+                    </div>
+                    <div class="left percent" id="mistakes">
+                        <div class="diagram white roboto-medium"><span id="mistakes-span">0</span>%</div>
+
+                        <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="155px"
+                             height="155px" xml:space="preserve" id="percent-40-svg">
+                        <circle cx="96" cy="76" r="71" stroke="#d92227" stroke-opacity=".8" stroke-width="17" stroke-dasharray="0, 495" fill="none" transform="rotate(-89.9 88 88)" id="percent-25-svg-circle"></circle>
+                        </svg>
+                        <div data-circle="0,495" id='percent-25-html-circle'></div>
+
+
+                        <div class="percent-header white roboto-regular">Снижение</div>
+                        <div class="percent-text white roboto-regular">количества ошибок</div>   
+                    </div>
+
+                    <div class="right" id="projects-near-charts">
+                        <div id="projects-near-charts-header" class="roboto-light white">
+                            Оптимизация и автоматизация банка
+                        </div>
+                        <div id="projects-near-charts-text" class="roboto-regular white">
+                            Банк дистанционного обслуживания (без офисов) 
+                            запустил новый продукт «Расчетный счет для ИП». 
+                            Клиент заполняет заявку на сайте банка и к нему 
+                            оперативно приезжает курьер для оформления документов. 
+                            По факту открытия счета, клиент получает доступ к 
+                            интернет-банку и смс-уведомление.
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+            </div> <!-- header -->
+        </div> <!-- header-bg-container -->
+
+
+        <div id="project-info-container">
+            <div class="wrapper">
+                <div id="project-info-right" class="right">
+                    <div id="download-case" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Скачать кейс</span>
+                        </a>
+                        <div id="pdf">PDF (2,2 Мб)</div>
+                    </div>
+
+                    <div id="site-bank" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Сайт банка</span>
+                        </a>
+                    </div>
+
+                    <div id="indicators" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Количественно-временные показатели</span>
+                        </a>
+                    </div>
+
+
+                    <div id="statistics-of-efficiency" class="roboto-regular">
+                        <a href="#" class="without-underline">
+                            <span class="blue-link">Статистика эффективности работы</span>
+                        </a>
+                    </div>
+
+                    <div id="project-worked" class="roboto-italic">
+                        Над проектом работали:
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        ведущий программист
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Дмитрий Никитин
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        старший дизайнер
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Павел Кулигин
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        дизайнер
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Юлия Волкова
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        проектировщик
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Светлана Карпова
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        программист
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Александр Володин
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        технолог
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Сергей Светлаков
+                    </div>
+
+                    <div class="project-worked-profession roboto-bold">
+                        менеджер
+                    </div>
+                    <div class="project-worked-name roboto-regular">
+                        Владимир Смирнов
+                    </div>
+
+                </div><!-- project-info-right -->
+                <div id="project-info-left" class="left">
+                    <div id="as-it-was">
+                        <div class="project-info-left-header">
+                            Организация бизнес-процесса
+                            «Как было»
+                        </div>
+                        <div class="project-info-left-text">
+                            <p>
+                                По причине срочного запуска нового проекта, 
+                                операционная деятельность всех подразделений 
+                                банка была реализована полностью в ручном 
+                                режиме, в программе Excel.
+                            </p>
+                            <p>
+                                Это приводило к большому количеству ошибок, 
+                                связанных с человеческим фактором. Обработка 
+                                заявок была некачественная и процесс открытия 
+                                нового счета занимал много времени, вследствие 
+                                чего многие клиенты просто отказывались от 
+                                услуг банка.
+                            </p>
+
+
+
+
+
+                        </div>
+
+
+
+
+                        <img src="images/as-it-was.png"  width="420" height="495" alt="картинка"  class="project-info-left-image" id="as-it-was-image"/>
+                        <script>
+                            $('#as-it-was-image').loupe();
+                        </script>
+
+
+
+
+                        <div class="project-info-left-subtitle">
+                            Пошаговое описание процесса «Как было»
+                        </div>
+
+                        <div class="step-container">
+
+                            <div class="step">
+                                <div class="step-number left">
+                                    1
+                                </div>
+                                <div class="step-header left">
+                                    Заявка
+                                </div>
+                                <div class="clear"></div>
+                                <div class="step-text">
+                                    Текст заявки
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number left">
+                                    2
+                                </div>
+                                <div class="step-header left">
+                                    Переход в личный кабинет ИП
+                                </div>
+                                <div class="clear"></div>
+                                <div class="step-text">
+                                    Текст перехода в личный кабинет ИП
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number left">
+                                    3
+                                </div>
+                                <div class="step-header left">
+                                    Уведомление о новой заявке
+                                </div>
+                                <div class="clear"></div>
+                                <div class="step-text">
+                                    Текст уведомления о новой заявке
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number left">
+                                    4
+                                </div>
+                                <div class="step-header left">
+                                    Звонок клиенту
+                                </div>
+                                <div class="clear"></div>
+                                <div class="step-text">
+                                    Текст звонка клиенту
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number left">
+                                    5
+                                </div>
+                                <div class="step-header left">
+                                    Отправка смс-уведомлений не ответившим клиентам
+                                </div>
+                                <div class="clear"></div>
+                                <div class="step-text">
+                                    Текст смс-уведомлений не ответившим клиентам
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number left">
+                                    6
+                                </div>
+                                <div class="step-header left">
+                                    Отправка данных выездному менеджеру
+                                </div>
+                                <div class="clear"></div>
+                                <div class="step-text">
+                                    Менеджер получает письмо с заявкой от сотрудника
+                                    Call-цента. Предварительно готовит и передает
+                                    известные данные о клиенте на почту бэкофиса, с 
+                                    требованиями зарезервировать счет. Дату и время 
+                                    встречи смотрит в программе Excel.
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number left">
+                                    7
+                                </div>
+                                <div class="step-header left">
+                                    Встреча с клиентом
+                                </div>
+                                <div class="clear"></div>
+                                <div class="step-text">
+                                    Текст встречи с клиентом
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number left">
+                                    8
+                                </div>
+                                <div class="step-header left">
+                                    Передача документов в банк
+                                </div>
+                                <div class="clear"></div>
+                                <div class="step-text">
+                                    Текст передачи документов в банк
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number left">
+                                    9
+                                </div>
+                                <div class="step-header left">
+                                    Проверка документов
+                                </div>
+                                <div class="clear"></div>
+                                <div class="step-text">
+                                    Текст проверки документов
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number left" id="step-number-10">
+                                    10
+                                </div>
+                                <div class="step-header left">
+                                    Открытие нового счета
+                                </div>
+                                <div class="clear"></div>
+                                <div class="step-text">
+                                    Текст открытия нового счета
+                                </div>
+                            </div>
+
+                        </div>
+                    </div><!-- as-it-was -->
+
+
+
+                    <div id="as-it-became">
+                        <div class="project-info-left-header">
+                            Организация бизнес-процесса
+                            «Как стало»
+                        </div>
+                        <div class="project-info-left-text">
+                            <p>
+                                Для оптимизации скорости открытия счетов, 
+                                улучшением качества обслуживания клиентов 
+                                и исключения ошибок, связанных с человеческим 
+                                фактором, банк пригласил специалистов из Bedoit.
+                            </p>
+                            <p>
+                                Мы провели исследования и восстановили полную 
+                                картину текущего,на тот момент, процесса, 
+                                определили узкие места и выработали оптимальное 
+                                решение, которое было согласовано с банком.
+                            </p>
+                            <p>
+                                Нами была разработана веб-система прохождения 
+                                заявки по всем «инстанциям», от момента заполнения 
+                                клиентом заявки на сайте и заканчивая 
+                                автоматизированным открытием счета в банковской системе. 
+                                Каждый важный шаг автоматически сопровождается 
+                                информирование клиента.
+                            </p>
+                            <p>
+                                За счет полностью автоматизированной системы и 
+                                системы учета статусов, все руководители видят 
+                                подробные отчеты о результатах работы своих 
+                                сотрудников.
+                            </p>
+                            <p>
+                                Реализация и внедрение данного проекта заняла 
+                                3 месяца.
+                            </p>
+                        </div>
+
+                        <img src="images/as-it-became.png" width="420" height="426" alt="картинка" class="project-info-left-image" id="as-it-became-image"/>
+                        <script>
+                            $('#as-it-became-image').loupe();
+                        </script>
+
+                        <div class="project-info-left-subtitle">
+                            Пошаговое описание процесса «Как было»
+                        </div>
+
+
+                        <div class="step-container">
+                            <div class="step">
+                                <div class="step-number left">
+                                    1
+                                </div>
+                                <div class="step-header left">
+                                    Заявка
+                                </div>
+                                <div class="clear"></div>
+                                <div class="step-text">
+                                    Клиент заполняет заявку на сайте (форму)
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number left">
+                                    2
+                                </div>
+                                <div class="step-header left">
+                                    Переход в личный кабинет ИП
+                                </div>
+                                <div class="clear"></div>
+                                <div class="step-text">
+                                    Текст перехода в личный кабинет ИП
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number left">
+                                    3
+                                </div>
+                                <div class="step-header left">
+                                    Автоматический запрос в колл-центр
+                                </div>
+                                <div class="clear"></div>
+                                <div class="step-text">
+                                    Текст автоматического запроса в колл-центр
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number left">
+                                    4
+                                </div>
+                                <div class="step-header left">
+                                    Встреча с клиентом
+                                </div>
+                                <div class="clear"></div>
+                                <div class="step-text">
+                                    Текст встречи с клиентом
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number left">
+                                    5
+                                </div>
+                                <div class="step-header left">
+                                    Отправка документов в банк
+                                </div>
+                                <div class="clear"></div>
+                                <div class="step-text">
+                                    Текст отправки документов в банк
+                                </div>
+                            </div>
+
+                            <div class="step">
+                                <div class="step-number left">
+                                    6
+                                </div>
+                                <div class="step-header left">
+                                    Открытие нового счета
+                                </div>
+                                <div class="clear"></div>
+                                <div class="step-text">
+                                    Текст открытия нового счета
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div><!-- as-it-became -->
+
+
+
+                    <div id="project-results">
+                        <div id="project-results-header" class="roboto-medium">
+                            Результаты работы созданной системы
+                        </div>
+
+                        <div class="project-result-column left">
+                            <div id="result-1">
+                                оптимизирована скорость открытия счетов, 
+                                за счет интеграций и автоматизаций
+                            </div>
+                            <div id="result-3">
+                                автоматизированно построение отчетности 
+                                для руководителей колл-центра, 
+                                выездных менеджеров, отдела продаж
+                                и собственника банка
+                            </div>
+                        </div>
+
+                        <div class="project-result-column left" id="project-result-column-2">
+                            <div id="result-2">
+                                увеличено количество обрабатываемых 
+                                заявок, при таком же количестве 
+                                персонала (снижение издержек)
+                            </div>
+                            <div id="result-4">
+                                исключены ошибки, связанные
+                                с человеческим фактором
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+                    </div>
+
+                </div><!-- project-info-left -->
+                <div class="clear"></div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="wrapper">
+                <div id="footer-col-1" class="white roboto-regular left">
+                    <div>Россия, Москва, Лубянский проезд, 4</div>
+                    <div>Spain, Vilanova i la Geltru, Neapolis, fl. 3</div>
+                </div>
+                <div id="footer-col-2" class="left">
+                    <div class="white roboto-regular">+7 (926) 888-22-32</div>
+                    <div class="white roboto-regular">+34 727-76-004</div>
+                </div>
+                <div id="footer-col-3" class="left">
+                    <a href="mailto:info@bedoit.ru" class="white roboto-regular" id="footer-email">info@bedoit.ru</a>
+                    <a href="skype:bedoit_skype" class="white roboto-regular" id="footer-skype">bedoit_skype</a>
+                </div>
+                <div id="groups" class="right">
+                    <!--<script type="text/javascript" src="//yastatic.net/share/share.js" charset="utf-8"></script><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="none" data-yashareQuickServices="twitter,facebook"></div>       
+					-->
+				
+				</div>
+                <div class="clear"></div>
+
+            </div>
+        </div>
+
+    </body>
+</html>

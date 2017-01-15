@@ -1,0 +1,66 @@
+#book-services{   
+    background: url('../images/category-main-image.jpg') no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+#link-badminton,
+#link-badminton1
+{
+    background-image: url('../images/badminton.jpg');
+}
+
+#link-volleyball,
+#link-volleyball1
+{
+    background-image: url('../images/valleyball.jpg');
+}
+
+#link-machines,
+#link-machines1
+{
+    background-image: url('../images/machines.jpg');
+}
+
+#link-bowling,
+#link-bowling1
+{
+    background-image: url('../images/bowling.jpg');
+}
+
+#link-tennis,
+#link-tennis1
+{
+    background-image: url('../images/tennis.jpg');
+}
+
+#link-football,
+#link-football1
+{
+    background-image: url('../images/football.jpg');
+}
+
+.slash{
+    color: #d7d7d7;
+}
+
+#bread-crumbs{
+    font-size: 110%;
+    margin-bottom: 8px;
+    text-shadow: 1px 1px 1px #222;
+}
+
+#bread-crumbs > a{
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+}
+
+#bread-crumbs > a:hover{
+    color: #eb194a;
+    border-bottom: 1px solid rgba(235, 25, 74, 0.3);
+}
+
+#book-services-header{
+    text-shadow: 2px 2px 7px #222;
+}

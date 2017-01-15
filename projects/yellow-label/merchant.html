@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Шаблон</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/merchant.css">
+        <link rel="stylesheet" href="css/GUI.css">
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/GUI.js"></script>
+        <script src="js/jquery.sudoSlider.js"></script>
+
+        <link  href="css/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script> <!-- 16 KB -->
+    </head>
+    <body>
+
+        <div id="header">
+            <div id="header-wrapper">
+                <a href="http://localhost/chan" id="logo" class="left">
+                    Yellow Pages
+                </a>
+
+                <a href="javascript:void(0);" id="calendar" class="right">
+                    <span id="my-books-text">
+                        Мои бронирования
+                    </span>
+                    <i class="fa fa-calendar right"></i>
+                </a>
+
+                <div class="clear"></div>
+
+            </div>
+        </div>
+
+
+        <div id="top-info-container">
+            <div class="table">
+                <div class="table-cell">
+                    <div class="in-table-cell">
+                        <div class="in-table-cell">
+
+                            <div id="bread-crumbs">
+                                <a href="index.html">Все услуги</a>
+                                <span class="slash">/</span>
+                                <a href="category.html">Спорт</a>
+                                <span class="slash">/</span>
+                                <a href="list.html">Бадминтон</a>
+                                <span class="slash">/</span>
+                            </div>
+
+                            <div id="merchant-header">
+                                Спортивная площадка “Восток”
+                            </div>
+
+
+                            <div class="merchant-address">
+                                <i class="fa fa-map-marker"></i>
+                                <span>Тайпин, Верхний район, округ 17</span>
+                            </div>
+
+
+                            <div class="merchant-worktime left">
+                                <div class="left clock-icon">
+                                    <i class="fa fa-clock-o"></i>
+                                </div>
+
+                                <div class="left worktime">
+                                    <span>
+                                        Пн-пт 10:00 - 18:00<br />
+                                        Cб 12:00 - 16:00
+                                    </span>
+                                </div>
+
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="left merchant-phone">
+                                <div class="left phone-icon">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+
+                                <div class="left phone">
+                                    <span>
+                                        <a href="tel:+74958765432">+7 (495) 876-54-32</a>
+                                    </span>
+                                </div>
+
+                                <div class="clear"></div>
+
+                            </div>
+
+                            <div class="clear"></div>
+
+
+                            <button class="book-it-button" id="book-it-button">
+                                Book it
+                            </button>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="fotorama" data-autoplay="10000" data-fit="cover" data-transition="dissolve">
+            <img src="images/1.jpg" data-fit="cover">
+            <img src="images/2.jpg" data-fit="cover">
+            <img src="images/3.jpg" data-fit="cover">
+        </div>
+
+
+        <div id="merchant-info">
+            <div class="wrapper">
+                <div class="row-fluid show-grid">
+                    <div class="span12">
+                        <div class="row-fluid show-grid">
+                            <div class="span6">
+                                <div class="merchant-h1">
+                                    О клубе
+                                </div>
+
+                                <p class="merchant-p">
+                                    Многофункциональный спортивный комплекс им.
+                                    В.И. Алексеева - прекрасная возможность уйти 
+                                    от городкой суеты, не уезжая из города, окунуться 
+                                    в мир спорта и отдыха в экологически привлекательной 
+                                    зоне, дышать чистым воздухом.
+                                </p>
+                            </div>
+                            <div class="span6">
+                                <div class="merchant-h1">
+                                    Стоимость
+                                </div>
+
+                                <p class="merchant-p">
+                                    Все желающие, включая старших школьников. 
+                                    Детских групп нет. 
+                                </p>
+
+                                <p class="merchant-p">
+                                    Имеются 4 группы. Стоимость 120 руб /1,5-2 часа. 
+                                </p>
+
+                                <div id="frequency">
+                                    <p class="merchant-p">
+                                        <span class="merchant-h1">
+                                            Занятия по абонементу:
+                                        </span>
+                                        2 раза в неделю - 800 рублей. 
+                                        3 раза в неделю - 1000 рублей.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="wrapper" id="time-table">
+            <div class="row-fluid show-grid">
+                <div class="span12">
+                    <div class="row-fluid show-grid">
+                        <div class="span3">
+                            <div class="times-are">
+                                Times are in <span>
+                                    GMT+07:00 Indochina Time
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="span3 offset1 current-time">
+                            Current Time: 4:27 PM
+                        </div>
+
+                        <div class="span2 offset3" id="time-slider-container">
+                            <div id="time-slider">
+                                <div class="time-slide">
+                                    Aug 27–Sep 3, 2015
+                                </div>
+                                <div class="time-slide">
+                                    Sep 4–Sep 10, 2015
+                                </div>
+                                <div class="time-slide">
+                                    Sep 11–Sep 18, 2015
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function() {
+                var sudoSlider = $("#slider").sudoSlider({
+                    slideCount: 1,
+                    continuous: true,
+                    speed: 300
+                });
+
+                $('.prevBtn').html('<div id="prev-button-block"><i class="fa fa-angle-left"></i></div>');
+                $('.nextBtn').html('<div id="next-button-block"><i class="fa fa-angle-right"></i></div>');
+
+                var sudoSlider2 = $('#time-slider').sudoSlider({
+                    slideCount: 1,
+                    continuous: true,
+                    speed: 300
+                });
+
+                $('#time-slider-container > .controls > .prevBtn').html('<i class="fa fa-angle-left"></i>');
+                $('#time-slider-container > .controls > .nextBtn').html('<i class="fa fa-angle-right"></i>');
+            });
+        </script>
+
+
+        <div class="days-container">
+
+            <div id="popup" data-id="" class="table">
+                <form class="table-cell">
+                    <div class="in-table-cell">
+                        <img src="images/close-popup.png" alt="закрыть" id="close-popup" />
+
+                        <input placeholder="Fullname" />
+                        <input placeholder="Phone" />
+                        <button id="form-button">Book it</button>
+                    </div>
+                </form>
+            </div>
+
+            <div id="unbook" data-id="" class="table">
+                <form class="table-cell">
+                    <div class="in-table-cell">
+                        <img src="images/close-popup.png" alt="закрыть" id="close-unbook" />
+
+                        <div id="unbook-name">Anton Chan</div>
+                        <div id="unbook-phone">Tel: 0972715953</div>
+                        <button id="unbook-form-button">Unbook</button>
+                    </div>
+                </form>
+            </div>
+
+            <script>
+                $(document).ready(function() {
+                    $('.active').click(function() {
+                        $('#unbook').hide();
+                        var columnID = $(this).parent().parent().attr('ID').trim();
+                        var windowWidth = $(window).width();
+                        $('#popup').show();
+
+                        switch (columnID) {
+                            case 'column-1':
+                                $('#popup').attr('data-id', 'popup-1');
+                                if (windowWidth > 767) {
+                                    popupPosition($('#column-2'), $('#column-3'), '#popup');
+                                }
+                                else {
+                                    popupFullPage('#popup');
+                                }
+                                break;
+                            case 'column-2':
+                                $('#popup').attr('data-id', 'popup-2');
+                                if (windowWidth > 767) {
+                                    popupPosition($('#column-3'), $('#column-4'), '#popup');
+                                }
+                                else {
+                                    popupFullPage('#popup');
+                                }
+                                break;
+                            case 'column-3':
+                                $('#popup').attr('data-id', 'popup-3');
+                                if (windowWidth > 767) {
+                                    popupPosition($('#column-1'), $('#column-2'), '#popup');
+                                }
+                                else {
+                                    popupFullPage('#popup');
+                                }
+                                break;
+                            case 'column-4':
+                                $('#popup').attr('data-id', 'popup-4');
+                                if (windowWidth > 767) {
+                                    popupPosition($('#column-2'), $('#column-3'), '#popup');
+                                }
+                                else {
+                                    popupFullPage('#popup');
+                                }
+                                break;
+                            case 'column-5':
+                                $('#popup').attr('data-id', 'popup-5');
+                                if (windowWidth > 767) {
+                                    popupPosition($('#column-6'), $('#column-7'), '#popup');
+                                }
+                                else {
+                                    popupFullPage('#popup');
+                                }
+                                break;
+                            case 'column-6':
+                                $('#popup').attr('data-id', 'popup-6');
+                                if (windowWidth > 767) {
+                                    popupPosition($('#column-4'), $('#column-5'), '#popup');
+                                }
+                                else {
+                                    popupFullPage('#popup');
+                                }
+                                break;
+                            case 'column-7':
+                                $('#popup').attr('data-id', 'popup-7');
+                                if (windowWidth > 767) {
+                                    popupPosition($('#column-5'), $('#column-6'), '#popup');
+                                }
+                                else {
+                                    popupFullPage('#popup');
+                                }
+                                break;
+                            default:
+                                return;
+                                break;
+                        }
+                    });
+
+
+
+
+                    $('.inactive').click(function() {
+                        $('#popup').hide();
+                        var columnID = $(this).parent().parent().attr('ID').trim();
+                        var windowWidth = $(window).width();
+                        $('#unbook').show();
+
+                        switch (columnID) {
+                            case 'column-1':
+                                $('#unbook').attr('data-id', 'popup-1');
+                                if (windowWidth > 767) {
+                                    popupPosition($('#column-2'), $('#column-3'), $('#unbook'));
+                                }
+                                else {
+                                    popupFullPage();
+                                }
+                                break;
+                            case 'column-2':
+                                $('#unbook').attr('data-id', 'popup-2');
+                                if (windowWidth > 767) {
+                                    popupPosition($('#column-3'), $('#column-4'), $('#unbook'));
+                                }
+                                else {
+                                    popupFullPage();
+                                }
+                                break;
+                            case 'column-3':
+                                $('#unbook').attr('data-id', 'popup-3');
+                                if (windowWidth > 767) {
+                                    popupPosition($('#column-1'), $('#column-2'), $('#unbook'));
+                                }
+                                else {
+                                    popupFullPage();
+                                }
+                                break;
+                            case 'column-4':
+                                $('#unbook').attr('data-id', 'popup-4');
+                                if (windowWidth > 767) {
+                                    popupPosition($('#column-2'), $('#column-3'), $('#unbook'));
+                                }
+                                else {
+                                    popupFullPage();
+                                }
+                                break;
+                            case 'column-5':
+                                $('#unbook').attr('data-id', 'popup-5');
+                                if (windowWidth > 767) {
+                                    popupPosition($('#column-6'), $('#column-7'), $('#unbook'));
+                                }
+                                else {
+                                    popupFullPage();
+                                }
+                                break;
+                            case 'column-6':
+                                $('#unbook').attr('data-id', 'popup-6');
+                                if (windowWidth > 767) {
+                                    popupPosition($('#column-4'), $('#column-5'), $('#unbook'));
+                                }
+                                else {
+                                    popupFullPage();
+                                }
+                                break;
+                            case 'column-7':
+                                $('#unbook').attr('data-id', 'popup-7');
+                                if (windowWidth > 767) {
+                                    popupPosition($('#column-5'), $('#column-6'), $('#unbook'));
+                                }
+                                else {
+                                    popupFullPage('#unbook');
+                                }
+                                break;
+                            default:
+                                return;
+                                break;
+                        }
+                    });
+
+
+                    $(window).resize(function() {
+                        if ($(window).width() > 767) {
+                            var popupID = $('#popup').attr('data-id').trim();
+                            switch (popupID) {
+                                case 'popup-1':
+                                    popupPosition($('#column-2'), $('#column-3'), $('#popup'));
+                                    break;
+                                case 'popup-2':
+                                    popupPosition($('#column-3'), $('#column-4'), $('#popup'));
+                                    break;
+                                case 'popup-3':
+                                    popupPosition($('#column-1'), $('#column-2'), $('#popup'));
+                                    break;
+                                case 'popup-4':
+                                    popupPosition($('#column-2'), $('#column-3'), $('#popup'));
+                                    break;
+                                case 'popup-5':
+                                    popupPosition($('#column-6'), $('#column-7'), $('#popup'));
+                                    break;
+                                case 'popup-6':
+                                    popupPosition($('#column-4'), $('#column-5'), $('#popup'));
+                                    break;
+                                case 'popup-7':
+                                    popupPosition($('#column-5'), $('#column-6'), $('#popup'));
+                                    break;
+                                default:
+                                    return;
+                                    break;
+                            }
+                        }
+                        else {
+                            popupFullPage('#popup');
+                        }
+                    });
+
+
+
+
+
+
+                    $(window).resize(function() {
+                        if ($(window).width() > 767) {
+                            var unbook = $('#unbook').attr('data-id').trim();
+                            switch (unbook) {
+                                case 'popup-1':
+                                    popupPosition($('#column-2'), $('#column-3'), $('#unbook'));
+                                    break;
+                                case 'popup-2':
+                                    popupPosition($('#column-3'), $('#column-4'), $('#unbook'));
+                                    break;
+                                case 'popup-3':
+                                    popupPosition($('#column-1'), $('#column-2'), $('#unbook'));
+                                    break;
+                                case 'popup-4':
+                                    popupPosition($('#column-2'), $('#column-3'), $('#unbook'));
+                                    break;
+                                case 'popup-5':
+                                    popupPosition($('#column-6'), $('#column-7'), $('#unbook'));
+                                    break;
+                                case 'popup-6':
+                                    popupPosition($('#column-4'), $('#column-5'), $('#unbook'));
+                                    break;
+                                case 'popup-7':
+                                    popupPosition($('#column-5'), $('#column-6'), $('#unbook'));
+                                    break;
+                                default:
+                                    return;
+                                    break;
+                            }
+                        }
+                        else {
+                            popupFullPage('#unbook');
+                        }
+                    });
+
+                    $('#close-popup').click(function() {
+                        $('#popup').hide();
+                    });
+
+                    $('#close-unbook').click(function() {
+                        $('#unbook').hide();
+                    });
+
+
+
+
+                    $('.active, #form-button, #unbook-form-button').hover(function() {
+                        $(this).animate({
+                            backgroundColor: "#fff",
+                            color: "#68c19a"
+                        }, 200);
+                    }, function() {
+                        $(this).animate({
+                            backgroundColor: "#68c19a",
+                            color: "#fff"
+                        }, 200);
+                    });
+
+
+                    $('.inactive').hover(function() {
+                        $(this).animate({
+                            backgroundColor: "#469874",
+                            color: "#fff"
+                        }, 200);
+                    }, function() {
+                        $(this).animate({
+                            backgroundColor: "rgb(104, 193, 154)",
+                            color: "#469874"
+                        }, 200);
+                    });
+
+
+                });
+
+
+
+                function popupFullPage(popup) {
+                    $(popup).addClass('popup-fixed');
+                }
+
+
+
+                function popupPosition(col1, col2, popup) {
+                    $(popup).removeClass('popup-fixed');
+                    var width = col1.width() + col2.width();
+                    var marginTop = $('.name-date-container').height();
+                    var height = $('.days-container').height() - marginTop;
+                    var minusMargin = 0;
+                    if ($(window).width() > 1600) {
+                        minusMargin = ($(window).width() - 1600) / 2;
+                    }
+                    var marginLeft = col1.offset().left - minusMargin;
+
+                    $(popup).css({'width': width, 'height': height - 69, 'margin-top': marginTop + 32, 'margin-left': marginLeft});
+                    $(popup).children('form').css({'height': height - 70, 'width': width});
+                }
+            </script>
+
+
+
+            <!-- 1 колонка -->
+            <div class="day-column left" id="column-1">
+                <div class="name-date-container">
+                    <div class="day-name">
+                        Thu
+                    </div>
+                    <div class="day-date">
+                        Aug 27
+                    </div>
+                </div>
+
+
+                <div class="time-blocks-container">
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+
+                    <div class="time inactive big table">
+                        <div class="table-cell">
+                            <div class="in-table-cell">
+                                <div class="time-container">3:00 PM</div>
+                                <div class="time-container">6:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                    <div class="time inactive small">
+                        <div class="time-container">6:00 AM</div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 1 колонка -->
+
+            <!-- 2 колонка -->
+            <div class="day-column left" id="column-2">
+
+                <div class="name-date-container">
+                    <div class="day-name">
+                        Fri
+                    </div>
+                    <div class="day-date">
+                        Aug 28
+                    </div>
+                </div>
+
+                <div class="time-blocks-container">
+                    <div class="time inactive big table">
+                        <div class="table-cell">
+                            <div class="in-table-cell">
+                                <div class="time-container">3:00 PM</div>
+                                <div class="time-container">6:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+
+
+                    <div class="time inactive small">
+                        <div class="time-container">6:00 AM</div>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 колонка -->
+
+            <!-- 3 колонка -->
+            <div class="day-column left" id="column-3">
+
+                <div class="name-date-container">
+                    <div class="day-name">
+                        Sat
+                    </div>
+                    <div class="day-date">
+                        Aug 29
+                    </div>
+                </div>
+
+                <div class="time-blocks-container">
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+
+                    <div class="time inactive small">
+                        <div class="time-container">6:00 AM</div>
+                    </div>
+                    <div class="time inactive big table">
+                        <div class="table-cell">
+                            <div class="in-table-cell">
+                                <div class="time-container">3:00 PM</div>
+                                <div class="time-container">6:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- 3 колонка -->
+
+
+            <!-- 4 колонка -->
+            <div class="day-column left" id="column-4">
+
+                <div class="name-date-container">
+                    <div class="day-name">
+                        Mon
+                    </div>
+                    <div class="day-date">
+                        Aug 31
+                    </div>
+                </div>
+
+                <div class="time-blocks-container">
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+
+                    <div class="time inactive big table">
+                        <div class="table-cell">
+                            <div class="in-table-cell">
+                                <div class="time-container">3:00 PM</div>
+                                <div class="time-container">6:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+
+                    <div class="time inactive small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- 4 колонка -->
+
+
+
+            <div class="day-column left" id="column-5">
+
+                <div class="name-date-container">
+                    <div class="day-name">
+                        Tue
+                    </div>
+                    <div class="day-date">
+                        Sep 1
+                    </div>
+                </div>
+
+                <div class="time-blocks-container">
+                    <div class="time inactive big table">
+                        <div class="table-cell">
+                            <div class="in-table-cell">
+                                <div class="time-container">3:00 PM</div>
+                                <div class="time-container">6:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+
+
+                    <div class="time inactive small">
+                        <div class="time-container">6:00 AM</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 6 колонка -->
+            <div class="day-column last-column left" id="column-6">
+
+                <div class="name-date-container">
+                    <div class="day-name">
+                        Wed
+                    </div>
+                    <div class="day-date">
+                        Sep 2
+                    </div>
+                </div>
+
+                <div class="time-blocks-container">
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+
+                    <div class="time inactive small">
+                        <div class="time-container">6:00 AM</div>
+                    </div>
+                    <div class="time inactive big table">
+                        <div class="table-cell">
+                            <div class="in-table-cell">
+                                <div class="time-container">3:00 PM</div>
+                                <div class="time-container">6:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- 6 колонка -->
+
+
+            <!-- 7 колонка -->
+            <div class="day-column last-column left" id="column-7">
+
+                <div class="name-date-container">
+                    <div class="day-name">
+                        Thu
+                    </div>
+                    <div class="day-date">
+                        Sep 3
+                    </div>
+                </div>
+
+                <div class="time-blocks-container">
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+
+                    <div class="time inactive big table">
+                        <div class="table-cell">
+                            <div class="in-table-cell">
+                                <div class="time-container">3:00 PM</div>
+                                <div class="time-container">6:00 PM</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                    <div class="time active small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+
+                    <div class="time inactive small">
+                        <div class="time-container">3:00 AM</div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- 7 колонка -->
+            <div class="clear"></div>
+
+        </div>
+
+        <div id="book-popup">
+
+            <div id="close-book-popup">
+                <i class="fa fa-times"></i>
+            </div>
+
+            <div class="header">
+                Бронирование площадки на 29 августа, пятница в 12:00 am
+            </div>
+            <div class="comment">
+                Подтверждение брони по СМС-коду, отправленному на ваш телефон. 
+                Информация в разделе Мои бронирования.
+            </div>
+
+            <form id="book-popup-form">
+                <div class="book-popup-column-left left">
+                    <label for="book-popup-phone" id="book-popup-phone-label">
+                        Телефон
+                    </label>
+                </div>
+                <div class="book-popup-column-right left">
+                    <input name="phone" id="book-popup-phone" placeholder="+65 1234 561 123"/>
+                    <button class="book-it-button" onclick="return false;">
+                        Book it
+                    </button>
+                </div>
+                <div class="clear"></div>
+
+            </form>
+
+        </div>
+
+        <div id="black-doodle"></div>
+
+
+        <script>
+            $(document).ready(function() {
+
+                $('#book-it-button').click(function() {
+                    if (!$(this).hasClass('active-book-it-button')) {
+                        $(this).removeClass('active-book-it-button');
+                        $('#black-doodle').fadeIn(400);
+                        setTimeout(function() {
+                            $('#book-popup').fadeIn(400);
+                        }, 450);
+                    }
+                    else {
+                        $(this).addClass('active-book-it-button');
+                    }
+                });
+
+                $('#close-book-popup').click(function() {
+                    $('#book-it-button').removeClass('active-book-it-button');
+                    $('#book-popup').fadeOut(400);
+                    setTimeout(function() {
+                        $('#black-doodle').fadeOut(400);
+                    }, 450);
+                });
+
+
+
+                $(function() {
+                    //var height = $(window).height();
+                    //if (height < 550) {
+                    $('.fotorama').fotorama({width: $(window).width(), height: 500});
+                    //}
+                    //else {
+                    //    $('.fotorama').fotorama({width: $(window).width(), height: 550});
+                    //}
+
+                });
+
+                var $window = $(window);
+                function fullScreen() {
+                    var windowWidth = $window.width();
+                    var windowHeight = $window.height();
+                    $('.fotorama').trigger('rescale', [windowWidth, windowHeight]);
+                }
+
+                fullScreen();
+                $window.resize(function() {
+                    fullScreen();
+                });
+
+
+
+                //задать размер больших контейнеров
+                function bigClassSize() {
+                    var height = $('.small').outerHeight() + 11;
+                    //var width = $('.small').outerWidth();
+
+                    $('.big').each(function() {
+                        var width = $(this).parent().width();
+                        $(this).css({'height': height * 3 - 13, 'width': width - 2});
+                    });
+                }
+                bigClassSize();
+
+
+                /* function bodyMarginTop() {
+                 var height = $('#header').outerHeight();
+                 
+                 $('body').css({'margin-top': height});
+                 }
+                 
+                 bodyMarginTop();*/
+
+
+                $(window).resize(function() {
+                    bigClassSize();
+                    //bodyMarginTop();
+                });
+
+            });
+        </script>
+    </body>
+</html>

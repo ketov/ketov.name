@@ -1,0 +1,327 @@
+#project-bg-container{
+    width: 100%;
+    max-width: 1900px;   
+    margin: 0 auto;
+    background: url('../images/projects-top-bg.png') no-repeat center center;
+    background-size: cover;
+    padding: 50px 0 76px 0;
+    min-width: 940px;
+}
+
+.percent{
+    width: 155px;
+    height: 155px;
+    border: 2px solid #fff;
+    border-radius: 120px;
+}
+
+#speed{
+    margin-left: 37px;
+	display:none;
+	}
+
+#mistakes{
+    margin-left: 6%;
+	display: none;
+}
+
+.diagram{
+    font-size: 365%;
+    padding-top: 35px;
+    padding-left: 23px;
+}
+
+#percent-40-svg, #percent-25-svg{
+    margin-top: -117px;
+    margin-left: 2px;
+}
+
+#your-project-products{
+    background: #f25350;
+    color: #fff;
+    font-family: RobotoRegular;
+    padding: 10px 20px 10px 20px;
+    font-size: 85%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: -30px;
+    margin-right: 37px;
+    
+}
+
+#your-project-products:hover{
+    background: #ff6360;
+}
+
+
+#projects-item{
+    color: #f25350;
+    cursor: default;
+}
+
+#menu{
+    padding-bottom: 107px;
+}
+
+#projects-near-charts{
+    width: 46%;
+    margin-right: 5%;
+}
+
+#projects-near-charts-header{
+    font-size: 300%;
+    margin-top: -14px;
+    line-height: 130%;
+}
+
+.percent-header,
+.percent-text{
+    text-align: center;
+}
+
+.percent-header{
+    font-size: 140%;
+    margin-top: 15px;
+}
+
+.percent-text{
+    font-size: 80%;
+    margin-top: 4px;
+}
+
+#projects-near-charts-text{
+    font-size: 95%;
+    margin-top: 17px;
+    line-height: 160%;
+}
+
+#project-info-right{
+    text-align: left;
+    width: 21%;
+    padding-bottom: 25px;
+}
+
+#project-info-left{
+    width: 72%;
+    margin-left: 37px;
+}
+
+.without-underline{
+    text-decoration: none;
+}
+
+.blue-link{
+    color: #3283bd;
+    border-bottom: 1px solid rgba(50, 131, 189, 0.6);
+    font-size: 84%;
+    display: inline;
+    line-height: 110%;
+}
+
+.blue-link:hover{
+    color: #f25350;
+    border-bottom: 1px solid rgba(242, 83, 80, 0.6);
+}
+
+#download-case{
+    color: #777777;
+    background: url(../images/download-case.png) no-repeat;
+    padding-left: 52px;
+    margin-top: 90px;
+}
+
+#site-bank{
+    background: url(../images/site-bank.png) 0px 6px no-repeat;
+    padding-left: 34px;
+    margin-top: 41px;
+}
+
+#pdf{
+    font-size: 85%;
+    margin-top: 2px;
+    padding-bottom: 3px;
+}
+
+#indicators{
+    line-height: 130%;
+    margin-top: 15px;
+    padding-left: 34px;
+    background: url(../images/indicators.png) 0px 7px no-repeat;
+}
+
+#statistics-of-efficiency{
+    line-height: 130%;
+    margin-top: 15px;
+    padding-left: 34px;
+    background: url(../images/statistics-of-efficiency.png) 0px 7px no-repeat;
+}
+
+#project-worked{
+    font-size: 85%;
+    margin-top: 46px;
+    margin-bottom: 15px;
+}
+
+.project-worked-profession{
+    font-size: 70%;
+    margin-top: 9px;
+}
+
+.project-worked-name{
+    font-size: 70%;
+    margin-top: 3px;
+}
+
+.project-info-right-fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.loupe{
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 100px;
+    border: 3px solid #f23a37;
+}
+
+.project-info-left-header{
+    font-family: RobotoBold;
+    color: #121212;
+    line-height: 135%;
+    width: 570px;
+    font-size: 235%;
+    margin-top: 60px;
+    margin-bottom: 27px;
+}
+
+.project-info-left-text{
+    color: #303030;
+    font-family: RobotoRegular;
+    font-size: 110%;
+    width: 630px;
+    line-height: 175%;
+    margin-top: 25px;
+}
+
+.project-info-left-text > p{
+    margin: 0;
+    margin-top: 19px;
+}
+
+#as-it-became-image,
+#as-it-was-image{
+    margin-top: 55px;
+    margin-left: 90px;
+}
+
+.project-info-left-subtitle{
+    font-family: RobotoMedium;
+    color: #000;
+    font-size: 110%;
+    line-height: 130%;
+    margin-top: 39px;
+    margin-bottom: 24px;
+}
+
+.step-header{
+    color: #1278b8;
+    border-bottom: 1px dashed #1278b8;
+    font-family: RobotoRegular;
+    font-size: 85%;
+    height: 17px;
+    margin-top: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.step-header:hover{
+    color:#f25350;
+    border-bottom: 1px dashed #f25350;
+}
+
+.step-number{
+    color: #197cba;
+
+    margin-top: 0px;
+    border-radius: 18px;
+    background: #fff;
+    border: 1px solid #197cba;
+    width: 15px;
+    height: 21px;
+    padding-top: 2px;
+    padding-left: 7px;
+}
+
+.step{
+    background: url('../images/step-container.png') 12px 0px repeat-y;
+}
+
+.step-text{
+    font-family: RobotoRegular;
+    color: #000000;
+    margin-left: 35px;
+    font-size: 79%;
+    width: 486px;
+    margin-top: 4px;
+}
+
+#footer{
+    margin-top: 98px;
+}
+
+#step-number-10{
+    width: 19px;
+    padding-left: 4px;
+}
+
+.step-number{
+    font-family: RobotoRegular;
+    font-size: 90%;
+}
+
+.project-result-column{
+    width: 300px;
+}
+
+#result-1{
+    background: url('../images/result-1.png') no-repeat;
+    padding-left: 53px;
+}
+
+#result-2{
+    background: url('../images/result-2.png') no-repeat;
+    padding-left: 66px;
+}
+
+#result-3{
+    background: url('../images/result-3.png') no-repeat;
+    padding-left: 52px;
+}
+
+#result-4{
+    background: url('../images/result-4.png') no-repeat;
+    padding-left: 67px;
+}
+
+#project-result-column-2{
+    margin-left: 60px;
+}
+
+#result-1,
+#result-2,
+#result-3,
+#result-4{
+    font-family: RobotoRegular;
+    font-size: 90%;
+}
+
+#result-3, #result-4{
+    margin-top: 31px;
+}
+
+#project-results-header{
+    font-size: 200%;
+    margin-top: 90px;
+    margin-bottom: 81px;
+}

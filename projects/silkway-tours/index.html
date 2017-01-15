@@ -1,0 +1,1362 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Мебельные туры в Китай</title>
+        <meta name="description" content="В Китае можно купить мебель в 2 раза дешевле, чем в России. Мы организуем туры за мебелью в Китай">
+        <meta name="keywords" content="туры в Китай за мебелью, покупка мебели в Китае, купить мебель в Китае, мебель в Санкт-Петербурге, купить мебель в Санкт-Петербурге">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+        <!-- <meta name="msapplication-TileColor" content="#ffffff">
+         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+         <meta name="theme-color" content="#ffffff">-->
+
+
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/GUI.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="css/fotorama.css" rel="stylesheet">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/myLib.js"></script>
+        <script src="js/GUI.js"></script>
+        <script src="js/jquery-ui.min.js"></script>     
+        <script src="js/jquery.mask.min.js"></script>
+        <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script src="js/fotorama.js" type="text/javascript"></script>
+    </head>
+    <body>
+
+        <div id="learn-more-container">
+
+            <div id="close-learn-more-form" class="close-form">
+                <i class="fa fa-times"></i>
+            </div>
+
+            <form id="learn-more-form">
+
+                <div class="header">
+                    Остались вопросы?
+                </div>
+                <div id="learn-more-form-comment">
+                    Оставьте свои контактные данные,<br />
+                    наш менеджер свяжется с вами в течение часа
+                </div>
+
+
+                <input placeholder="Имя" id="learn-more-form-name"/>
+
+
+                <input placeholder="Телефон" id="learn-more-form-phone" />
+                <div class="error-block" id="learn-more-form-enter-phone"></div>
+
+                <div class="success" id="learn-more-form-success"></div>
+
+                <button class="yellow-button" id="learn-more-form-button" type="submit" name="submit" onclick="return false;">
+                    Отправить
+                </button>
+
+            </form>
+        </div><!-- learn-more-container -->
+
+
+
+
+
+        <div id="tour-container">
+
+            <div id="close-tour-form" class="close-form">
+                <i class="fa fa-times"></i>
+            </div>
+
+            <form id="tour-form">
+
+                <div class="header">
+                    Заявка на тур
+                </div>
+                <!--<div id="learn-more-form-comment">
+                    Оставьте свои контактные данные,<br />
+                    менеджер свяжется с вами в течение часа
+                </div>-->
+
+
+                <input placeholder="Имя" id="tour-form-name"/>
+
+
+                <input placeholder="Телефон" id="tour-form-phone" />
+                <div class="error-block" id="tour-form-enter-phone"></div>
+
+                <div class="success" id="tour-form-success"></div>
+
+                <button class="yellow-button" id="tour-form-button" type="submit" name="submit" onclick="return false;">
+                    Отправить
+                </button>
+
+            </form>
+        </div><!-- tour-container -->
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="black-bg"></div>
+
+        <div id="menu" class="fixed-menu">
+            <ul>
+
+                <li class="left menu-item" id="logo">
+                    <img src="images/logo.png" alt="Антон Козуб" />
+                </li>
+
+                <li class="right" id="menu-phone">
+                    <a href="tel:+78129230234">
+                        <span class="menu-phone-regular">8 812</span> <span class="menu-phone-bold">923-02-34</span>
+                    </a>
+
+                <li class="clear"></li>
+            </ul>
+
+            <div id="menu-items-container">
+                <div id="in-menu-items-container">
+                    <div class="menu-item active left" id="menu-compare">
+                        Сравните цены
+                    </div>
+                    <div class="menu-item active left" id="menu-approach">
+                        Наш подход
+                    </div>
+                    <div class="menu-item active left" id="menu-reviews">
+                        Отзывы
+                    </div>
+                    <div class="menu-item active left" id="menu-request">
+                        Оставить заявку
+                    </div>
+                    <div class="clear"></div>
+
+                </div>
+            </div>
+
+        </div><!-- menu -->
+
+        <!-- работа с блоком, содержащим пункты меню -->
+        <script>
+            $(document).ready(function() {
+                function menuContainer() {
+                    var block = $('#in-menu-items-container');
+                    var margin = $('.wrapper').width() * 0.03;
+
+                    var compare = $('#menu-compare');
+                    var approach = $('#menu-approach');
+                    var reviews = $('#menu-reviews');
+                    var request = $('#menu-request');
+
+
+                    if ($(window).width() < 1020) {
+                        compare.removeClass('active');
+                        compare.hide();
+                    }
+                    else {
+                        compare.addClass('active');
+                        compare.show();
+                    }
+
+                    if ($(window).width() < 820) {
+                        approach.removeClass('active');
+                        approach.hide();
+                    }
+                    else {
+                        approach.addClass('active');
+                        approach.show();
+                    }
+
+                    if ($(window).width() < 620) {
+                        reviews.removeClass('active');
+                        request.removeClass('active');
+                        reviews.hide();
+                        request.hide();
+                    }
+                    else {
+                        reviews.addClass('active');
+                        request.addClass('active');
+                        reviews.show();
+                        request.show();
+                    }
+
+                    var full_weight = 0;
+                    block.children('.menu-item.active').each(function() {
+                        full_weight += $(this).width();
+                        full_weight += margin;
+                        $(this).css({'margin-right': margin});
+                    });
+
+
+                    block.css({'width': full_weight + 20});
+
+                }
+
+                menuContainer();
+                $(window).resize(function() {
+                    menuContainer();
+                });
+
+            });
+        </script>
+
+        <div id="first-block" class="table">
+            <div class="table-cell">
+                <div class="in-table-cell">
+                    <h1 class="header">Мебель европейского качества<br />
+                        в 2 раза дешевле, чем в салоне</h1>
+                    <div class="first-block-comment">
+                        <p class="after-header-comment">Организуем поездку по магазинам и мебельным фабрикам 
+                            Китая, где вы найдете мебель, о которой всегда
+                            мечтали в 2 раза дешевле, чем в Санкт-Петербурге.</p>
+                    </div>
+                    <button class="yellow-button" id="first-block-button">
+                        Узнать подробности
+                    </button>
+                </div>
+            </div>
+
+        </div><!-- first-block -->
+
+
+        <div class="screen-block">
+            <div class="header">
+                Почему так дёшево?
+            </div>
+            <p class="after-header-comment">
+                Цена на мебель формируется не только за счет её качества,
+                но и за счет трат на перевозку, оплату аренды салона, 
+                зарплат менеджеров, а также влияния бренда.
+            </p>
+
+
+
+            <div class="wrapper" id="advantages">
+                <div class="row-fluid show-grid">
+                    <div class="span12">
+                        <div class="row-fluid show-grid">
+                            <div class="span4 advantage" id="advantage-price">
+                                <div class="advantage-header">
+                                    Низкие
+                                    цены
+                                </div>
+                                <p class="advantage-text">
+                                    Экономия ваших средств при покупке мебели 
+                                    в Китае может достигать 70% с учетом 
+                                    проживания, посещения фабрик, 
+                                    транспортировки вашего заказа и 
+                                    таможенного оформления. 
+                                </p>
+                            </div>
+
+                            <div class="span4 advantage" id="advantage-brand">
+                                <div class="advantage-header">
+                                    Без влияния брендов
+                                </div>
+                                <p class="advantage-text">
+                                    Покупая мебель в Китае, вы точно уверены, 
+                                    что не переплачиваете за бренд. Будьте 
+                                    уверены, что вам не продадут китайскую 
+                                    мебель по цене итальянской.
+                                </p>
+                            </div>
+
+                            <div class="span4 advantage" id="advantage-without-manager">
+                                <div class="advantage-header">
+                                    Без салона или менеджеров
+                                </div>
+                                <p class="advantage-text">
+                                    В стоимость вашего спального гарнитура
+                                    или шкафа купе не будут включены затраты 
+                                    на аренду салона, зарплату персонала и 
+                                    прибыль генерального директора.
+                                </p>
+                            </div>
+
+
+                        </div>           
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="row-fluid show-grid">
+                    <div class="span12">
+                        <div class="row-fluid show-grid">
+                            <div class="span4 advantage" id="advantage-quality">
+                                <div class="advantage-header">
+                                    Высокое качество
+                                </div>
+                                <p class="advantage-text">
+                                    7 из 10 известных европейских брендов уже 
+                                    перенесли свое производство в Китай. 
+                                    Поэтому местная мебель соответствует 
+                                    всем общепринятым стандартам качества.
+                                </p>
+                            </div>
+
+                            <div class="span4 advantage" id="advantage-comfort">
+                                <div class="advantage-header">
+                                    Простота и комфорт
+                                </div>
+                                <p class="advantage-text">
+                                    Наши специалисты возьмут на себя вопросы 
+                                    транспортировки и таможенных оформлений, 
+                                    помогут подобрать отель, купить билеты и 
+                                    сделать визу.  
+                                </p>
+                            </div>
+
+                            <div class="span4 advantage" id="advantage-trip">
+                                <div class="advantage-header">
+                                    Увлекательная поездка
+                                </div>
+                                <p class="advantage-text">
+                                    Китай — одна из самых интересных стран 
+                                    мира. Посетите древнейшие 
+                                    достопримечательности Востока и последние 
+                                    достижения цивилизации. Отведайте 
+                                    вкуснейшие блюда китайской кухни. 
+                                </p>
+                            </div>
+
+
+                        </div>           
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div id="slider">
+            <div class="wrapper">
+                <div id="slider-image-container">
+
+                </div>
+
+
+            </div>
+        </div><!-- slider -->
+
+
+
+        <div id="shopping-centers-navigation">
+            <div class="wrapper">
+
+
+                <div class="shopping-centers-navigation-item left active-shopping-center-container" id="luvr">
+                    <img src="images/slider-pointer.png" alt="указатель" class="slider-pointer"/>
+                    <div class="shopping-centers-navigation-header active-shopping-center" data-image="images/luvr.JPG">
+                        Лувр
+                    </div>
+                    <div class="shopping-centers-navigation-text">
+                        Лувр является крупнейшим мебельным торговым 
+                        центром не только в Китае, но и во всем мире. 
+                        Такого количества качественной мебели разнообразных 
+                        стилей вы не найдете нигде: ни в Москве, ни в Париже, 
+                        ни Нью-Йорке.
+                    </div>
+                </div>
+
+
+                <div class="shopping-centers-navigation-item left" id="keramik">
+                    <img src="images/slider-pointer.png" alt="указатель" class="slider-pointer"/>
+
+                    <div class="shopping-centers-navigation-header" data-image="images/keramikcity.jpg">
+                        Керамик сити
+                    </div>
+                    <div class="shopping-centers-navigation-text">
+                        Торговый комплекс расположен в самом сердце 
+                        Китая. Это крупный и престижный центр керамики 
+                        в городе Фошань. Основная продукция: все виды 
+                        плитки, сантехника, санфаянс, декоративные 
+                        керамические изделия.
+                    </div>
+                </div>
+
+                <div class="shopping-centers-navigation-item left" id="denschichen">
+                    <img src="images/slider-pointer.png" alt="указатель" class="slider-pointer"/>
+
+                    <div class="shopping-centers-navigation-header" data-image="images/denshichen1.jpg">
+                        <!--Деншичхэн-->
+                        Макаллин
+                    </div>
+                    <div class="shopping-centers-navigation-text">
+                        <!--Расположен в Гучжэне, где производится 65% всего 
+                        объема выпускаемых в Китае светильников, фонарей 
+                        и фитингов. Вы сможете приобрести хрустальные 
+                        люстры, настольные и потолочные лампы, люстры для 
+                        гостиниц и ресторанов-->
+                        Это второй центр ”Макаллин», открывшийся в Гуанчжоу 
+                        12 ноября 2011. Площадь нового центра составляет 
+                        60 000 м2, всего 8 этажей. Ценовая категория – 
+                        также как и в первом центре – средняя и выше среднего.
+                    </div>
+                </div>
+
+
+                <div class="clear"></div>
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+        <div id="compare">
+            <div class="wrapper">
+                <div class="header">
+                    Сравните сами
+                </div>
+                <p class="after-header-comment">
+                    Мы постоянно следим за ценами в Китае и Санкт-Петербурге.
+                    Сравните цены на самые покупаемые предметы мебели:
+                    кухонный гарнитур, диван и кровать.
+                </p>
+
+
+                <div id="compare-slides-container">
+                    <div class="compare-slide absolute compare-slide-active" id="compare-slide-1">
+                        <div class="compare-point-container" id="compare-point-1">
+                            <div class="table">
+                                <div class="table-cell">
+                                    <div class="compare-point in-table-cell">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="compare-plate" id="compare-plate-1">
+                            - кухонный шкаф длиной 5 метров<br />
+                            - комплект стульев<br />
+                            - стол со столешницей из керамогранита<br />
+                            <div class="compare-plate-header">
+                                Цена комплекта:
+                            </div>
+                            <div class="compare-plate-price">
+                                15445$ в России и 7900$ в Китае
+                            </div>
+                        </div>
+
+                        <img src="images/kitchen.jpg" alt="кухня" />
+                    </div>
+                    <div class="compare-slide absolute opacity" id="compare-slide-2">
+
+
+                        <div class="compare-point-container" id="compare-point-2">
+                            <div class="table">
+                                <div class="table-cell">
+                                    <div class="compare-point in-table-cell">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="compare-plate" id="compare-plate-2">
+                            - 2х местный диван<br />
+                            - 2 кресла<br />
+                            - журнальный стол<br />
+                            - книжный шкаф<br />
+                            - тумба<br />
+                            <div class="compare-plate-header">
+                                Цена комплекта:
+                            </div>
+                            <div class="compare-plate-price">
+                                8400$ в России и 5900$ в Китае
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                        <img src="images/living-room.jpg" alt="гостиная" />
+                    </div>
+                    <div class="compare-slide absolute opacity" id="compare-slide-3">
+
+
+                        <div class="compare-point-container" id="compare-point-3">
+                            <div class="table">
+                                <div class="table-cell">
+                                    <div class="compare-point in-table-cell">
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="compare-plate" id="compare-plate-3">
+                            - 2х спальная кровать<br />
+                            - 2 прикроватные тумбы<br />
+                            - письменный стол<br />
+                            - комод<br />
+                            <div class="compare-plate-header">
+                                Цена комплекта:
+                            </div>
+                            <div class="compare-plate-price">
+                                6300$ в России и 4000$ в Китае
+                            </div>
+                        </div>
+
+
+                        <img src="images/bedroom.jpg" alt="спальная" />
+                    </div>
+                    <div class="compare-slide">
+                        <img src="images/doodle.jpg" alt="болванка" />
+                    </div>
+                </div>
+
+                <div id="compare-slider-navigation">
+                    <div class="compare-slide-tab left compare-slider-active-tab" data-slide="#compare-slide-1">
+                        Кухня
+                    </div>
+                    <div class="compare-slide-tab left compare-slider-not-active-tab" data-slide="#compare-slide-2">
+                        Гостиная
+                    </div>
+                    <div class="compare-slide-tab left compare-slider-not-active-tab" data-slide="#compare-slide-3">
+                        Спальня
+                    </div>
+
+                    <div class="clear"></div>
+
+                </div>
+            </div>
+        </div><!-- compare -->
+
+
+        <div id="how">
+            <div class="wrapper">
+
+                <div class="header">
+                    Как пройдёт тур
+                </div>
+                <p class="after-header-comment">
+                    Узнайте все подробности нашего предложения. <br />
+                    Если у вас возникнут вопросы, просто позвоните нам<br />
+                    по телефону 8 (812) 923-02-34.
+                </p>
+
+
+                <div class="row-fluid show-grid">
+                    <div class="span12">
+                        <div class="row-fluid show-grid">
+
+                            <div class="span10" id="how-1">
+                                <div class="how-text">
+                                    <img src="images/1-number.png" alt="цифра" class="how-number"/>
+                                    <div class="how-header">
+                                        Санкт-Петербург
+                                    </div>
+                                    <p class="how-p">
+                                        Оставьте заявку на тур на сайте или 
+                                        позвоните нам. Мы сформируем для вас 
+                                        индивидуальную программу мебельного 
+                                        тура по вашим требованиям, свяжем с 
+                                        гидом в Китае, поможем выбрать отель и подпишем договор.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="span2 left-130">
+                                <div id="number-15000">
+                                    630$
+                                </div>
+                                <p id="text-15000">
+                                    Стандартный мебельный тур на 5 дней.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="row-fluid show-grid">
+
+                            <div class="span8" id="how-2">
+                                <div class="how-text">
+                                    
+                                    
+                                    
+                                    <img src="images/2-number.png" alt="цифра" class="how-number"/>
+                                    <div class="how-header">
+                                        Китай, Гуанчжоу
+                                    </div>
+                                    <p class="how-p">
+                                        Помогаем с трансфером из аэропорта в 
+                                        выбранную вами гостиницу. После 
+                                        регистрации и заселения вы познакомитесь 
+                                        с нашим представителем в Китае. 
+                                    </p>
+
+                                    <p class="how-p">
+                                        Сопровождение по всем мебельным центрам, 
+                                        которые были запланированы в программе 
+                                        тура, помощь в выборе товара и обсуждение 
+                                        с производителем индивидуальных условий.
+                                    </p>
+
+                                    <p class="how-p">
+                                        После того как вы определись с покупками 
+                                        последует оформление заказа, заключение 
+                                        договора с производителями, определение 
+                                        сроков, внесение предоплаты, составление 
+                                        спецификации.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="span4 left-130">
+                                <img src="images/guide.png" alt="гид" />
+                                <div class="guide-header">
+                                    Андрей Сон
+                                </div>
+
+                                <p class="guide-text">
+                                    Наш представитель. Живёт и работает 
+                                    в Китае 7 лет. Будет сопровождать 
+                                    и помогать на всех этапах тура.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+
+
+                        <div class="row-fluid show-grid">
+
+                            <div class="span10" id="how-3">
+                                <div class="how-text">
+                                    
+                                    
+                                    <img src="images/3-number.png" alt="цифра" class="how-number"/>
+                                    <div class="how-header">
+                                        Контроль исполнения заказа
+                                    </div>
+                                    <p class="how-p">
+                                        Контролируем сроки и качество исполнения 
+                                        вашего заказа. После готовности мебели 
+                                        наши менеджеры проверят товар на 
+                                        возможность брака, сделают детальное 
+                                        описание каждой единицы товарас 
+                                        указанием материала, веса и объема, 
+                                        определят стоимость доставки и таможенного 
+                                        оформления груза.
+                                    </p>
+
+                                    <p class="how-p">
+                                        После выхода груза из порта Гуанчжоу 
+                                        наши менеджеры отследят каждый этап 
+                                        логистической цепочки, консолидацию груза, 
+                                        экспортное оформление, безопасную перевозку, 
+                                        осуществят доставку до указанного адреса.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="span2 left-130">
+                                <img src="images/insurance.png" alt="страхование" />
+                                <div class="insurance-header">
+                                    Страхуем грузы
+                                </div>
+
+                                <p class="insurance-text">
+                                    Застрахуйте мебель на пути 
+                                    из Китая в Санкт-Петербург.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div><!-- how -->
+
+
+
+        <div id="tour-application-block">
+            <button id="tour-application-button" class="yellow-button">
+                Оставить заявку на тур
+            </button>
+
+            <div id="plane">
+                <img src="images/plane.png" alt="самолёт" />
+            </div>
+
+        </div>
+
+
+
+
+
+        <div id="reviews">
+
+            <div class="header">
+                Впечатления клиентов
+            </div>
+
+            <div class="wrapper">
+                <div class="row-fluid show-grid">
+                    <div class="span12">
+                        <div class="row-fluid show-grid active-review">
+
+                            <div class="span8">
+                                <div class="review-video-container">
+                                    <iframe src="https://www.youtube.com/embed/330JzXIXQI4" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+                            <div class="span4 review-comment">
+                                <div class="review-comment-header">
+                                    Екатерина
+                                </div>
+                                <p class="review-comment-text">
+                                    Агент по недвижимости
+                                </p>
+
+                                <div class="review-comment-bought-header">
+                                    Приобрела в Китае
+                                </div>
+                                <ul class="review-comment-bought-list">
+                                    <li>— кухонный гарнитур</li>
+                                    <li>— обеденный стол</li>
+                                    <li>— стулья</li>
+                                    <li>— мягкую мебель в гостиную</li>
+                                    <li>— двуспальную кровать</li>
+                                    <li>— комод</li>
+                                    <li>— 2 прикроватные тумбы</li>
+                                    <li>— мебель в детскую комнату</li>
+                                </ul>
+
+                                <!--<div class="review-comment-cost-header">
+                                    Стоимость покупки
+                                </div>
+                                <p class="review-comment-text">
+                                    25 000$
+                                </p>
+
+                                <div class="review-comment-tour-cost-header">
+                                    Стоимость тура
+                                </div>
+                                <p class="review-comment-text">
+                                    630$
+                                </p>-->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="reviews-border"></div>
+
+
+
+                <div id="reviews-not-active">
+                    <div class="row-fluid show-grid">
+                        <div class="span12">
+                            <div class="row-fluid show-grid active-review">
+
+                                <div class="span8">
+                                    <div class="review-video-container">
+                                        <iframe src="https://www.youtube.com/embed/7TEQWhhqCo4" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+
+                                <div class="span4 review-comment">
+                                    <div class="review-comment-header">
+                                        Станислав
+                                    </div>
+                                    <p class="review-comment-text">
+                                        Программист, 29 лет
+                                    </p>
+
+                                    <div class="review-comment-bought-header">
+                                        Приобрёл в Китае
+                                    </div>
+                                    <ul class="review-comment-bought-list">
+                                        <li>— мебель для гостиной</li>
+                                        <li>— мебель в детскую комнату</li>
+                                        <li>— гарнитур в спальную комнату</li>
+                                        <li>— сантехнику</li>
+                                        <li>— отделочные материалы</li>
+                                        <li>— различные элементы света</li>
+                                        <li>— мебель из ротанга для загородного дома</li>
+                                    </ul>
+
+                                    <!--<div class="review-comment-cost-header">
+                                        Стоимость покупки
+                                    </div>
+                                    <p class="review-comment-text">
+                                        29 000$
+                                    </p>
+
+                                    <div class="review-comment-tour-cost-header">
+                                        Стоимость тура
+                                    </div>
+                                    <p class="review-comment-text">
+                                        630$
+                                    </p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews-border"></div>
+
+
+
+
+
+                    <div class="row-fluid show-grid">
+                        <div class="span12">
+                            <div class="row-fluid show-grid active-review">
+
+                                <div class="span8">
+                                    <div class="review-fotorama-container">
+                                        <div class="fotorama"
+                                             data-nav="thumbs" id="fotorama-1">
+                                            <a href="images/fotorama-1-1.jpg"><img src="images/fotorama-1-1.jpg"></a>
+                                            <a href="images/fotorama-1-2.jpg"><img src="images/fotorama-1-2.jpg"></a>
+
+
+                                            <a href="images/fotorama-1-3.jpg"><img src="images/fotorama-1-3.jpg"></a>
+
+
+                                            <a href="images/fotorama-1-4.jpg"><img src="images/fotorama-1-4.jpg"></a>
+
+
+                                            <a href="images/fotorama-1-5.jpg"><img src="images/fotorama-1-5.jpg"></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="span4 review-comment">
+                                    <div class="review-comment-header">
+                                        Сторярова Наталья
+                                    </div>
+                                    <p class="review-comment-text">
+                                        46 лет, главный бухгалтер
+                                    </p>
+
+                                    <div class="review-comment-bought-header">
+                                        Приобрела в Китае
+                                    </div>
+
+                                    <ul class="review-comment-bought-list">
+                                        <li>— кухонный гарнитур с обеденным столом и стульями</li>
+                                        <li>— мебель в гостиную</li>
+                                        <li>— предметы света</li>
+                                        <li>— мебель в спальную комнату</li>
+                                        <li>— мебель в гостевую комнату</li>
+                                        <li>— мебель в детскую</li>
+                                        <li>— сантехника</li>
+                                    </ul>
+
+                                    <div class="review-header">Отзыв</div>
+                                    <div class="review">
+                                        Мы купили мебель для большой квартиры, 
+                                        плитку, двери, паркет, сан.технику, шторы, люстры, кухню. Изначально ехали 
+                                        только за мягкой мебелью, но когда поняли какие цены в Китае по сравнению с
+                                        нашими, хватали все. Компания ответственно подошла к организации 
+                                        и мы остались очень довольны. Большое Вам спасибо.
+                                    </div>
+
+                                    <!-- <div class="review-comment-cost-header">
+                                         Стоимость покупок
+                                     </div>
+                                     <p class="review-comment-text">
+                                         37 000$
+                                     </p>
+ 
+                                     <div class="review-comment-tour-cost-header">
+                                         Стоимость тура
+                                     </div>
+                                     <p class="review-comment-text">
+                                         630$
+                                     </p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reviews-border"></div>
+
+
+
+
+                    <!-- 2-я фоторама -->
+
+
+                    <div class="row-fluid show-grid">
+                        <div class="span12">
+                            <div class="row-fluid show-grid active-review">
+
+                                <div class="span8">
+                                    <div class="review-fotorama-container">
+                                        <div class="fotorama"
+                                             data-nav="thumbs" id="fotorama-2">
+                                            <a href="images/fotorama-2-1.jpg"><img src="images/fotorama-2-1.jpg"></a>
+                                            <a href="images/fotorama-2-2.jpg"><img src="images/fotorama-2-2.jpg"></a>
+
+
+                                            <a href="images/fotorama-2-3.jpg"><img src="images/fotorama-2-3.jpg"></a>
+
+
+                                            <a href="images/fotorama-2-4.jpg"><img src="images/fotorama-2-4.jpg"></a>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="span4 review-comment">
+                                    <div class="review-comment-header">
+                                        Тихомирова Анастасия
+                                    </div>
+                                    <p class="review-comment-text">
+                                        38 лет, домохозяйка
+                                    </p>
+
+                                    <div class="review-comment-bought-header">
+                                        Приобрела в Китае
+                                    </div>
+
+                                    <ul class="review-comment-bought-list">
+                                        <li>— кухонный гарнитур</li>
+                                        <li>— мебель в спальную комнату</li>
+                                        <li>— мягкая мебель в гостиную</li>
+                                        <li>— предметы света</li>
+                                        <li>— отделочные материалы</li>
+                                        <li>— сантехника</li>
+                                    </ul>
+
+                                    <div class="review-header">Отзыв</div>
+                                    <div class="review">
+                                        Все было организовано хорошо! 
+                                        Нас встретили и разместили в 
+                                        предложенный компанией отель. Отель нас 
+                                        устраивал по цене и по расположению.В целом 
+                                        же эта поездка доставила массу положительных 
+                                        впечатлений, с удовольствием буду рекомендовать
+                                        друзьям, которые решили сменить интерьер!
+                                    </div>
+
+                                    <!--<div class="review-comment-cost-header">
+                                        Стоимость покупок
+                                    </div>
+                                    <p class="review-comment-text">
+                                        16 000$
+                                    </p>
+
+                                    <div class="review-comment-tour-cost-header">
+                                        Стоимость тура
+                                    </div>
+                                    <p class="review-comment-text">
+                                        630$
+                                    </p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2-я фоторама -->
+
+                    <!--<div class="reviews-border"></div>-->
+
+                </div>
+
+
+                <button id="show-reviews">
+                    Показать ещё 3 отзыва <i class="fa fa-angle-down"></i>
+                </button>
+
+
+
+            </div>
+        </div>
+
+
+
+        <div id="form-container">
+            <form id="main-form" onSubmit="return true">
+
+                <div class="header">
+                    Заявка на тур
+                </div>
+
+                <input placeholder="Имя" id="main-form-name"/>
+
+
+                <input placeholder="Телефон" id="main-form-phone" />
+                <div class="error-block" id="main-form-enter-phone"></div>
+
+                <div class="success" id="main-form-success"></div>
+
+                <button class="yellow-button" id="main-form-button" type="submit" name="submit" onclick="return false;">
+                    Отправить
+                </button>
+
+                <div id="main-form-comment">
+                    В течение часа с вами свяжется<br />
+                    менеджер для уточнения деталей заявки
+                </div>
+
+            </form>
+        </div><!-- form-container -->
+
+
+        <script>
+            $(document).ready(function() {
+                $('#main-form-button').click(function() {
+
+                    var req = new XMLHttpRequest();
+                    var formData = new FormData();
+
+                    var phone = $('#main-form-phone').val().trim();
+                    var name = $('#main-form-name').val().trim();
+
+                    formData.append('phone', phone);
+                    formData.append('name', name);
+
+                    req.onreadystatechange = function() {
+
+                        if (req.readyState == 4) {
+                            if (req.status == 200) {
+
+                                var success = req.getResponseHeader("Success");
+                                if (success != null) {
+                                    $('#main-form-success').html("Поздравляем! Вы все заполнили.<br /> \n\
+                                                                       В ближайшее время мы вам позвоним.");
+                                    $('#main-form-phone').removeClass('error');
+                                    $('#main-form-enter-phone').html('');
+                                    $('#main-form-phone').val('');
+                                    $('#main-form-name').val('');
+                                    $("#main-form-phone, #main-form-name").css({'border-bottom': 'none', 'border-radius': 5, 'padding-bottom': 15, 'background': '#eeecd1'});
+
+                                    return;
+                                } else {
+                                    $('#main-form-phone').addClass('error');
+                                    $('#main-form-enter-phone').html('Введите правильный номер телефона:<br /> +7 xxx xxx xx xx');
+                                    $('#main-form-success').text('');
+
+                                }
+                            }//if (req.status == 200)
+                        }//if (req.readyState == 4)
+                    }//req.onreadystatechange = function
+                    req.open("POST", "mainForm.php", true);
+                    req.send(formData);
+
+
+                });
+
+
+
+
+
+
+
+                $('#learn-more-form-button').click(function() {
+
+                    var req = new XMLHttpRequest();
+                    var formData = new FormData();
+
+                    var phone = $('#learn-more-form-phone').val().trim();
+                    var name = $('#learn-more-form-name').val().trim();
+
+                    formData.append('phone', phone);
+                    formData.append('name', name);
+
+                    req.onreadystatechange = function() {
+
+                        if (req.readyState == 4) {
+                            if (req.status == 200) {
+
+                                var success = req.getResponseHeader("Success");
+                                if (success != null) {
+                                    $('#learn-more-form-success').html("Поздравляем! Вы все заполнили.<br /> \n\
+                                                                       В ближайшее время мы вам позвоним.");
+                                    $('#learn-more-form-phone').removeClass('error');
+                                    $('#learn-more-form-enter-phone').html('');
+                                    $('#learn-more-form-phone').val('');
+                                    $('#learn-more-form-name').val('');
+                                    $("#learn-more-form-phone, #learn-more-form-name").css({'border-bottom': 'none', 'border-radius': 5, 'padding-bottom': 15, 'background': '#eeecd1'});
+
+
+                                    setTimeout(function() {
+                                        $('#learn-more-container').fadeOut(400);
+                                    }, 1400);
+
+                                    setTimeout(function() {
+                                        $('#black-bg').fadeOut(400);
+                                    }, 1800);
+
+
+                                    return;
+                                } else {
+                                    $('#learn-more-form-phone').addClass('error');
+                                    $('#learn-more-form-enter-phone').html('Введите правильный номер телефона:<br /> +7 xxx xxx xx xx');
+                                    $('#learn-more-form-success').text('');
+
+                                }
+                            }//if (req.status == 200)
+                        }//if (req.readyState == 4)
+                    }//req.onreadystatechange = function
+                    req.open("POST", "learnMoreForm.php", true);
+                    req.send(formData);
+
+
+                });
+
+
+
+
+
+
+
+                $('#tour-form-button').click(function() {
+
+                    var req = new XMLHttpRequest();
+                    var formData = new FormData();
+
+                    var phone = $('#tour-form-phone').val().trim();
+                    var name = $('#tour-form-name').val().trim();
+
+                    formData.append('phone', phone);
+                    formData.append('name', name);
+
+                    req.onreadystatechange = function() {
+
+                        if (req.readyState == 4) {
+                            if (req.status == 200) {
+
+                                var success = req.getResponseHeader("Success");
+                                if (success != null) {
+                                    $('#tour-form-success').html("Поздравляем! Вы все заполнили.<br /> \n\
+                                                                       В ближайшее время мы вам позвоним.");
+                                    $('#tour-form-phone').removeClass('error');
+                                    $('#tour-form-enter-phone').html('');
+                                    $('#tour-form-phone').val('');
+                                    $('#tour-form-name').val('');
+                                    $("#tour-form-phone, #tour-form-name").css({'border-bottom': 'none', 'border-radius': 5, 'padding-bottom': 15, 'background': '#eeecd1'});
+
+
+                                    setTimeout(function() {
+
+                                        $('#tour-container').fadeOut(400);
+                                    }, 1400);
+
+                                    setTimeout(function() {
+                                        $('#black-bg').fadeOut(400);
+                                    }, 1800);
+
+                                    return;
+                                } else {
+                                    $('#tour-form-phone').addClass('error');
+                                    $('#tour-form-enter-phone').html('Введите правильный номер телефона:<br /> +7 xxx xxx xx xx');
+                                    $('#tour-form-success').text('');
+
+                                }
+                            }//if (req.status == 200)
+                        }//if (req.readyState == 4)
+                    }//req.onreadystatechange = function
+                    req.open("POST", "tourForm.php", true);
+                    req.send(formData);
+
+
+                });
+
+
+            });
+        </script>
+
+
+        <div id="map-block">
+            <div id="contact-info" class="left">
+                <div id="contact-info-container">
+                    <div class="contact-info-h1">
+                        Silkway Tours
+                    </div>
+
+                    <p class="contact-info-p">
+                        С 2007 года торгуем мебелью в собственном салоне 
+                        на Ломоносова 15. Но ситуация с курсом доллара 
+                        помогла осознать, что выгодней возить людей за мебелью 
+                        в Китай, чем продавать мебель в Санкт-Петербурге для 
+                        тех же самых людей.
+                    </p>
+
+                    <p class="contact-info-p">
+                        Работаем с частными клиентами, отелями, ресторанами, 
+                        клубами, барами и магазинами. Приглашаем к сотрудничеству 
+                        госучреждения, с радостью поучаствуем в тендерах.
+                    </p>
+
+
+
+                    <div class="piter-address">
+                        <div class="contact-info-h2">
+                            Адрес в Санкт-Петербурге
+                        </div>
+
+                        <div class="address-item left" id="piter-address">
+                            ул. Балтийская 51<br /> офис 202
+                        </div>
+
+                        <div class="address-item left" id="piter-days">
+                            Открыты пн-пт <br /> с 9:00 до 17:00
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <div class="address-item piter-phone address-item left">
+                            <a href="tel:+78129230234" class="phone">8 (812) 923-02-34</a>
+                            <a href="mailto:info@silkway-tours.ru" class="email">info@silkway-tours.ru</a>
+                        </div>
+
+                        <div class="address-item left skype-info">
+                            <a href="skype:silkwaytours?call">
+                                silkwaytours
+                            </a>
+                        </div>
+
+                        <div class="clear"></div>
+
+                    </div>
+
+                    <div id="china-address">
+                        <div class="contact-info-h2">
+                            Адрес в Китае
+                        </div>
+
+                        <div class="address-item left" id="china-address-column">
+                            No.82 B Lecong<br />
+                            Avenue, Lecong Town
+                        </div>
+
+                        <div class="address-item left piter-phone">
+                            <a href="tel:+8613922103244" class="phone">+86 13922103244</a>
+                            <a href="mailto:china@silkway-tours.ru" class="email">china@silkway-tours.ru</a>
+
+
+
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+
+
+                    <div id="in-social">
+                        <div class="contact-info-h2">
+                            Мы в социальных сетях
+                        </div>
+                        <div id="social-icons-block">
+                            <a href="https://vk.com/silkwaytours" target="_blank">
+                                <i class="fa fa-vk"></i>
+                            </a>
+
+                            <a href="https://twitter.com/SilkwayTours" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+
+                            <a href="https://instagram.com/swtours" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+
+                            <a href="https://www.facebook.com/groups/518051615020994/" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                    <div id="footer">
+                        <div id="copyright" class="left">
+                            2015, Silkway Tours
+                        </div>
+
+                        <div id="kuligin" class="right">
+                            <div class="kuligin-1">Дизайн и разработка</div>
+                            <div class="kuligin-link">
+                                <a href="http://pavelkuligin.ru" target="_blank">
+                                    Павел Кулигин
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="clear"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="map-container" class="left">
+
+            </div>
+            <div class="clear"></div>
+        </div><!-- map-block -->
+
+
+
+
+
+
+        <div class="wrapper" id="last-wrapper">
+            <div class="" itemscope itemtype="http://schema.org/Store">
+                <h3><span itemprop="name">Silkway Tours</span></h3><span itemprop="description">Организация туров за мебелью в Китай</span><br /><span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><span itemprop="streetAddress">Санкт-Петербург ул. Балтийская 51 офис 202</span><br /><span itemprop="postalCode"></span><br /><span itemprop="addressCountry">Россия</span><br />Phone: <span itemprop="telephone">8 (812) 923-02-34</span><br /><span itemprop="url">http://silkway-tours.ru</span><br /></div>
+        </div>
+
+    </body>
+</html>

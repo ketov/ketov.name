@@ -1,0 +1,51 @@
+#logo{
+    cursor: default;
+}
+
+#book-services{
+    background: url('../images/balloon.jpg') no-repeat;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+#book-services-header{
+    text-shadow: 2px 2px 2px #6aa4d1;
+    padding-top: 23px;
+}
+
+#link-sports,
+#link-sports1
+{
+    background-image: url('../images/sports.jpg');
+}
+
+#link-massage,
+#link-massage1
+{
+    background-image: url('../images/massage.jpg');
+}
+
+#link-haircut,
+#link-haircut1
+{
+    background-image: url('../images/haircut.jpg');
+}
+
+#link-restaurant,
+#link-restaurant1
+{
+    background-image: url('../images/restaurant.jpg');
+}
+
+#link-movie,
+#link-movie1
+{
+    background-image: url('../images/movie.jpg');
+}
+
+#link-medicine,
+#link-medicine1
+{
+    background-image: url('../images/medicine.jpg');
+}
